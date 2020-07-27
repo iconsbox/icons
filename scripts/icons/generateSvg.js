@@ -4,7 +4,7 @@ const parser = require('node-html-parser');
 const shell = require('shelljs');
 
 // Glob index.svg files inb packages
-const svgIcons = glob.sync(`${process.cwd()}/packages/**/index.svg`);
+const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
 
 /* eslint-disable indent */
 const asyncForEach = async (array, callback) => {
@@ -179,7 +179,7 @@ export default ${folderName};
   });
 
 
-  if (shell.exec(`prettier --write "packages/**/*.{js,jsx}"`).code !== 0) {
+  if (shell.exec(`prettier --write "src/**/*.{js,jsx}"`).code !== 0) {
     shell.echo(`run lint failed`);
   }
 })();

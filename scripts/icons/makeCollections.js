@@ -93,10 +93,11 @@ export { default as ${iconName} } from './${iconName}/component';`;
   });
 
   for (const key in content) {
+    await fse.ensureDirSync(`${key}/sprite`);
     await fse.writeFile(`${key}/index.js`, content[key], 'utf8');
     await fse.writeFile(
-      `${key}/sprite.js`,
-      content[key].replace(/\/component/g, '/sprite'),
+      `${key}/sprite/index.js`,
+      content[key].replace(/from '\.\//g, "from '../").replace(/\/component/g, '/sprite'),
       'utf8',
     );
   }

@@ -5,7 +5,7 @@ const glob = require('glob');
 
 const packagePath = process.cwd();
 const buildPath = path.join(packagePath, './dist');
-const srcPath = path.join(packagePath, './packages');
+const srcPath = path.join(packagePath, './src');
 
 async function createPackageFile() {
   const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
@@ -48,8 +48,8 @@ async function createModulePackages({ from, to }) {
    * Sprite icons
    * @type {string[]}
    */
-  const spritePackages = glob.sync('*/**/sprite/index.js', { cwd: from }).map(path.dirname);
-  const componentPackages = glob.sync('*/**/component/index.js', { cwd: from }).map(path.dirname);
+  const spritePackages = glob.sync('**/sprite/index.js', { cwd: from }).map(path.dirname);
+  const componentPackages = glob.sync('**/component/index.js', { cwd: from }).map(path.dirname);
 
   const directoryPackages = spritePackages.concat(componentPackages);
   await Promise.all(
