@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const RefreshCircleSharpIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const RefreshCircleSharpIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -23,11 +23,11 @@ const RefreshCircleSharpIcon = ({ className, size }) => (
 
 RefreshCircleSharpIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 RefreshCircleSharpIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default RefreshCircleSharpIcon;

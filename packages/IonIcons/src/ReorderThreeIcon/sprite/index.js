@@ -1,20 +1,20 @@
 /**
  * THIS IS AN AUTO GENERATED SPRITE FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { useOptions, GlobalConfig } from '@snappmarket/config';
+import * as React from "react";
+import PropTypes from "prop-types";
+import { useOptions, GlobalConfig } from "@snappmarket/config";
 
 if (GlobalConfig.options.importSpriteSVG) {
   // eslint-disable-next-line global-require
-  require('./ReorderThreeIcon.svg');
+  require("./ReorderThreeIcon.svg");
 }
 
 const ReorderThreeIcon = ({ className, size }) => {
   const options = useOptions();
 
-  let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : '';
-  if (options.publicPath !== '/') {
+  let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : "";
+  if (options.publicPath !== "/") {
     importPrefix = `/${options.publicPath}${importPrefix}`;
   }
 
@@ -25,7 +25,7 @@ const ReorderThreeIcon = ({ className, size }) => {
       className={className}
       style={{
         width: size * 10,
-        height: size * 10,
+        height: size * 10
       }}
       fill="currentColor"
     >
@@ -39,11 +39,11 @@ const ReorderThreeIcon = ({ className, size }) => {
 
 ReorderThreeIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 ReorderThreeIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default ReorderThreeIcon;

@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const PausePresentationOutlinedIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const PausePresentationOutlinedIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -22,11 +22,11 @@ const PausePresentationOutlinedIcon = ({ className, size }) => (
 
 PausePresentationOutlinedIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 PausePresentationOutlinedIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default PausePresentationOutlinedIcon;

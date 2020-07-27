@@ -69,7 +69,7 @@ const asyncForEach = async (array, callback) => {
   }
 };
 
-walk('./packages', regExcludes, async (err, results) => {
+walk('./src', regExcludes, async (err, results) => {
   if (err) {
     throw err;
   }
@@ -97,7 +97,7 @@ export { default as ${iconName} } from './${iconName}/component';`;
     await fse.writeFile(`${key}/index.js`, content[key], 'utf8');
     await fse.writeFile(
       `${key}/sprite/index.js`,
-      content[key].replace(/from '\.\//g, "from '../").replace(/\/component/g, '/sprite'),
+      content[key].replace(/from '\./g, "from '..").replace(/\/component/g, '/sprite'),
       'utf8',
     );
   }

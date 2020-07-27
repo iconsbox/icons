@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const WbCloudyTwoToneIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const WbCloudyTwoToneIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -29,11 +29,11 @@ const WbCloudyTwoToneIcon = ({ className, size }) => (
 
 WbCloudyTwoToneIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 WbCloudyTwoToneIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default WbCloudyTwoToneIcon;

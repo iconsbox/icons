@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Customer13Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Customer13Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -111,11 +111,11 @@ const Customer13Icon = ({ className, size }) => (
 
 Customer13Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Customer13Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Customer13Icon;

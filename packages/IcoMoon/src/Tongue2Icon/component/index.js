@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Tongue2Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Tongue2Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -25,11 +25,11 @@ const Tongue2Icon = ({ className, size }) => (
 
 Tongue2Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Tongue2Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Tongue2Icon;

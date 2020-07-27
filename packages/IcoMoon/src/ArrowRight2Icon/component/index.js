@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const ArrowRight2Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const ArrowRight2Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -25,11 +25,11 @@ const ArrowRight2Icon = ({ className, size }) => (
 
 ArrowRight2Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 ArrowRight2Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default ArrowRight2Icon;

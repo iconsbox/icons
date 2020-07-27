@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Bookmark4Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Bookmark4Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -27,11 +27,11 @@ const Bookmark4Icon = ({ className, size }) => (
 
 Bookmark4Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Bookmark4Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Bookmark4Icon;

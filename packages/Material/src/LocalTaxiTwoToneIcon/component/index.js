@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const LocalTaxiTwoToneIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const LocalTaxiTwoToneIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -31,11 +31,11 @@ const LocalTaxiTwoToneIcon = ({ className, size }) => (
 
 LocalTaxiTwoToneIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 LocalTaxiTwoToneIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default LocalTaxiTwoToneIcon;

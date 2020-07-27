@@ -1,11 +1,11 @@
 {
-  "name": "@snappmarket/icons_feather",
+  "name": "@snappmarket/icons_material",
   "private": false,
   "version": "1.0.0",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.js",
-  "unpkg": "./dist/umd/featherIcons.production.js",
+  "unpkg": "./dist/umd/materialIcons.production.js",
   "scripts": {
     "test": "cross-env BABEL_ENV=test jest --config ../../jest.config.js",
     "test:coverage": "cross-env BABEL_ENV=test jest --config ../../jest.config.js --coverage=true",

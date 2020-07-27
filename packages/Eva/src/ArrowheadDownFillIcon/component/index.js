@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const ArrowheadDownFillIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const ArrowheadDownFillIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -28,11 +28,11 @@ const ArrowheadDownFillIcon = ({ className, size }) => (
 
 ArrowheadDownFillIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 ArrowheadDownFillIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default ArrowheadDownFillIcon;

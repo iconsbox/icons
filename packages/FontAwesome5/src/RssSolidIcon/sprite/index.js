@@ -1,20 +1,20 @@
 /**
  * THIS IS AN AUTO GENERATED SPRITE FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { useOptions, GlobalConfig } from '@snappmarket/config';
+import * as React from "react";
+import PropTypes from "prop-types";
+import { useOptions, GlobalConfig } from "@snappmarket/config";
 
 if (GlobalConfig.options.importSpriteSVG) {
   // eslint-disable-next-line global-require
-  require('./RssSolidIcon.svg');
+  require("./RssSolidIcon.svg");
 }
 
 const RssSolidIcon = ({ className, size }) => {
   const options = useOptions();
 
-  let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : '';
-  if (options.publicPath !== '/') {
+  let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : "";
+  if (options.publicPath !== "/") {
     importPrefix = `/${options.publicPath}${importPrefix}`;
   }
 
@@ -25,7 +25,7 @@ const RssSolidIcon = ({ className, size }) => {
       className={className}
       style={{
         width: size * 10,
-        height: size * 10,
+        height: size * 10
       }}
       fill="currentColor"
     >
@@ -39,11 +39,11 @@ const RssSolidIcon = ({ className, size }) => {
 
 RssSolidIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 RssSolidIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default RssSolidIcon;

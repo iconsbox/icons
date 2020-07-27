@@ -1,20 +1,20 @@
 /**
  * THIS IS AN AUTO GENERATED SPRITE FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { useOptions, GlobalConfig } from '@snappmarket/config';
+import * as React from "react";
+import PropTypes from "prop-types";
+import { useOptions, GlobalConfig } from "@snappmarket/config";
 
 if (GlobalConfig.options.importSpriteSVG) {
   // eslint-disable-next-line global-require
-  require('./Crop54SharpIcon.svg');
+  require("./Crop54SharpIcon.svg");
 }
 
 const Crop54SharpIcon = ({ className, size }) => {
   const options = useOptions();
 
-  let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : '';
-  if (options.publicPath !== '/') {
+  let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : "";
+  if (options.publicPath !== "/") {
     importPrefix = `/${options.publicPath}${importPrefix}`;
   }
 
@@ -25,7 +25,7 @@ const Crop54SharpIcon = ({ className, size }) => {
       className={className}
       style={{
         width: size * 10,
-        height: size * 10,
+        height: size * 10
       }}
       fill="currentColor"
     >
@@ -39,11 +39,11 @@ const Crop54SharpIcon = ({ className, size }) => {
 
 Crop54SharpIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Crop54SharpIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Crop54SharpIcon;

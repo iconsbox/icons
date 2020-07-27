@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const BackupTwoToneIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const BackupTwoToneIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -29,11 +29,11 @@ const BackupTwoToneIcon = ({ className, size }) => (
 
 BackupTwoToneIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 BackupTwoToneIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default BackupTwoToneIcon;

@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const GrinStarsRegularIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const GrinStarsRegularIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -22,11 +22,11 @@ const GrinStarsRegularIcon = ({ className, size }) => (
 
 GrinStarsRegularIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 GrinStarsRegularIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default GrinStarsRegularIcon;

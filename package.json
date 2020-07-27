@@ -23,8 +23,8 @@
     "docz:build": "cross-env BABEL_ENV=docz docz build",
     "docz:serve": "cross-env BABEL_ENV=docz docz serve",
     "docz:deploy": "surge .docz/dist",
-    "release": "node ./scripts/release/release.js",
-    "jsdoc2docz": "node ./scripts/docs/jsdocs-to-docz.js"
+    "generate": "lerna run --parallel generate",
+    "release": "node ./scripts/release/release.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

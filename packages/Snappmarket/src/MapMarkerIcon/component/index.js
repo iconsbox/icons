@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const MapMarkerIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const MapMarkerIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -34,11 +34,11 @@ C302.497,216.15,346.144,172.498,399.997,172.498z"
 
 MapMarkerIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 MapMarkerIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default MapMarkerIcon;

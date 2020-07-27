@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const StarEmptyIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const StarEmptyIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -25,11 +25,11 @@ const StarEmptyIcon = ({ className, size }) => (
 
 StarEmptyIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 StarEmptyIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default StarEmptyIcon;

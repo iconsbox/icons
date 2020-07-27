@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Juice9Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Juice9Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -172,11 +172,11 @@ const Juice9Icon = ({ className, size }) => (
 
 Juice9Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Juice9Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Juice9Icon;

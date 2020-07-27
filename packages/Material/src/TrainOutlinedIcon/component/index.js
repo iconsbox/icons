@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const TrainOutlinedIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const TrainOutlinedIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -27,11 +27,11 @@ const TrainOutlinedIcon = ({ className, size }) => (
 
 TrainOutlinedIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 TrainOutlinedIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default TrainOutlinedIcon;

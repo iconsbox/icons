@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const PandaIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const PandaIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -304,11 +304,11 @@ const PandaIcon = ({ className, size }) => (
 
 PandaIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 PandaIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default PandaIcon;

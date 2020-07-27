@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Forward3Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Forward3Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -25,11 +25,11 @@ const Forward3Icon = ({ className, size }) => (
 
 Forward3Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Forward3Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Forward3Icon;

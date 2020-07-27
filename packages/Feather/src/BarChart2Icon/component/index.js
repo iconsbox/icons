@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const BarChart2Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const BarChart2Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -24,11 +24,11 @@ const BarChart2Icon = ({ className, size }) => (
 
 BarChart2Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 BarChart2Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default BarChart2Icon;

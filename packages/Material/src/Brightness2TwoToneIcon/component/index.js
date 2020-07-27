@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Brightness2TwoToneIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Brightness2TwoToneIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -29,11 +29,11 @@ const Brightness2TwoToneIcon = ({ className, size }) => (
 
 Brightness2TwoToneIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Brightness2TwoToneIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Brightness2TwoToneIcon;

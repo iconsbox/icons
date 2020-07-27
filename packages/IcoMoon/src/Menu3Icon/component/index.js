@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const Menu3Icon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const Menu3Icon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -26,11 +26,11 @@ const Menu3Icon = ({ className, size }) => (
 
 Menu3Icon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 Menu3Icon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default Menu3Icon;

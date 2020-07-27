@@ -1,8 +1,8 @@
 /**
  * THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
  */
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import PropTypes from "prop-types";
 
 const BrandAlgoliaIcon = ({ className, size }) => (
   <svg
@@ -11,7 +11,7 @@ const BrandAlgoliaIcon = ({ className, size }) => (
     className={className}
     style={{
       width: size * 10,
-      height: size * 10,
+      height: size * 10
     }}
     focusable="false"
     fill="currentColor"
@@ -22,11 +22,11 @@ const BrandAlgoliaIcon = ({ className, size }) => (
 
 BrandAlgoliaIcon.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.number,
+  size: PropTypes.number
 };
 
 BrandAlgoliaIcon.defaultProps = {
-  size: 1.5,
+  size: 1.5
 };
 
 export default BrandAlgoliaIcon;
