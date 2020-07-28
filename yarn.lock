@@ -2391,6 +2391,11 @@
     escape-string-regexp "^1.0.5"
     lodash.deburr "^4.1.0"
 
+"@snappmarket/config@^0.3.5-alpha.1":
+  version "0.3.5-alpha.1"
+  resolved "https://registry.yarnpkg.com/@snappmarket/config/-/config-0.3.5-alpha.1.tgz#bff409e429fe0f685b68bb06898882f7603fb9b5"
+  integrity sha512-ZOcPzekFIVN9F5+ksIKtyNYpPdOJ/HO7xb4AhPkm8wYGW8m/a9GkzNb++7oK0MWJQClOMa3usI5Jq5Gq3iivXw==
+
 "@styled-system/css@^5.0.16":
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.1.5.tgz#0460d5f3ff962fa649ea128ef58d9584f403bbbc"

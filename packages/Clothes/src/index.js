@@ -3,8 +3,8 @@
 */
 export { default as CollaredIcon } from './CollaredIcon/component';
 export { default as FrockIcon } from './FrockIcon/component';
-export { default as HoodieIcon } from './HoodieIcon/component';
 export { default as HatIcon } from './HatIcon/component';
+export { default as HoodieIcon } from './HoodieIcon/component';
 export { default as JacketIcon } from './JacketIcon/component';
 export { default as JeansIcon } from './JeansIcon/component';
 export { default as Mens2Icon } from './Mens2Icon/component';
@@ -24,8 +24,8 @@ export { default as Womans10Icon } from './Womans10Icon/component';
 export { default as Womans2Icon } from './Womans2Icon/component';
 export { default as Womans3Icon } from './Womans3Icon/component';
 export { default as Womans4Icon } from './Womans4Icon/component';
-export { default as Womans6Icon } from './Womans6Icon/component';
 export { default as Womans5Icon } from './Womans5Icon/component';
+export { default as Womans6Icon } from './Womans6Icon/component';
 export { default as Womans7Icon } from './Womans7Icon/component';
 export { default as Womans8Icon } from './Womans8Icon/component';
 export { default as Womans9Icon } from './Womans9Icon/component';

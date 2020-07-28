@@ -14,7 +14,7 @@ const DeviceHubRoundedIcon = ({ className, size }) => {
   const options = useOptions();
 
   let importPrefix = options.useSpriteFile ? `/${options.spriteSvgName}` : "";
-  if (options.publicPath !== "/") {
+  if (options.useSpriteFile && options.publicPath !== "/") {
     importPrefix = `/${options.publicPath}${importPrefix}`;
   }
 

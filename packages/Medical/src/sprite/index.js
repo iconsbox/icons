@@ -4,8 +4,8 @@
 export { default as AmbulanceIcon } from '../AmbulanceIcon/sprite';
 export { default as AnatomyIcon } from '../AnatomyIcon/sprite';
 export { default as BagIcon } from '../BagIcon/sprite';
-export { default as BandageIcon } from '../BandageIcon/sprite';
 export { default as BottleIcon } from '../BottleIcon/sprite';
+export { default as BandageIcon } from '../BandageIcon/sprite';
 export { default as BrainIcon } from '../BrainIcon/sprite';
 export { default as BreathIcon } from '../BreathIcon/sprite';
 export { default as CardiogramIcon } from '../CardiogramIcon/sprite';

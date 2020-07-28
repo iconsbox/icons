@@ -3,8 +3,8 @@
 */
 export { default as ArabManIcon } from '../ArabManIcon/sprite';
 export { default as CamelIcon } from '../CamelIcon/sprite';
-export { default as ChandNightIcon } from '../ChandNightIcon/sprite';
 export { default as DateFruitBowlIcon } from '../DateFruitBowlIcon/sprite';
+export { default as ChandNightIcon } from '../ChandNightIcon/sprite';
 export { default as DateFruitIcon } from '../DateFruitIcon/sprite';
 export { default as DayIcon } from '../DayIcon/sprite';
 export { default as DrinkIcon } from '../DrinkIcon/sprite';
