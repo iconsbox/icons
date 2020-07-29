@@ -67,7 +67,17 @@
   "eye-closed": ["hidden", "invisible", "concealed", ""],
   "file": ["file", "text", "words"],
   "file-binary": ["image", "video", "word", "powerpoint", "excel"],
-  "file-code": ["text", "javascript", "html", "css", "php", "ruby", "coffeescript", "sass", "scss"],
+  "file-code": [
+    "text",
+    "javascript",
+    "html",
+    "css",
+    "php",
+    "ruby",
+    "coffeescript",
+    "sass",
+    "scss"
+  ],
   "file-directory": ["folder"],
   "file-media": ["image", "video", "audio"],
   "file-pdf": ["adobe"],
