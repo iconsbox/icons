@@ -5,9 +5,11 @@
     <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
 </p>
 
-<p align="center">
-    <h2>A world of famous icon packs with easy to use interface</h2>
+<p align="center" style="font-size: 24px; font-weight: 900">
+    A world of famous icon packs with easy to use interface
+    <br/>
 </p>
+
 <p align="center">
     <img src="./app/resources/img/packs/clothesBadge.jpg" width="120" alt="clothesBadge" />
     <img src="./app/resources/img/packs/eidBadge.jpg" width="120" alt="eidBadge" />
@@ -28,9 +30,6 @@
     <img src="./app/resources/img/packs/supportBadge.jpg" width="120" alt="supportBadge" />
     <img src="./app/resources/img/packs/yourIconsBadge.jpg" width="120" alt="addYourIcon" />
 </p>
-
-## Demo
-https://snappmarket.github.io/IconBox/
 
 ## How to use it ?
 
