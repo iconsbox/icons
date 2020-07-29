@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./app/resources/img/bouncingBox.gif" width="480" alt="BoxBouncing" />
+    <img src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif" width="480" alt="BoxBouncing" />
 </p>
 <p align="center">
     <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
