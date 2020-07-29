@@ -2,26 +2,26 @@
     <img src="./app/resources/img/bouncingBox.gif" width="480" alt="BoxBouncing" />
 </p>
 <p align="center">
-    <img src="./app/resources/img/topBanner.jpg" width="480" alt="IconBox" />
+    <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
 </p>
 <p align="center">
-    <img src="./app/resources/img/packs/clothesBadge.jpg" width="200" alt="clothesBadge" />
-    <img src="./app/resources/img/packs/eidBadge.jpg" width="200" alt="eidBadge" />
-    <img src="./app/resources/img/packs/emojiBadge.jpg" width="200" alt="emojiBadge" />
-    <img src="./app/resources/img/packs/evaBadge.jpg" width="200" alt="evaBadge" />
-    <img src="./app/resources/img/packs/featherBadge.jpg" width="200" alt="featherBadge" />
-    <img src="./app/resources/img/packs/fontAwesome4Badge.jpg" width="200" alt="fontAwesome4Badge" />
-    <img src="./app/resources/img/packs/fontAwesome5Badge.jpg" width="200" alt="fontAwesome5Badge" />
-    <img src="./app/resources/img/packs/foundationBadge.jpg" width="200" alt="foundationBadge" />
-    <img src="./app/resources/img/packs/icomoonBadge.jpg" width="200" alt="icomoonBadge" />
-    <img src="./app/resources/img/packs/iconlyBadge.jpg" width="200" alt="iconlyBadge" />
-    <img src="./app/resources/img/packs/ionBadge.jpg" width="200" alt="ionBadge" />
-    <img src="./app/resources/img/packs/linearBadge.jpg" width="200" alt="linearBadge" />
-    <img src="./app/resources/img/packs/materialBadge.jpg" width="200" alt="materialBadge" />
-    <img src="./app/resources/img/packs/medicalBadge.jpg" width="200" alt="medicalBadge" />
-    <img src="./app/resources/img/packs/octBadge.jpg" width="200" alt="octBadge" />
-    <img src="./app/resources/img/packs/snappmarketBadge.jpg" width="200" alt="snappmarketBadge" />
-    <img src="./app/resources/img/packs/supportBadge.jpg" width="200" alt="supportBadge" />
+    <img src="./app/resources/img/packs/clothesBadge.jpg" width="120" alt="clothesBadge" />
+    <img src="./app/resources/img/packs/eidBadge.jpg" width="120" alt="eidBadge" />
+    <img src="./app/resources/img/packs/emojiBadge.jpg" width="120" alt="emojiBadge" />
+    <img src="./app/resources/img/packs/evaBadge.jpg" width="120" alt="evaBadge" />
+    <img src="./app/resources/img/packs/featherBadge.jpg" width="120" alt="featherBadge" />
+    <img src="./app/resources/img/packs/fontAwesome4Badge.jpg" width="120" alt="fontAwesome4Badge" />
+    <img src="./app/resources/img/packs/fontAwesome5Badge.jpg" width="120" alt="fontAwesome5Badge" />
+    <img src="./app/resources/img/packs/foundationBadge.jpg" width="120" alt="foundationBadge" />
+    <img src="./app/resources/img/packs/icomoonBadge.jpg" width="120" alt="icomoonBadge" />
+    <img src="./app/resources/img/packs/iconlyBadge.jpg" width="120" alt="iconlyBadge" />
+    <img src="./app/resources/img/packs/ionBadge.jpg" width="120" alt="ionBadge" />
+    <img src="./app/resources/img/packs/linearBadge.jpg" width="120" alt="linearBadge" />
+    <img src="./app/resources/img/packs/materialBadge.jpg" width="120" alt="materialBadge" />
+    <img src="./app/resources/img/packs/medicalBadge.jpg" width="120" alt="medicalBadge" />
+    <img src="./app/resources/img/packs/octBadge.jpg" width="120" alt="octBadge" />
+    <img src="./app/resources/img/packs/snappmarketBadge.jpg" width="120" alt="snappmarketBadge" />
+    <img src="./app/resources/img/packs/supportBadge.jpg" width="120" alt="supportBadge" />
 </p>
 
 ## Demo

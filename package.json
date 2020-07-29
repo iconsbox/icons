@@ -10,6 +10,7 @@
     "bootstrap:seprated": "lerna exec yarn",
     "build": "lerna run --parallel build",
     "build-lerna": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.spec.js",
+    "deploy": "yarn docs:build && gh-pages -d docs -r https://$GH_TOKEN@github.com/snappmarket/iconbox",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "test": "cross-env BABEL_ENV=test jest",
     "lint": "npm run lint:js && npm run lint:css",
