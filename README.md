@@ -4,6 +4,10 @@
 <p align="center">
     <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
 </p>
+
+<p align="center">
+    <h2>A world of famous icon packs with easy to use interface</h2>
+</p>
 <p align="center">
     <img src="./app/resources/img/packs/clothesBadge.jpg" width="120" alt="clothesBadge" />
     <img src="./app/resources/img/packs/eidBadge.jpg" width="120" alt="eidBadge" />
@@ -22,6 +26,7 @@
     <img src="./app/resources/img/packs/octBadge.jpg" width="120" alt="octBadge" />
     <img src="./app/resources/img/packs/snappmarketBadge.jpg" width="120" alt="snappmarketBadge" />
     <img src="./app/resources/img/packs/supportBadge.jpg" width="120" alt="supportBadge" />
+    <img src="./app/resources/img/packs/yourIconsBadge.jpg" width="120" alt="addYourIcon" />
 </p>
 
 ## Demo
@@ -41,7 +46,8 @@ This repo is just a wrapper to exist icon packs, so please respect every icon pa
 - **Emoji**: free icon pack from [flat icons](https://www.flaticon.com/)
 - **Eva Icons**: [MIT](https://github.com/akveo/eva-icons#license)
 - **Feather Icons**: free icon pack from [flat icons](https://www.flaticon.com/)
-- **Font awesome icons** : [CC BY 4.0 License](https://github.com/FortAwesome/Font-Awesome#license)
+- **Font awesome4 icons** : [CC BY 4.0 License](https://github.com/FortAwesome/Font-Awesome#license)
+- **Font awesome5 icons** : [CC BY 4.0 License](https://github.com/FortAwesome/Font-Awesome#license)
 - **Foundation**: [MIT](https://github.com/zurb/foundation-icons)
 - **IcoMoon**: [GPL / CC BY 4.0](https://github.com/Keyamoon/IcoMoon-Free), [GPL / CC BY 4.0](https://icomoon.io/app/#/select/library)
 - **Iconly**: free icon pack from [flat icons](https://www.flaticon.com/)
