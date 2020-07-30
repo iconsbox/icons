@@ -13,6 +13,83 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/static/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/static/img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/static/img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/static/img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/static/img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/static/img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/static/img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/static/img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/static/img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/static/img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/static/img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/static/img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <div class="container">
@@ -22,34 +99,127 @@
           width="480"
           alt="BoxBouncing"
         />
-        <img
-          src="./app/resources/img/topBanner.jpg"
-          width="100%"
-          alt="IconBox"
-        />
 
-        <h1>
-          IconBox
-        </h1>
+        <div class="logo">
+          🧙
+          <h1>‍IconBox</h1>
+          <span class="labelStats"><strong>+10k</strong> icons</span>
+        </div>
         <p class="text-muted">version 1.0.1-alpha.1</p>
 
-        <p align="center" style="font-size: 24px; font-weight: 900">
+        <p class="topBannerMessage">
           A world of famous icon packs with easy to use interface
           <br />
         </p>
       </header>
 
       <div class="toolbar">
-        <div class="selectPackType">
-          <div class="listPackages">{{PACKAGES_LIST}}</div>
-        </div>
-        <input type="text" id="searchBar" placeholder="Type a name or icon family" />
-        <button>
+        <div class="searchPanel">
+          <div class="select selectPackType">
+            <div class="select-title hoverable">Pack</div>
+            <div class="select-value hoverable">All packs</div>
+            <div class="select-panel listPackages">
+              <ul></ul>
+            </div>
 
-        </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Type some thing to search ..."
+          />
+          <button class="hoverable" type="button" id="submitSearchIcon">
+            <svg
+              class="searchIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <rect width="24" height="24" opacity="0" />
+              <path
+                d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"
+              />
+            </svg>
+          </button>
+
+          <div class="select chooseSize">
+            <div class="select-title hoverable">Size</div>
+            <div class="select-value hoverable">14</div>
+            <div class="select-panel">
+              <ul>
+                <li>12</li>
+                <li>14</li>
+                <li>16</li>
+                <li>18</li>
+                <li>22</li>
+                <li>24</li>
+              </ul>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="button button-green hoverable">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-plus"
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          Add Pack
+        </div>
       </div>
 
-      <div class="iconsList">{{ICONS_LIST}}</div>
+      <div class="iconsList"></div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="backToTop hoverable">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
     </div>
   </body>
 </html>

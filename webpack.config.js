@@ -30,12 +30,9 @@ module.exports = {
       title: "IconBox"
     }),
 
-    // new CopyWebpackPlugin([
-    //   { from: path.join(__dirname, "./src/www/"), to: "./" },
-    //   { from: path.join(__dirname, "./src/assets/"), to: "./assets/" },
-    //   { from: path.join(__dirname, "./wiki/_book"), to: "./wiki/" },
-    //   { from: path.join(__dirname, "./api-docs/"), to: "./api-docs/" }
-    // ]),
+    new CopyWebpackPlugin([
+      { from: path.join(__dirname, "./app/resources/"), to: "./static/" },
+    ]),
 
     new CompressionPlugin({
       filename: "[path].gz[query]",
@@ -119,5 +116,10 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'docs'),
+    compress: true,
+    port: 9000
   }
 };

@@ -5,17 +5,29 @@ const makeFilePath = function (pack, name) {
   return `${config.PATH_PREFIX}${pack}/src/${name}/${config.PATH_SUFFIX}`;
 };
 
-const input = document.querySelector("div.search-bar input");
-const iconContainer = document.querySelector("div.box div.tabler-icons");
-let icons = [];
+/**
+ * Define global utils
+ */
+const input = document.querySelector("#searchBar");
+const iconsContainer = document.querySelector(".iconList");
+const packagesListSelector = document.querySelector(".listPackages ul");
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('myParam');
 
-document.querySelectorAll("div.tabler-icon").forEach(icon => icons.push({
-  el : icon,
-  name : icon.querySelector('strong').innerHTML,
-}));
+/**
+ * Add initial content
+ */
+let packagesList = '';
+Object.keys(iconsData).forEach(packName => {
+  packagesList += `<li>${packName}</li>`;
+});
+packagesListSelector.innerHTML = packagesList;
 
+
+/**
+ * Search mechanism
+ */
 input.addEventListener('input', search);
-
 function search(evt){
   let searchValue = evt.target.value;
   let iconsToShow = searchValue.length ? icons.filter(icon => icon.name.includes(searchValue)) : icons;
