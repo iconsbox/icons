@@ -1,6 +1,6 @@
 export default {
   Clothes: {
-    package: "@snappmarket/icons_clothes",
+    package: "@iconbox/clothes",
     version: "1.0.1-alpha.1",
     icons: {
       FrockIcon: { k: [] },
@@ -36,7 +36,7 @@ export default {
     }
   },
   Emoji: {
-    package: "@snappmarket/icons_emoji",
+    package: "@iconbox/emoji",
     version: "1.0.1-alpha.1",
     icons: {
       AmericanIcon: { k: [] },
@@ -142,7 +142,7 @@ export default {
     }
   },
   Eid: {
-    package: "@snappmarket/icons_eid",
+    package: "@iconbox/eid",
     version: "1.0.1-alpha.1",
     icons: {
       ArabManIcon: { k: [] },
@@ -173,7 +173,7 @@ export default {
     }
   },
   Feather: {
-    package: "@snappmarket/icons_feather",
+    package: "@iconbox/feather",
     version: "1.0.1-alpha.1",
     icons: {
       ActivityIcon: { k: [] },
@@ -461,7 +461,7 @@ export default {
     }
   },
   Eva: {
-    package: "@snappmarket/icons_eva",
+    package: "@iconbox/eva",
     version: "1.0.1-alpha.1",
     icons: {
       ActivityFillIcon: { k: [] },
@@ -957,7 +957,7 @@ export default {
     }
   },
   FontAwesome4: {
-    package: "@snappmarket/icons_fa4",
+    package: "@iconbox/fa4",
     version: "1.0.1-alpha.1",
     icons: {
       AddressBookIcon: { k: [] },
@@ -1748,7 +1748,7 @@ export default {
     }
   },
   Iconly: {
-    package: "@snappmarket/icons_iconly",
+    package: "@iconbox/iconly",
     version: "1.0.1-alpha.1",
     icons: {
       Activity2Icon: { k: [] },
@@ -1850,7 +1850,7 @@ export default {
     }
   },
   IcoMoon: {
-    package: "@snappmarket/icons_icomoon",
+    package: "@iconbox/icomoon",
     version: "1.0.1-alpha.1",
     icons: {
       AddressBookIcon: { k: [] },
@@ -2346,7 +2346,7 @@ export default {
     }
   },
   Medical: {
-    package: "@snappmarket/icons_medical",
+    package: "@iconbox/medical",
     version: "1.0.1-alpha.1",
     icons: {
       AmbulanceIcon: { k: [] },
@@ -2377,7 +2377,7 @@ export default {
     }
   },
   Linearicons: {
-    package: "@snappmarket/icons_linear",
+    package: "@iconbox/linear",
     version: "1.0.1-alpha.1",
     icons: {
       AlarmIcon: { k: [] },
@@ -2553,7 +2553,7 @@ export default {
     }
   },
   Snappmarket: {
-    package: "@snappmarket/icons_snappmarket",
+    package: "@iconbox/snappmarket",
     version: "1.0.1-alpha.3",
     icons: {
       AngleDownIcon: { k: [] },
@@ -2651,7 +2651,7 @@ export default {
     }
   },
   Octicons: {
-    package: "@snappmarket/icons_oct",
+    package: "@iconbox/oct",
     version: "1.0.1-alpha.1",
     icons: {
       ArchiveIcon: { k: [] },
@@ -2861,7 +2861,7 @@ export default {
     }
   },
   Foundation: {
-    package: "@snappmarket/icons_foundation",
+    package: "@iconbox/foundation",
     version: "1.0.1-alpha.1",
     icons: {
       AddressBookIcon: { k: [] },
@@ -3150,7 +3150,7 @@ export default {
     }
   },
   Support: {
-    package: "@snappmarket/icons_support",
+    package: "@iconbox/support",
     version: "1.0.1-alpha.1",
     icons: {
       Allday2Icon: { k: [] },
@@ -3216,7 +3216,7 @@ export default {
     }
   },
   IonIcons: {
-    package: "@snappmarket/icons_ion",
+    package: "@iconbox/ion",
     version: "1.0.1-alpha.1",
     icons: {
       AddCircleSharpIcon: { k: [] },
@@ -4449,7 +4449,7 @@ export default {
     }
   },
   FontAwesome5: {
-    package: "@snappmarket/icons_fa5",
+    package: "@iconbox/fa5",
     version: "1.0.1-alpha.1",
     icons: {
       AddressBookRegularIcon: { k: [] },
@@ -5978,7 +5978,7 @@ export default {
     }
   },
   Material: {
-    package: "@snappmarket/icons_material",
+    package: "@iconbox/material",
     version: "1.0.1-alpha.1",
     icons: {
       AcUnitIcon: { k: [] },

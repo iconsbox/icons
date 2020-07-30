@@ -33,7 +33,7 @@
 
 ## How to use it ?
 
-Icons are available in `svg` format, `react` components and a special way of `sprite` file which allows you to sprite svg icons
+Icons are available in `svg` format, `react` components and a special way of `sprite` file, which allows you to sprite svg icons
 in a pack. e.g. if you are using `webpack` you could use [svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader)
 
 

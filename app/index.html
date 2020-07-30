@@ -1,31 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>IconBox - SayJeyHi</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IconBox - SayJeyHi</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-  <header class="header">
-    <h1>
-      IconBox
-    </h1>
-    <p class="text-muted">version 1.0.1-alpha.1</p>
-  </header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif"
+          width="480"
+          alt="BoxBouncing"
+        />
+        <img
+          src="./app/resources/img/topBanner.jpg"
+          width="100%"
+          alt="IconBox"
+        />
 
-  <div class="search-bar">
-    <input type="text" name="search" placeholder="type to search"/>
-  </div>
+        <h1>
+          IconBox
+        </h1>
+        <p class="text-muted">version 1.0.1-alpha.1</p>
 
-  <div class="box">
-    <div class="tabler-icons">
+        <p align="center" style="font-size: 24px; font-weight: 900">
+          A world of famous icon packs with easy to use interface
+          <br />
+        </p>
+      </header>
 
+      <div class="toolbar">
+        <div class="selectPackType">
+          <div class="listPackages">{{PACKAGES_LIST}}</div>
+        </div>
+      </div>
+
+      <div class="iconsList">{{ICONS_LIST}}</div>
     </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
