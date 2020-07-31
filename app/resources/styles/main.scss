@@ -27,11 +27,57 @@ code {
   margin: 0 auto;
 }
 
-.box {
-  padding: 0 1rem 1rem 1rem;
-  background: #fff;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 3px 3px;
+// Main content
+.iconsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .box {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    margin: 0.4rem;
+    will-change: transform, box-shadow;
+    transition: transform 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 6px -1px rgba(0, 0, 0, 0.1);
+      .buttons {
+        display: flex;
+      }
+    }
+    img {
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+    .buttons {
+      position: absolute;
+      .button {
+        background: rgba(10,10,10,0.06);
+        height: 2.4rem;
+        margin: 0.3 !important;
+      }
+      .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.4rem;
+        svg {
+          width: 2rem;
+          height: 2rem;
+          left: 0;
+        }
+      }
+    }
+  }
 }
 
 .text-muted {
@@ -132,6 +178,7 @@ code {
   height: 5.4rem;
   padding-top: 0.6rem;
   width: 100%;
+  z-index: 1111;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -140,6 +187,17 @@ code {
     rgba(255, 255, 255, 1) 100%
   );
 
+  &.stick .stickyLogo{
+    display: flex;
+  }
+  .stickyLogo {
+    align-items: center;
+    justify-content: center;
+    height: 3.1rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    display: none;
+  }
   .searchPanel {
     position: relative;
     background: #efefef;
@@ -228,10 +286,7 @@ code {
   }
 }
 
-// Main content
-.iconsList {
-  min-height: 1400px;
-}
+
 
 // Back to top
 .backToTop {
