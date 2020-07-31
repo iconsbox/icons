@@ -1,6 +1,5 @@
  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <React.Fragment>
-    <circle cx="14" cy="10" r="1.5" />
+<circle cx="14" cy="10" r="1.5" />
     <circle cx="14" cy="18" r="1" />
     <circle cx="14" cy="14" r="1.5" />
     <circle cx="14" cy="6" r="1" />
@@ -21,6 +20,5 @@
     <circle cx="10" cy="14" r="1.5" />
     <circle cx="10" cy="10" r="1.5" />
     <circle cx="18" cy="10" r="1" />
-  </React.Fragment>,
-  'BlurOnTwoTone',
+
 </svg>

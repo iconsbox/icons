@@ -16,11 +16,8 @@ const PriorityHighTwoToneIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <React.Fragment>
-      <circle cx="12" cy="19" r="2"></circle>
-      <path d="M10 3h4v12h-4z"></path>
-    </React.Fragment>
-    , 'PriorityHighTwoTone',
+    <circle cx="12" cy="19" r="2"></circle>
+    <path d="M10 3h4v12h-4z"></path>
   </svg>
 );
 
