@@ -4,7 +4,7 @@ import "./resources/styles/main.scss";
 import { _ } from "./utils/selectors";
 import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
-import { ready } from "./utils/document";
+import { ready, addEvent, getScrollY } from "./utils/document";
 
 ready(() => {
   /**
@@ -67,26 +67,35 @@ ready(() => {
   /**
    * Check infinity scroll
    */
-  window.addEventListener("scroll", function (event) {
-    const element = document.body;
+  window.addEventListener(
+    "scroll",
+    function(event) {
+      const element = document.body;
+      console.log({
+        scrollHeight: element.scrollHeight,
+        scrollTop: window.scrollTop,
+        clientHeight: element.clientHeight
+      });
+      if (element.scrollHeight - window.scrollTop === element.clientHeight) {
+        console.log("scrolled");
+      }
+    },
+    false
+  );
+
+
+
+  addEvent(window, "scroll", function(event) {
+    const toolbar = document.querySelector(".toolbar");
+    const y = getScrollY();
+
     console.log({
-      scrollHeight: element.scrollHeight,
-      scrollTop: window.scrollTop,
-      clientHeight: element.clientHeight
+      y,
     });
-    if (element.scrollHeight - window.scrollTop === element.clientHeight) {
-      console.log("scrolled");
+    if (y >= 603) {
+      toolbar.classList.add("stick");
+    } else {
+      toolbar.classList.remove("stick");
     }
-  }, false);
-
-  /**
-   * Scroll and add logo to nav-bar
-   */
-  document.querySelector('.toolbar').addEventListener('sticky-change', e => {
-    const header = e.detail.target;  // header became sticky or stopped sticking.
-    const sticking = e.detail.stuck; // true when header is sticky.
-
-    console.log(header);
-    header.classList.toggle('stick', sticking); // add drop shadow when sticking.
   });
 });
