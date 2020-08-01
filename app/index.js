@@ -23,7 +23,7 @@ ready(() => {
   /**
    * Add initial select packages
    */
-  let packagesList = "";
+  let packagesList = "<li>All</li>";
   IconDataKey.forEach(packName => {
     packagesList += `<li>${packName}</li>`;
   });
@@ -65,17 +65,25 @@ ready(() => {
     });
   });
 
+  /**
+   * Show panel
+   */
   addEvent(selectPackType, "click", evt => {
     const li = evt.currentTarget;
     li.querySelector(".select-panel").classList.toggle("visible");
   });
 
+  /**
+   * Choose package type
+   */
   addEvent(packagesListItemSelector, "click", evt => {
     const li = evt.target;
     const packageName = li.innerText.trim();
+    selectPackType.querySelector(".select-value").innerHTML = packageName;
 
     config.ACTIVE_PAGE = 1;
-    history.pushState({}, "", "/?package=" + packageName);
+    config.ACTIVE_PACKAGE = packageName !== "All" ? packageName : "";
+    history.pushState({}, "", "/?package=" + config.ACTIVE_PACKAGE);
 
     const popStateEvent = new PopStateEvent("popstate", { state: packageName });
     dispatchEvent(popStateEvent);
@@ -116,6 +124,19 @@ ready(() => {
       top: 0,
       left: 0,
       behavior: "smooth"
+    });
+  });
+
+  /**
+   * Copy svg file
+   */
+  Array.from(_(".copy") || []).forEach(function(element) {
+    addEvent(element, "click", () => {
+      const svgContent = fetch(
+        "https://raw.githubusercontent.com/snappmarket/IconBox/master/packages/Medical/src/BottleIcon/index.svg"
+      ).then(data => {
+        console.log(data);
+      });
     });
   });
 
@@ -195,6 +216,6 @@ ready(() => {
       }
     }
   };
-  addEvent(window, 'popstate', reloadIcons);
+  addEvent(window, "popstate", reloadIcons);
   reloadIcons();
 });
