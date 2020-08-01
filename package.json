@@ -9,7 +9,7 @@
     "build": "lerna run --parallel build",
     "deploy": "yarn docs:build && gh-pages -d docs -r https://$GH_TOKEN@github.com/snappmarket/iconbox",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
-    "test": "echo \"Will write tests! :) -> https://gatsby.dev/unit-testing\"",
+    "test": "echo \"Will write tests soon ...",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint packages/**/*.js",
     "lint:eslint": "eslint --ignore-path .gitignore packages",
