@@ -5,6 +5,7 @@ import { _ } from "./utils/selectors";
 import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
 import { ready, addEvent, getScrollY } from "./utils/document";
+import { getNextProp } from "./utils/object";
 
 ready(() => {
   /**
@@ -13,12 +14,13 @@ ready(() => {
   const input = _("#searchBar");
   const packagesListSelector = _(".listPackages ul");
   const body = document.body;
+  const IconDataKey = Object.keys(iconsData);
 
   /**
-   * Add initial content
+   * Add initial select packages
    */
   let packagesList = "";
-  Object.keys(iconsData).forEach(packName => {
+  IconDataKey.forEach(packName => {
     packagesList += `<li>${packName}</li>`;
   });
   packagesListSelector.innerHTML = packagesList;
@@ -35,11 +37,14 @@ ready(() => {
     iconsToShow.forEach(icon => iconContainer.appendChild(icon.el));
   });
 
+  /**
+   * Show icons list in page
+   */
   const reloadIcons = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const params = {};
     params.size = urlParams.get("size") || 12;
-    params.package = urlParams.get("package") || "All";
+    params.package = urlParams.get("package") || "";
     params.icon = urlParams.get("icon") || "";
 
     /**
@@ -61,8 +66,46 @@ ready(() => {
         list
       );
     } else {
-      let icons = [];
-      Object.keys(iconsData).forEach(pack => {});
+      const startPackage = config.ACTIVE_PACKAGE || IconDataKey[0];
+      let { icons, package: npmPackage, version } = iconsData[startPackage];
+      const list = paginate(
+        Object.keys(icons),
+        config.ICONS_PER_PAGE,
+        config.ACTIVE_PAGE
+      );
+      const listSize = list.length;
+      const nextNextPackage = getNextProp(iconsData, startPackage);
+      renderIcons(
+        {
+          pack: startPackage,
+          package: npmPackage,
+          version
+        },
+        list
+      );
+
+      /**
+       * If we have more icons and this pack is finished
+       */
+      if (listSize < config.ICONS_PER_PAGE && nextNextPackage) {
+        config.ACTIVE_PAGE = 1;
+        config.ACTIVE_PACKAGE = nextNextPackage;
+
+        let { icons: iconsNext, package: npmPackageNext, version: versionNext } = iconsData[nextNextPackage];
+
+        renderIcons(
+          {
+            pack: nextNextPackage,
+            package: npmPackageNext,
+            version: versionNext
+          },
+          paginate(
+            Object.keys(iconsNext),
+            config.ICONS_PER_PAGE,
+            config.ACTIVE_PAGE
+          )
+        );
+      }
     }
   };
   window.onpopstate = reloadIcons;
@@ -75,7 +118,7 @@ ready(() => {
     const toolbar = document.querySelector(".toolbar");
     const y = getScrollY();
 
-    if (y >= 603) {
+    if (y >= 640) {
       toolbar.classList.add("stick");
     } else {
       toolbar.classList.remove("stick");

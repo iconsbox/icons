@@ -303,11 +303,30 @@ code {
   }
   .select-panel {
     position: absolute;
-    display: none;
-    top: 100%;
-    width: 20rem;
+    top: calc(100% - 2rem);
+    right: 0;
+    left: 0;
+    width: calc(100%);
     background: #fff;
-    border-radius: 1.2rem;
+    border: 1px solid #e4e4;
+    border-radius: 0 0 0.6rem 0.6rem;
+    padding-top: 2rem;
+    box-shadow: 0 0 24rem 100rem rgba(0,0,0,0.4);
+    z-index: -1;
+    will-change: transform, opacity, visibility;
+    opacity: 0;
+    max-height: 90vh;
+    overflow: auto;
+    visibility: collapse;
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in,
+    visibility 0.2s ease-in;
+
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateZ(0) translateY(0);
+    }
+
     ul {
       padding: 0;
       margin: 0;
@@ -315,6 +334,11 @@ code {
       li {
         padding: 0.4rem 0.8rem;
         margin: 0;
+        &.selected {
+          &:before {
+            content: '✅';
+          }
+        }
       }
     }
   }
