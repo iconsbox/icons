@@ -42,42 +42,63 @@ code {
     border-radius: 1rem;
     margin: 0.4rem;
     will-change: transform, box-shadow;
-    transition: transform 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
+
     &:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 6px -1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05),
+        0 1px 6px -1px rgba(0, 0, 0, 0.1);
       .buttons {
+        opacity: 1;
+        visibility: visible;
+        transform: translateZ(0) translateY(0);
+      }
+      img {
+        transform: translateZ(0) translateY(-1.3rem) scale(1);
       }
     }
     img {
       width: 3rem !important;
       height: 3rem !important;
+      transform: translateZ(0) scale(0.9);
+      will-change: transform;
+      transition: transform 0.2s ease-in;
     }
     .buttons {
       position: absolute;
       bottom: 0.4rem;
       display: flex;
+      will-change: transform, opacity, visibility;
+      opacity: 0;
+      overflow: hidden;
+      visibility: collapse;
+      transform: translateZ(0) translateY(0.8rem);
+      transition: transform 0.2s ease-in, opacity 0.2s ease-in,
+        visibility 0.2s ease-in;
 
       .button {
-        background: rgba(10,10,10,0.06);
-        height: 2.4rem;
+        background: rgba(10, 10, 10, 0.06);
+        height: 2.2rem;
         margin: 0.3rem 0.2rem !important;
         border-radius: 0.6rem !important;
+        font-size: 0.9rem !important;
       }
       .copy {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2.4rem;
+        width: 2.2rem;
         padding: 0;
+        background: #44f98b;
 
         svg {
-          width: 1.2rem;
-          height: 1.2rem;
+          width: 0.9rem;
+          height: 0.9rem;
           left: 0;
         }
       }
@@ -192,7 +213,7 @@ code {
     rgba(255, 255, 255, 1) 100%
   );
 
-  &.stick .stickyLogo{
+  &.stick .stickyLogo {
     display: flex;
     font-size: 1.6rem;
     position: relative;
@@ -261,14 +282,14 @@ code {
     font-weight: 400;
     padding: 0 1rem;
     &:after {
-      content: ': ';
+      content: ": ";
     }
   }
   .select-value {
     font-size: 0.9rem;
     font-weight: 900;
     padding-right: 1rem;
-    color:#0074D9;
+    color: #0074d9;
     cursor: pointer;
   }
   .select-panel {
@@ -297,8 +318,6 @@ code {
     }
   }
 }
-
-
 
 // Back to top
 .backToTop {
