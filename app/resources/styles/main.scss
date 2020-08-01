@@ -63,8 +63,8 @@ code {
       }
     }
     img {
-      width: 3rem !important;
-      height: 3rem !important;
+      width: 2.8rem !important;
+      height: 2.8rem !important;
       transform: translateZ(0) scale(0.9);
       will-change: transform;
       transition: transform 0.2s ease-in;
@@ -165,6 +165,15 @@ code {
     }
     &:before {
       right: 0;
+    }
+  }
+
+  .socials {
+    margin-top: 3rem;
+    svg {
+      fill: #333;
+      width: 2rem;
+      height: 2rem;
     }
   }
 }

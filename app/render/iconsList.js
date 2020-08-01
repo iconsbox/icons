@@ -1,4 +1,5 @@
 import config from "../config";
+import { appendHtml } from '../utils/document';
 
 const iconsContainer = document.getElementById("iconsList");
 
@@ -29,5 +30,5 @@ export default (packageData, listIcons) => {
        </div>
     </div>`;
   });
-  iconsContainer.innerHTML = packagesList;
+  appendHtml(iconsContainer, packagesList);
 };

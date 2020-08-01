@@ -10,17 +10,6 @@ export const ready = fn => {
   }
 };
 
-export const getDocHeight = () => {
-  return Math.max(
-    D.body.scrollHeight,
-    D.documentElement.scrollHeight,
-    D.body.offsetHeight,
-    D.documentElement.offsetHeight,
-    D.body.clientHeight,
-    D.documentElement.clientHeight
-  );
-};
-
 export const addEvent = (obj, type, fn) => {
   if (obj.attachEvent) {
     obj["e" + type + fn] = fn;
@@ -38,9 +27,17 @@ export const getScrollY = () => {
   if (typeof window.pageYOffset == "number") {
     //Netscape compliant
     scrOfY = window.pageYOffset;
-  } else if (document.body && document.body.scrollTop) {
+  } else if (D.body && D.body.scrollTop) {
     //DOM compliant
-    scrOfY = document.body.scrollTop;
+    scrOfY = D.body.scrollTop;
   }
   return scrOfY;
+};
+
+export const appendHtml = (el, str) => {
+  const div = document.createElement("div");
+  div.innerHTML = str;
+  while (div.children.length > 0) {
+    el.appendChild(div.children[0]);
+  }
 };

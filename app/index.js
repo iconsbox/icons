@@ -12,7 +12,7 @@ ready(() => {
    */
   const input = _("#searchBar");
   const packagesListSelector = _(".listPackages ul");
-  const selectElement = _(".select");
+  const body = document.body;
 
   /**
    * Add initial content
@@ -35,7 +35,7 @@ ready(() => {
     iconsToShow.forEach(icon => iconContainer.appendChild(icon.el));
   });
 
-  const reloadIcons = function(page = 1) {
+  const reloadIcons = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const params = {};
     params.size = urlParams.get("size") || 12;
@@ -47,7 +47,11 @@ ready(() => {
      */
     if (iconsData[params.package]) {
       const { icons, package: npmPackage, version } = iconsData[params.package];
-      const list = paginate(Object.keys(icons), config.ICONS_PER_PAGE, page);
+      const list = paginate(
+        Object.keys(icons),
+        config.ICONS_PER_PAGE,
+        config.ACTIVE_PAGE
+      );
       renderIcons(
         {
           pack: params.package,
@@ -65,37 +69,21 @@ ready(() => {
   reloadIcons();
 
   /**
-   * Check infinity scroll
+   * Check infinity scroll and stick logo
    */
-  window.addEventListener(
-    "scroll",
-    function(event) {
-      const element = document.body;
-      console.log({
-        scrollHeight: element.scrollHeight,
-        scrollTop: window.scrollTop,
-        clientHeight: element.clientHeight
-      });
-      if (element.scrollHeight - window.scrollTop === element.clientHeight) {
-        console.log("scrolled");
-      }
-    },
-    false
-  );
-
-
-
   addEvent(window, "scroll", function(event) {
     const toolbar = document.querySelector(".toolbar");
     const y = getScrollY();
 
-    console.log({
-      y,
-    });
     if (y >= 603) {
       toolbar.classList.add("stick");
     } else {
       toolbar.classList.remove("stick");
+    }
+
+    if (body.scrollHeight - y < 1000) {
+      config.ACTIVE_PAGE = config.ACTIVE_PAGE + 1;
+      reloadIcons();
     }
   });
 });
