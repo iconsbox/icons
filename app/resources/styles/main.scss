@@ -55,17 +55,16 @@ code {
         0 1px 6px -1px rgba(0, 0, 0, 0.1);
       .buttons {
         opacity: 1;
-        visibility: visible;
         transform: translateZ(0) translateY(0);
       }
       img {
-        transform: translateZ(0) translateY(-1.3rem) scale(1);
+        transform: translateZ(0) translateY(-1.3rem);
       }
     }
     img {
       width: 2.8rem !important;
       height: 2.8rem !important;
-      transform: translateZ(0) scale(0.9);
+      transform: translateZ(0);
       will-change: transform;
       transition: transform 0.2s ease-in;
     }
@@ -75,11 +74,8 @@ code {
       display: flex;
       will-change: transform, opacity, visibility;
       opacity: 0;
-      overflow: hidden;
-      visibility: collapse;
       transform: translateZ(0) translateY(0.8rem);
-      transition: transform 0.2s ease-in, opacity 0.2s ease-in,
-        visibility 0.2s ease-in;
+      transition: transform 0.2s ease-in, opacity 0.2s ease-in;
 
       .button {
         background: rgba(10, 10, 10, 0.06);
@@ -94,7 +90,7 @@ code {
         align-items: center;
         width: 2.2rem;
         padding: 0;
-        background: #44f98b;
+        background: #a7fca8;
 
         svg {
           width: 0.9rem;
@@ -213,7 +209,7 @@ code {
   height: 6rem;
   padding-top: 0.6rem;
   width: 100%;
-  z-index: 1111;
+  z-index: 999999;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -286,6 +282,7 @@ code {
   background: #e2e2e2;
   border-radius: 12px;
   cursor: pointer;
+  position: relative;
 
   .select-title {
     font-weight: 400;
@@ -315,7 +312,7 @@ code {
     z-index: -1;
     will-change: transform, opacity, visibility;
     opacity: 0;
-    max-height: 90vh;
+    max-height: 70vh;
     overflow: auto;
     visibility: collapse;
     transition: transform 0.2s ease-in, opacity 0.2s ease-in,
@@ -354,7 +351,7 @@ code {
 
 // Back to top
 .backToTop {
-  background: #ccc;
+  background: #f6f6f6;
   width: 3rem;
   height: 3rem;
   display: flex;

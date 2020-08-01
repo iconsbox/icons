@@ -1,5 +1,5 @@
 import config from "../config";
-import { appendHtml } from '../utils/document';
+import { appendHtml } from "../utils/document";
 
 const iconsContainer = document.getElementById("iconsList");
 
@@ -13,7 +13,13 @@ const makeFilePath = function(pack, name) {
   return `${config.PATH_PREFIX}${pack}/src/${name}${config.PATH_SUFFIX}`;
 };
 
-export default (packageData, listIcons) => {
+/**
+ * Will render icons list on page
+ * @param packageData
+ * @param listIcons
+ * @param replace
+ */
+export default (packageData, listIcons, replace = false) => {
   let packagesList = "";
   listIcons.forEach(icon => {
     packagesList += `<div class="box" data-pack="${
@@ -30,5 +36,13 @@ export default (packageData, listIcons) => {
        </div>
     </div>`;
   });
-  appendHtml(iconsContainer, packagesList);
+
+  /**
+   * If filter applied we need to replace new icons
+   */
+  if (replace) {
+    iconsContainer.innerHTML = packagesList;
+  } else {
+    appendHtml(iconsContainer, packagesList);
+  }
 };
