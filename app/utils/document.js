@@ -18,6 +18,7 @@ export const addEvent = (obj, type, fn) => {
     };
     obj.attachEvent("on" + type, obj[type + fn]);
   } else {
+    obj.removeEventListener(type, fn, false);
     obj.addEventListener(type, fn, false);
   }
 };

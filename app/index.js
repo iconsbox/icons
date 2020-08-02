@@ -6,7 +6,7 @@ import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
 import { ready, addEvent, getScrollY } from "./utils/document";
 import { getNextProp } from "./utils/object";
-import { addSkeletonRemoverEvent } from "./utils/misc";
+import { addSkeletonRemoverEvent, addCopySvgEvent } from "./utils/misc";
 
 ready(() => {
   /**
@@ -111,6 +111,10 @@ ready(() => {
     const popStateEvent = new PopStateEvent("popstate", { state: packageName });
     dispatchEvent(popStateEvent);
 
+    if(config.SEARCH_MODE) {
+      searchBar.input();
+    }
+
     window.scrollTo({
       top: 640,
       left: 0,
@@ -147,19 +151,6 @@ ready(() => {
       top: 0,
       left: 0,
       behavior: "smooth"
-    });
-  });
-
-  /**
-   * Copy svg file
-   */
-  Array.from(_a(".copy") || []).forEach(function(element) {
-    addEvent(element, "click", () => {
-      const svgContent = fetch(
-        "https://raw.githubusercontent.com/snappmarket/IconBox/master/packages/Medical/src/BottleIcon/index.svg"
-      ).then(data => {
-        console.log(data);
-      });
     });
   });
 
@@ -233,6 +224,7 @@ ready(() => {
     }
 
     addSkeletonRemoverEvent();
+    addCopySvgEvent();
   };
   addEvent(window, "popstate", reloadIcons);
 

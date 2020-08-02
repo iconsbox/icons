@@ -399,6 +399,33 @@ code {
   }
 }
 
+// Text copy notif
+.text-copied {
+  background: rgba(0, 0, 0, 0.74);
+  color: #fff;
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9) translateY(0.8rem);
+  will-change: opacity, transforn;
+  z-index: 99999;
+  &.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  svg {
+    margin-right: 0.8rem;
+  }
+}
+
 .modal {
   display: none;
 }
