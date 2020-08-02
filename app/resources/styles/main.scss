@@ -68,6 +68,10 @@ code {
       transform: translateZ(0);
       will-change: transform;
       transition: transform 0.2s ease-in;
+      &.loading {
+        background-image: linear-gradient(to right, rgba(235, 235, 235, 1) 0%, rgba(240, 240, 240, 1) 54%, rgba(245, 245, 245, 1) 100%);
+        border-radius: 0.6rem;
+      }
     }
     .buttons {
       position: absolute;

@@ -6,6 +6,7 @@ import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
 import { ready, addEvent, getScrollY } from "./utils/document";
 import { getNextProp } from "./utils/object";
+import { addSkeletonRemoverEvent } from "./utils/misc";
 
 ready(() => {
   /**
@@ -19,12 +20,13 @@ ready(() => {
   const body = document.body;
   let searchResultData = {};
 
+
   /**
    * Add initial select packages
    */
   let packagesList = "<li>All</li>";
   Object.keys(iconsData).forEach(packName => {
-    packagesList += `<li>${packName}</li>`;
+    packagesList += `<li class="${packName}-item">${packName}</li>`;
   });
   packagesListSelector.innerHTML = packagesList;
 
@@ -151,7 +153,7 @@ ready(() => {
   /**
    * Copy svg file
    */
-  Array.from(_(".copy") || []).forEach(function(element) {
+  Array.from(_a(".copy") || []).forEach(function(element) {
     addEvent(element, "click", () => {
       const svgContent = fetch(
         "https://raw.githubusercontent.com/snappmarket/IconBox/master/packages/Medical/src/BottleIcon/index.svg"
@@ -167,6 +169,9 @@ ready(() => {
   const reloadIcons = function(event = {}) {
     const usedIcons = config.SEARCH_MODE ? searchResultData : iconsData;
     const IconDataKey = Object.keys(usedIcons);
+    const urlParams = new URLSearchParams(window.location.search);
+    const params = {};
+    params.package = urlParams.get("package") || "";
 
     if(!Object.keys(usedIcons).length) {
       renderIcons({}, [], true);
@@ -218,7 +223,7 @@ ready(() => {
       /**
        * If we have more icons and this pack is finished
        */
-      if (listSize < config.ICONS_PER_PAGE && nextNextPackage) {
+      if (listSize < config.ICONS_PER_PAGE && nextNextPackage && !params.package) {
         console.log({ nextNextPackage} );
         config.ACTIVE_PAGE = 1;
         config.ACTIVE_PACKAGE = nextNextPackage;
@@ -226,7 +231,23 @@ ready(() => {
         reloadIcons();
       }
     }
+
+    addSkeletonRemoverEvent();
   };
   addEvent(window, "popstate", reloadIcons);
+
+
+  /**
+   * Add initial packages
+   */
+  const urlParams = new URLSearchParams(window.location.search);
+  const paramPackage = urlParams.get("package") || "";
+  if(paramPackage) {
+    _(`.${paramPackage}-item`).click();
+    setTimeout(() => _(`.${paramPackage}-item`).click(), 0);
+  }
+
+
   reloadIcons();
+
 });
