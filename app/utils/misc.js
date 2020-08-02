@@ -48,4 +48,9 @@ export const addShowDetailEvent = () => {
       showModal();
     });
   });
+  Array.from(_a(".box img") || []).forEach(element => {
+    addEvent(element, "click", e => {
+      showModal();
+    });
+  });
 };

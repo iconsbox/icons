@@ -2,6 +2,7 @@ import {addEvent, copyText,} from "../utils/document";
 import {_, _a} from '../utils/selectors';
 
 const modalContainer = _('.modal');
+const iconHolder =  _(".icon-holder");
 
 /**
  * Close modal
@@ -15,8 +16,6 @@ addEvent(_('.modal-close'), 'click', () => {
  */
 Array.from(_a(".code") || []).forEach(element => {
   addEvent(element, "click", e => {
-    e.stopPropagation();
-    e.preventDefault();
     const data = e.currentTarget.value;
 
     copyText(data);
@@ -27,10 +26,26 @@ Array.from(_a(".code") || []).forEach(element => {
   });
 });
 
-addEvent(_('.modal-close'), 'click', () => {
-  modalContainer.classList.remove('visible');
+/**
+ * Colors apply to svg
+ */
+Array.from(_a(".color") || []).forEach(element => {
+  addEvent(element, "click", e => {
+    const colorName = e.currentTarget.getAttribute('data-color');
+
+    // remove previous color
+    const previousClassName = iconHolder.getAttribute('data-active-color') || '';
+    if(previousClassName) {
+      iconHolder.classList.remove(previousClassName);
+    }
+    iconHolder.classList.add(colorName);
+    iconHolder.setAttribute('data-active-color', colorName);
+  });
 });
 
+/**
+ * Show modal
+ */
 export const showModal = () => {
   modalContainer.classList.add('visible');
 };

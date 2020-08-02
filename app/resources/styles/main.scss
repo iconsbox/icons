@@ -48,7 +48,6 @@ code,
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;
 
     &:hover {
       transform: scale(1.05);
@@ -64,6 +63,7 @@ code,
       }
     }
     img {
+      cursor: pointer;
       width: 2.8rem !important;
       height: 2.8rem !important;
       transform: translateZ(0);
@@ -208,6 +208,7 @@ code,
   margin-left: 0.4rem;
   padding: 0 1rem;
   cursor: pointer;
+  text-decoration: none;
 
   svg {
     width: 1.5rem;
@@ -507,6 +508,34 @@ code,
         svg {
           width: 9rem;
           height: 9rem;
+        }
+
+        &.gray svg {
+          color: rgba(1, 1, 1, 0.64);
+        }
+        &.red {
+          color: #ff4d4f;
+        }
+        &.green svg {
+          color: #389e0d;
+        }
+        &.yellow svg {
+          color: #fadb14;
+        }
+        &.cyan svg {
+          color: #08979c;
+        }
+        &.magenta svg {
+          color: #9e1068;
+        }
+        &.blue svg {
+          color: #1890ff;
+        }
+        &.lime svg {
+          color: #bae637;
+        }
+        &.volcano svg {
+          color: #d4380d;
         }
       }
       .icon-colors {
