@@ -16,7 +16,7 @@ const Stop2Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M2 2h12v12h-12z"></path>
+    <path d="M2 2h12v12h-12z"></path>
   </svg>
 );
 

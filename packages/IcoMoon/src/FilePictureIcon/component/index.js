@@ -16,7 +16,7 @@ const FilePictureIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M13 14h-10v-2l3-5 4.109 5 2.891-2v4z"></path>
+    <path d="M13 14h-10v-2l3-5 4.109 5 2.891-2v4z"></path>
     <path
       fill="#000000"
       d="M13 7.5c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5 0.672-1.5 1.5-1.5c0.828 0 1.5 0.672 1.5 1.5z"

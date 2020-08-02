@@ -16,7 +16,7 @@ const Next2Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M12 2v12h-2v-5.5l-5 5v-11l5 5v-5.5z"></path>
+    <path d="M12 2v12h-2v-5.5l-5 5v-11l5 5v-5.5z"></path>
   </svg>
 );
 

@@ -16,7 +16,7 @@ const Play3Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M3 2l10 6-10 6z"></path>
+    <path d="M3 2l10 6-10 6z"></path>
   </svg>
 );
 

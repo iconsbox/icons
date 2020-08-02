@@ -16,7 +16,7 @@ const Previous2Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M4 14v-12h2v5.5l5-5v11l-5-5v5.5z"></path>
+    <path d="M4 14v-12h2v5.5l5-5v11l-5-5v5.5z"></path>
   </svg>
 );
 

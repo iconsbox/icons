@@ -16,7 +16,7 @@ const MenuIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M1 3h14v3h-14zM1 7h14v3h-14zM1 11h14v3h-14z"></path>
+    <path d="M1 3h14v3h-14zM1 7h14v3h-14zM1 11h14v3h-14z"></path>
   </svg>
 );
 

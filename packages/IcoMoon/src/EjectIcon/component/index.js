@@ -16,7 +16,7 @@ const EjectIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M0 12h16v2h-16zM8 2l8 8h-16z"></path>
+    <path d="M0 12h16v2h-16zM8 2l8 8h-16z"></path>
   </svg>
 );
 

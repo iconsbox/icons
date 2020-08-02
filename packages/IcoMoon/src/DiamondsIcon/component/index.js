@@ -16,7 +16,7 @@ const DiamondsIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M8 0l-5 8 5 8 5-8z"></path>
+    <path d="M8 0l-5 8 5 8 5-8z"></path>
   </svg>
 );
 

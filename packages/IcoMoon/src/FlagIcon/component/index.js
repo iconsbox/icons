@@ -16,7 +16,7 @@ const FlagIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M0 0h2v16h-2v-16z"></path>
+    <path d="M0 0h2v16h-2v-16z"></path>
     <path
       fill="#000000"
       d="M13 10.047c1.291 0 2.415-0.312 3-0.773v-8c-0.585 0.461-1.709 0.773-3 0.773s-2.415-0.312-3-0.773v8c0.585 0.461 1.709 0.773 3 0.773z"

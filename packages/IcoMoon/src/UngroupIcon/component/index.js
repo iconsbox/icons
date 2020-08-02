@@ -36,20 +36,20 @@ const UngroupIcon = ({ className, size }) => (
       fill="#000000"
       d="M14.251 2.5l1.749-1.749v-0.751h-0.751l-1.749 1.749-1.749-1.749h-0.751v0.751l1.749 1.749-1.749 1.749v0.751h0.751l1.749-1.749 1.749 1.749h0.751v-0.751z"
     ></path>
-    <path fill="#000000" d="M0 12h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M0 9h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M13 7h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M13 13h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M13 10h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M0 6h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M0 3h1v2h-1v-2z"></path>
-    <path fill="#000000" d="M8 2h2v1h-2v-1z"></path>
-    <path fill="#000000" d="M5 2h2v1h-2v-1z"></path>
-    <path fill="#000000" d="M2 2h2v1h-2v-1z"></path>
-    <path fill="#000000" d="M7 15h2v1h-2v-1z"></path>
-    <path fill="#000000" d="M10 15h2v1h-2v-1z"></path>
-    <path fill="#000000" d="M4 15h2v1h-2v-1z"></path>
-    <path fill="#000000" d="M1 15h2v1h-2v-1z"></path>
+    <path d="M0 12h1v2h-1v-2z"></path>
+    <path d="M0 9h1v2h-1v-2z"></path>
+    <path d="M13 7h1v2h-1v-2z"></path>
+    <path d="M13 13h1v2h-1v-2z"></path>
+    <path d="M13 10h1v2h-1v-2z"></path>
+    <path d="M0 6h1v2h-1v-2z"></path>
+    <path d="M0 3h1v2h-1v-2z"></path>
+    <path d="M8 2h2v1h-2v-1z"></path>
+    <path d="M5 2h2v1h-2v-1z"></path>
+    <path d="M2 2h2v1h-2v-1z"></path>
+    <path d="M7 15h2v1h-2v-1z"></path>
+    <path d="M10 15h2v1h-2v-1z"></path>
+    <path d="M4 15h2v1h-2v-1z"></path>
+    <path d="M1 15h2v1h-2v-1z"></path>
   </svg>
 );
 

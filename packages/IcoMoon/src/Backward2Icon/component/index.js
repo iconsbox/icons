@@ -16,7 +16,7 @@ const Backward2Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M9 2.5v5l5-5v11l-5-5v5l-5.5-5.5z"></path>
+    <path d="M9 2.5v5l5-5v11l-5-5v5l-5.5-5.5z"></path>
   </svg>
 );
 

@@ -16,7 +16,7 @@ const BookmarkIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M3 0v16l5-5 5 5v-16z"></path>
+    <path d="M3 0v16l5-5 5 5v-16z"></path>
   </svg>
 );
 

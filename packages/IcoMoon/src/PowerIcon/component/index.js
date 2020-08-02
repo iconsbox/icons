@@ -16,7 +16,7 @@ const PowerIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M6 0l-6 8h6l-4 8 14-10h-8l6-6z"></path>
+    <path d="M6 0l-6 8h6l-4 8 14-10h-8l6-6z"></path>
   </svg>
 );
 

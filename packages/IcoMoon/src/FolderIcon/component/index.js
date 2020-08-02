@@ -16,7 +16,7 @@ const FolderIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path fill="#000000" d="M7 2l2 2h7v11h-16v-13z"></path>
+    <path d="M7 2l2 2h7v11h-16v-13z"></path>
   </svg>
 );
 
