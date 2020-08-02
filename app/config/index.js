@@ -5,4 +5,5 @@ export default {
   ICONS_PER_PAGE: 42,
   ACTIVE_PACKAGE: '',
   ACTIVE_PAGE: 1,
+  SEARCH_MODE: false,
 };

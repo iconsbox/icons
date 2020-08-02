@@ -32,6 +32,7 @@ module.exports = {
 
     new CopyWebpackPlugin([
       { from: path.join(__dirname, "./app/resources/"), to: "./static/" },
+      { from: path.join(__dirname, "./CNAME"), to: "./" },
     ]),
 
     new CompressionPlugin({

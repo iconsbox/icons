@@ -17,14 +17,13 @@ ready(() => {
   const packagesListSelector = _(".listPackages ul");
   const packagesListItemSelector = _(".listPackages ul");
   const body = document.body;
-  const IconDataKey = Object.keys(iconsData);
-  const searchResultData = {};
+  let searchResultData = {};
 
   /**
    * Add initial select packages
    */
   let packagesList = "<li>All</li>";
-  IconDataKey.forEach(packName => {
+  Object.keys(iconsData).forEach(packName => {
     packagesList += `<li>${packName}</li>`;
   });
   packagesListSelector.innerHTML = packagesList;
@@ -34,34 +33,56 @@ ready(() => {
    */
   addEvent(searchBar, "input", evt => {
     let searchValue = evt.target.value.toLowerCase().trim();
-    IconDataKey.forEach(pack => {
-      let { icons, package: npmPackage, version: npmVersion } = iconsData[pack];
-      Object.keys(icons).forEach(icon => {
-        const currentIcon = icons[icon];
-        /**
-         * Check if icons name or keywords looks like search term
-         */
-        if (
-          icon.toLowerCase() === searchValue ||
-          icon.toLowerCase().indexOf(searchValue) > -1 ||
-          currentIcon.k.join("-").indexOf(searchValue) > -1
-        ) {
+
+    if(searchValue.length > 1) {
+      config.ACTIVE_PACKAGE = '';
+      config.ACTIVE_PAGE = 1;
+      config.SEARCH_MODE = true;
+      searchResultData = {};
+
+      Object.keys(iconsData).forEach(pack => {
+        let {icons, package: npmPackage, version: npmVersion} = iconsData[pack];
+        Object.keys(icons).forEach(icon => {
+          const currentIcon = icons[icon];
           /**
-           * Check if we add this package or it is new
+           * Check if icons name or keywords looks like search term
            */
-          if (searchResultData[pack]) {
-            searchResultData[pack].icons[icon] = currentIcon;
-          } else {
-            searchResultData[pack] = {
-              package: npmPackage,
-              version: npmVersion,
-              icons: {
-                [icon]: currentIcon
-              }
-            };
+          if (
+            icon.toLowerCase() === searchValue ||
+            icon.toLowerCase().indexOf(searchValue) > -1 ||
+            currentIcon.k.join("-").indexOf(searchValue) > -1
+          ) {
+            /**
+             * Check if we add this package or it is new
+             */
+            if (searchResultData[pack]) {
+              searchResultData[pack].icons[icon] = currentIcon;
+            } else {
+              searchResultData[pack] = {
+                package: npmPackage,
+                version: npmVersion,
+                icons: {
+                  [icon]: currentIcon
+                }
+              };
+            }
           }
-        }
+        });
       });
+
+      // render result
+      reloadIcons({ state: true });
+    } else {
+      searchResultData = {};
+      config.SEARCH_MODE = false;
+
+      reloadIcons({ state: true });
+    }
+
+    window.scrollTo({
+      top: 640,
+      left: 0,
+      behavior: "smooth"
     });
   });
 
@@ -144,17 +165,22 @@ ready(() => {
    * Show icons list in page
    */
   const reloadIcons = function(event = {}) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const params = {};
-    params.size = urlParams.get("size") || 12;
-    params.package = urlParams.get("package") || "";
-    params.icon = urlParams.get("icon") || "";
+    const usedIcons = config.SEARCH_MODE ? searchResultData : iconsData;
+    const IconDataKey = Object.keys(usedIcons);
+
+    if(!Object.keys(usedIcons).length) {
+      renderIcons({}, [], true);
+      _('.nothing-found').classList.add('visible');
+      return false;
+    }else{
+      _('.nothing-found').classList.remove('visible');
+    }
 
     /**
      * Add initial content
      */
-    if (iconsData[params.package]) {
-      const { icons, package: npmPackage, version } = iconsData[params.package];
+    if (event.state && event.state.length) {
+      const { icons, package: npmPackage, version } = usedIcons[event.state];
       const list = paginate(
         Object.keys(icons),
         config.ICONS_PER_PAGE,
@@ -162,7 +188,7 @@ ready(() => {
       );
       renderIcons(
         {
-          pack: params.package,
+          pack: event.state,
           package: npmPackage,
           version
         },
@@ -171,48 +197,33 @@ ready(() => {
       );
     } else {
       const startPackage = config.ACTIVE_PACKAGE || IconDataKey[0];
-      let { icons, package: npmPackage, version } = iconsData[startPackage];
+      let { icons, package: npmPackage, version } = usedIcons[startPackage];
       const list = paginate(
         Object.keys(icons),
         config.ICONS_PER_PAGE,
         config.ACTIVE_PAGE
       );
       const listSize = list.length;
-      const nextNextPackage = getNextProp(iconsData, startPackage);
+      const nextNextPackage = getNextProp(usedIcons, startPackage);
       renderIcons(
         {
           pack: startPackage,
           package: npmPackage,
           version
         },
-        list
+        list,
+        event.state
       );
 
       /**
        * If we have more icons and this pack is finished
        */
       if (listSize < config.ICONS_PER_PAGE && nextNextPackage) {
+        console.log({ nextNextPackage} );
         config.ACTIVE_PAGE = 1;
         config.ACTIVE_PACKAGE = nextNextPackage;
 
-        let {
-          icons: iconsNext,
-          package: npmPackageNext,
-          version: versionNext
-        } = iconsData[nextNextPackage];
-
-        renderIcons(
-          {
-            pack: nextNextPackage,
-            package: npmPackageNext,
-            version: versionNext
-          },
-          paginate(
-            Object.keys(iconsNext),
-            config.ICONS_PER_PAGE,
-            config.ACTIVE_PAGE
-          )
-        );
+        reloadIcons();
       }
     }
   };
