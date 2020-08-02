@@ -11,16 +11,17 @@ export const ready = fn => {
 };
 
 export const addEvent = (obj, type, fn) => {
-  if (obj.attachEvent) {
-    obj["e" + type + fn] = fn;
-    obj[type + fn] = function() {
-      obj["e" + type + fn](window.event);
-    };
-    obj.attachEvent("on" + type, obj[type + fn]);
-  } else {
-    obj.removeEventListener(type, fn, false);
+  // if (obj.attachEvent) {
+  //   obj["e" + type + fn] = fn;
+  //   obj[type + fn] = function() {
+  //     obj["e" + type + fn](window.event);
+  //   };
+  //   obj.attachEvent("on" + type, obj[type + fn]);
+  //   obj.attachEvent("on" + type, obj[type + fn]);
+  // } else {
+    obj.removeEventListener(type, fn);
     obj.addEventListener(type, fn, false);
-  }
+  // }
 };
 
 export const getScrollY = () => {

@@ -207,6 +207,7 @@ code {
   color: #333;
   margin-left: 0.4rem;
   padding: 0 1rem;
+  cursor: pointer;
 
   svg {
     width: 1.5rem;
@@ -454,7 +455,7 @@ code {
 }
 
 .modal {
-  display: none;
+  //display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -462,9 +463,100 @@ code {
   width: 100%;
   height: 100vh;
   background: #fff;
+  z-index: 999999;
   padding: 0.6rem;
   &.visible {
     display: flex;
+  }
+  .modal-close {
+    float: right;
+    cursor: pointer;
+    margin: 0.8rem;
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: row;
+    padding: 0.8rem;
+    .icon-largeIcon {
+      flex: 0 0 40%;
+      .icon-holder {
+        position: relative;
+        width: 100%;
+        height: 14rem;
+        background: #fff;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+        border-radius: 0.8rem;
+        will-change: transform, box-shadow;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        svg {
+          width: 9rem;
+          height: 9rem;
+        }
+      }
+      .icon-colors {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .color {
+          flex: 0 0 auto;
+          border-radius: 50%;
+          position: relative;
+          width: 2.2rem;
+          height: 2.2rem;
+          cursor: pointer;
+          margin: 1rem 0 0.6rem 0;
+          transition: border-radius 0.3s ease-in-out;
+          &:hover {
+            border-radius: 0.6rem;
+          }
+          &.gray {
+            background: rgba(1, 1, 1, 0.64);
+          }
+          &.red {
+            background: #ff4d4f;
+          }
+          &.green {
+            background: #389e0d;
+          }
+          &.yellow {
+            background: #fadb14;
+          }
+          &.cyan {
+            background: #08979c;
+          }
+          &.magenta {
+            background: #9e1068;
+          }
+          &.blue {
+            background: #1890ff;
+          }
+          &.lime {
+            background: #bae637;
+          }
+          &.volcano {
+            background: #d4380d;
+          }
+        }
+      }
+      .button-green {
+        margin: 1rem 0 !important;
+      }
+    }
+
+    .icons-info {
+      padding: 1rem;
+    }
   }
 }
 

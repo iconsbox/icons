@@ -17,8 +17,8 @@ module.exports = {
   devtool: "source-map",
   output: {
     path: exportSrc,
-    filename: "[name].js",
-    chunkFilename: "[name].js"
+    filename: "[name][hash].js",
+    chunkFilename: "[name][hash].js"
   },
   entry: appSrc,
 
@@ -28,8 +28,8 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: "[name][hash].css",
+      chunkFilename: "[id][hash].css"
     }),
     new HtmlWebpackPlugin({
       template: path.join(appSrc, "index.html"),
