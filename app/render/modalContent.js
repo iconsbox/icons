@@ -61,13 +61,14 @@ export const showModal = (packName, iconName) => {
   };
   const icon = pack.icons[iconName];
   const svgAddress = makeFilePath(packName, iconName);
-  const iconKeywords = icon.k.push(iconName, iconName.replace('Icon', ''));
-  const keywords =
+  const iconKeywords = [...icon.k, iconName, iconName.replace('Icon', '')];
+  const keywords = iconKeywords.map(keyword => `<span class="keyword">${keyword}</span>`).join(', ');
 
   modalContainer.querySelector('.icon-name').innerHTML = iconName;
   modalContainer.querySelector('.package-version').innerHTML = pack.version;
   modalContainer.querySelector('.package-name1').innerHTML = pack.package;
   modalContainer.querySelector('.package-name2').innerHTML = pack.package;
+  modalContainer.querySelector('.keywords').innerHTML = keywords;
   modalContainer.querySelector('.svgImport').value = makeSvgPath(pack.package, iconName);
   modalContainer.querySelector('.componentImport').value = makeComponentPath(pack.package, iconName);
   modalContainer.querySelector('.spriteImport').value = makeSpritePath(pack.package, iconName);
