@@ -1,5 +1,6 @@
 import { _a, _ } from "./selectors";
 import { addEvent, copyText } from "./document";
+import { showModal } from '../render/modalContent';
 
 /**
  * Load image skeleton
@@ -17,7 +18,7 @@ export const addSkeletonRemoverEvent = () => {
  * Copy svg file
  */
 export const addCopySvgEvent = () => {
-  Array.from(_a(".copy") || []).forEach(function(element) {
+  Array.from(_a(".copy") || []).forEach(element => {
     addEvent(element, "click", e => {
       e.stopPropagation();
       e.preventDefault();
@@ -34,6 +35,17 @@ export const addCopySvgEvent = () => {
             _(".text-copied").classList.remove("visible");
           }, 400);
         });
+    });
+  });
+};
+
+/**
+ * Show icon details modal
+ */
+export const addShowDetailEvent = () => {
+  Array.from(_a(".details") || []).forEach(element => {
+    addEvent(element, "click", e => {
+      showModal();
     });
   });
 };

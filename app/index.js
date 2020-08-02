@@ -6,7 +6,7 @@ import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
 import { ready, addEvent, getScrollY } from "./utils/document";
 import { getNextProp } from "./utils/object";
-import { addSkeletonRemoverEvent, addCopySvgEvent } from "./utils/misc";
+import { addSkeletonRemoverEvent, addCopySvgEvent, addShowDetailEvent } from "./utils/misc";
 
 ready(() => {
   /**
@@ -234,6 +234,7 @@ ready(() => {
 
     addSkeletonRemoverEvent();
     addCopySvgEvent();
+    addShowDetailEvent();
   };
   addEvent(window, "popstate", reloadIcons);
 
