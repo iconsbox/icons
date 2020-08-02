@@ -12,11 +12,11 @@ body {
   padding: 0 1rem 1rem 1rem;
 }
 
-code {
+code,
+.code {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   background: #fafafa;
-  border: 1px solid #f0f0f0;
   color: #666;
   padding: 2px 4px;
   margin-bottom: 2px;
@@ -27,12 +27,24 @@ code {
   margin: 0 auto;
 }
 
+.skeleton {
+  width: 6rem !important;
+  height: 6rem !important;
+  background-image: linear-gradient(
+      to right,
+      rgba(235, 235, 235, 1) 0%,
+      rgba(240, 240, 240, 1) 54%,
+      rgba(245, 245, 245, 1) 100%
+  );
+  border-radius: 0.6rem;
+}
+
 // Main content
 .iconsList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 30rem;
+  min-height: 6rem;
 
   .box {
     position: relative;
@@ -48,7 +60,6 @@ code {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;
 
     &:hover {
       transform: scale(1.05);
@@ -64,6 +75,7 @@ code {
       }
     }
     img {
+      cursor: pointer;
       width: 2.8rem !important;
       height: 2.8rem !important;
       transform: translateZ(0);
@@ -151,7 +163,6 @@ code {
     width: 100%;
     font-size: 1.2rem;
     font-weight: 300;
-    margin-top: 20px;
     border-bottom: 2px solid rgb(240, 240, 240);
     position: relative;
     padding: 2rem;
@@ -175,9 +186,9 @@ code {
     }
   }
 
-  .socials {
+  .people {
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     a {
       text-decoration: none;
     }
@@ -207,6 +218,8 @@ code {
   color: #333;
   margin-left: 0.4rem;
   padding: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
 
   svg {
     width: 1.5rem;
@@ -432,7 +445,7 @@ code {
   transition: all 0.3s ease-in-out;
   transform: scale(0.9) translateY(0.8rem);
   will-change: opacity, transforn;
-  z-index: 99999;
+  z-index: 99999999999;
   &.visible {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -462,10 +475,191 @@ code {
   width: 100%;
   height: 100vh;
   background: #fff;
+  z-index: 999999;
   padding: 0.6rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   &.visible {
     display: flex;
   }
+  .modal-close {
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8rem;
+    width: 95%;
+    .icon-largeIcon {
+      flex: 0 0 35%;
+      .icon-holder {
+        position: relative;
+        width: 100%;
+        height: 16rem;
+        background: #fff;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+        border-radius: 0.8rem;
+        will-change: transform, box-shadow;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        svg {
+          width: 9rem !important;
+          height: 9rem !important;
+          fill: currentColor;
+        }
+
+        &.gray svg {
+          color: rgba(1, 1, 1, 0.64);
+        }
+        &.red svg{
+          color: #ff4d4f;
+        }
+        &.green svg {
+          color: #389e0d;
+        }
+        &.yellow svg {
+          color: #fadb14;
+        }
+        &.cyan svg {
+          color: #08979c;
+        }
+        &.magenta svg {
+          color: #9e1068;
+        }
+        &.blue svg {
+          color: #1890ff;
+        }
+        &.lime svg {
+          color: #bae637;
+        }
+        &.volcano svg {
+          color: #d4380d;
+        }
+      }
+      .icon-colors {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .color {
+          flex: 0 0 auto;
+          border-radius: 50%;
+          position: relative;
+          width: 2.2rem;
+          height: 2.2rem;
+          cursor: pointer;
+          margin: 1.4rem 0 0.6rem 0;
+          transition: border-radius 0.3s ease-in-out;
+          &:hover {
+            border-radius: 0.6rem;
+          }
+          &.gray {
+            background: rgba(1, 1, 1, 0.64);
+          }
+          &.red {
+            background: #ff4d4f;
+          }
+          &.green {
+            background: #389e0d;
+          }
+          &.yellow {
+            background: #fadb14;
+          }
+          &.cyan {
+            background: #08979c;
+          }
+          &.magenta {
+            background: #9e1068;
+          }
+          &.blue {
+            background: #1890ff;
+          }
+          &.lime {
+            background: #bae637;
+          }
+          &.volcano {
+            background: #d4380d;
+          }
+        }
+      }
+      .button-green {
+        margin: 1rem 0 !important;
+      }
+    }
+
+    .icons-info {
+      padding: 1rem 4rem;
+      width: 100%;
+      .info-item {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        span {
+          font-weight: 300;
+          margin-left: 0.4rem;
+          color: #444;
+          font-size: 0.9rem;
+          &.keyword {
+            border-radius: 0.8rem;
+            background: #efefef;
+            margin: 0.4rem 0.2rem;
+            padding: 0.2rem 0.6rem;
+          }
+        }
+      }
+
+    }
+    .icon-usage {
+      position: relative;
+      background: #fff;
+      border-radius: 1rem;
+      height: 2.7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1 1 0;
+      margin: 0.6rem 0 ;
+      border: 1px solid #efefef;
+
+      .label {
+        border-radius: 1rem 0 0 1rem;
+        min-width: 7rem;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        background: rgba(239, 239, 239, 0.7);
+        padding-left: 0.8rem;
+      }
+      input {
+        background: transparent;
+        font-size: 1rem;
+        padding: 0 0.8rem;
+        flex: 1;
+        color: #909090;
+      }
+    }
+  }
+}
+
+.separator {
+  width: 100%;
+  border-top: 0.1rem solid #efefef;
+  margin: 1rem 0;
 }
 
 img {
