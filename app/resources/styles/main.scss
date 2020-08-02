@@ -455,9 +455,13 @@ code {
 
 .modal {
   display: none;
-  box-shadow: 0 0 10rem 100rem rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
   background: #fff;
-  border-radius: 0.8rem;
   padding: 0.6rem;
   &.visible {
     display: flex;
