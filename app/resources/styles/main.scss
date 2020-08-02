@@ -371,3 +371,43 @@ code {
     transform: scale(1);
   }
 }
+
+.modal {
+  display: none;
+}
+
+img{ max-height: 100%;}
+
+@media screen and (max-width: 662px) {
+  .box {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .box {
+    width: 5rem;
+    height: 5rem;
+  }
+  .toolbar {
+    flex-direction: column;
+    .button-green {
+      margin-top: 0.4rem;
+      margin-left: 0 !important;
+    }
+  }
+  .header .logo h1 {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .box {
+    width: 5rem;
+    height: 5rem;
+  }
+  .header .topBannerMessage {
+    font-size: 0.8rem;
+  }
+}

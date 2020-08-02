@@ -1,15 +1,18 @@
-<p align="center">
-    <img src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif" width="480" alt="BoxBouncing" />
-</p>
-<p align="center">
-    <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
-</p>
+<a href="https://iconbox.space" target="_blank">
+    <p align="center">
+        <img src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif" width="480" alt="BoxBouncing" />
+    </p>
+    <p align="center">
+        <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
+    </p>
+</a>
 
 <p align="center" style="font-size: 24px; font-weight: 900">
     A world of famous icon packs with easy to use interface
     <br/>
 </p>
 
+<a href="https://iconbox.space" target="_blank">
 <p align="center">
     <img src="./app/resources/img/packs/clothesBadge.jpg" width="120" alt="clothesBadge" />
     <img src="./app/resources/img/packs/eidBadge.jpg" width="120" alt="eidBadge" />
@@ -30,6 +33,7 @@
     <img src="./app/resources/img/packs/supportBadge.jpg" width="120" alt="supportBadge" />
     <img src="./app/resources/img/packs/yourIconsBadge.jpg" width="120" alt="addYourIcon" />
 </p>
+</a>
 
 ## How to use it ?
 
