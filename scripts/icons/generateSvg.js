@@ -1,7 +1,7 @@
-const fse = require('fs-extra');
-const glob = require('glob');
-const parser = require('node-html-parser');
-const shell = require('shelljs');
+const fse = require("fs-extra");
+const glob = require("glob");
+const parser = require("node-html-parser");
+const shell = require("shelljs");
 
 // Glob index.svg files inb packages
 const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
@@ -19,10 +19,10 @@ const asyncForEach = async (array, callback) => {
   await asyncForEach(svgIcons, async icon => {
     try {
       const fullPath = icon
-        .substr(0, icon.lastIndexOf('/'))
-        .replace('/sprite', '');
-      const folderName = fullPath.split('/').pop();
-      const svgFileContent = await fse.readFile(icon, 'utf-8');
+        .substr(0, icon.lastIndexOf("/"))
+        .replace("/sprite", "");
+      const folderName = fullPath.split("/").pop();
+      const svgFileContent = await fse.readFile(icon, "utf-8");
 
       /**
        * Check directory existence
@@ -35,10 +35,10 @@ const asyncForEach = async (array, callback) => {
        * @type {(TextNode & {valid: boolean}) | (HTMLElement & {valid: boolean})}
        */
       const root = parser.parse(svgFileContent);
-      const svgElement = root.querySelector('svg');
-      const viewBox = svgElement.getAttribute('viewBox');
-      svgElement.setAttribute('id', folderName);
-      svgElement.removeAttribute('fill');
+      const svgElement = root.querySelector("svg");
+      const viewBox = svgElement.getAttribute("viewBox");
+      svgElement.setAttribute("id", folderName);
+      svgElement.removeAttribute("fill");
 
       /**
        * Make sprite svg
@@ -67,9 +67,9 @@ const ${folderName} = ({ className, size }) => {
     <svg
       data-testid="${folderName}"
       viewBox="0 0 ${viewBox
-          .split(' ')
-          .slice(2)
-          .join(' ')}"
+        .split(" ")
+        .slice(2)
+        .join(" ")}"
       className={className}
       style={{
         width: size * 10,
@@ -115,18 +115,18 @@ const ${folderName} = ({ className, size }) =>
     focusable="false"
     fill="currentColor">
     ${svgElement.innerHTML
-        .replace(/xmlns:xlink/g, 'xmlnsXlink')
-        .replace(/xlink:href/g, 'xlinkHref')
-        .replace(/<g><\/g>/g, '')
-        .replace(/fill-rule/g, 'fillRule')
-        .replace(/fill-rule/g, 'fillRule')
-        .replace(/clip-rule/g, 'clipRule')
-        .replace(/clip-path/g, 'clipPath')
-        .replace(/stroke-width/g, 'strokeWidth')
-        .replace(/stroke-linecap/g, 'strokeLinecap')
-        .replace(/stroke-linejoin/g, 'strokeLinejoin')
-        .replace(/fill-opacity/g, 'fillOpacity')
-        .replace(/class=/g, 'className=')}
+      .replace(/xmlns:xlink/g, "xmlnsXlink")
+      .replace(/xlink:href/g, "xlinkHref")
+      .replace(/<g><\/g>/g, "")
+      .replace(/fill-rule/g, "fillRule")
+      .replace(/fill-rule/g, "fillRule")
+      .replace(/clip-rule/g, "clipRule")
+      .replace(/clip-path/g, "clipPath")
+      .replace(/stroke-width/g, "strokeWidth")
+      .replace(/stroke-linecap/g, "strokeLinecap")
+      .replace(/stroke-linejoin/g, "strokeLinejoin")
+      .replace(/fill-opacity/g, "fillOpacity")
+      .replace(/class=/g, "className=")}
   </svg>;
 
 ${folderName}.propTypes = {
@@ -142,42 +142,40 @@ export default ${folderName};
 
 `;
 
-      /**
-       * Update svg file
-       */
-      await fse.writeFile(
-        `${fullPath}/sprite/${folderName}.svg`,
-        root
-          .toString()
-          .replace(/<g><\/g>/g, '')
-          .replace(/xmlns xlink/g, 'xmlns:xlink'),
-        'utf8',
-      );
-
-      /**
-       * Update index js file
-       */
-      await fse.writeFile(
-        `${fullPath}/component/index.js`,
-        normalFileContent,
-        'utf8',
-      );
-
-      /**
-       * Update sprite js file
-       */
-      await fse.writeFile(
-        `${fullPath}/sprite/index.js`,
-        splittableFileContent,
-        'utf8',
-      );
-
+      await Promise.all([
+        /**
+         * Update svg file
+         */
+        fse.writeFile(
+          `${fullPath}/sprite/${folderName}.svg`,
+          root
+            .toString()
+            .replace(/<g><\/g>/g, "")
+            .replace(/xmlns xlink/g, "xmlns:xlink"),
+          "utf8"
+        ),
+        /**
+         * Update index js file
+         */
+        await fse.writeFile(
+          `${fullPath}/component/index.js`,
+          normalFileContent,
+          "utf8"
+        ),
+        /**
+         * Update sprite js file
+         */
+        await fse.writeFile(
+          `${fullPath}/sprite/index.js`,
+          splittableFileContent,
+          "utf8"
+        )
+      ]);
     } catch (e) {
       // eslint-disable-next-line no-console
       console.log(e);
     }
   });
-
 
   if (shell.exec(`prettier --write "src/**/*.{js,jsx}"`).code !== 0) {
     shell.echo(`run lint failed`);
