@@ -1,4 +1,4 @@
-<svg  width="200" height="100" viewBox="0 0 200 100" style="width:15px;height:15px" id="SnappMarketLogo">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100" style="width:15px;height:15px" id="SnappMarketLogo">
   <defs>
     <path id="urtwa" d="M88 284.36h31.418v44.817H88z"></path>
     <path id="urtwc"
@@ -53,7 +53,7 @@
   <g>
     <g transform="translate(-88 -284)">
       <g>
-
+        
         <g clip-path="url(#urtwb)">
           <use xlink:href="#urtwc"></use>
         </g>

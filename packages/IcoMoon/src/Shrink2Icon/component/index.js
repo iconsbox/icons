@@ -16,10 +16,7 @@ const Shrink2Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path
-      fill="#000000"
-      d="M7 9v6.5l-2.5-2.5-3 3-1.5-1.5 3-3-2.5-2.5zM16 1.5l-3 3 2.5 2.5h-6.5v-6.5l2.5 2.5 3-3z"
-    ></path>
+    <path d="M7 9v6.5l-2.5-2.5-3 3-1.5-1.5 3-3-2.5-2.5zM16 1.5l-3 3 2.5 2.5h-6.5v-6.5l2.5 2.5 3-3z"></path>
   </svg>
 );
 

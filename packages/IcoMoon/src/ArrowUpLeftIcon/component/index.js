@@ -16,10 +16,7 @@ const ArrowUpLeftIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path
-      fill="#000000"
-      d="M0 11.5l4-4 8.5 8.5 3.5-3.5-8.5-8.5 4-4h-11.5v11.5z"
-    ></path>
+    <path d="M0 11.5l4-4 8.5 8.5 3.5-3.5-8.5-8.5 4-4h-11.5v11.5z"></path>
   </svg>
 );
 

@@ -16,10 +16,7 @@ const Upload2Icon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path
-      fill="#000000"
-      d="M0 14h16v1h-16zM16 12v1h-16v-1l2-4h4v2h4v-2h4zM3.5 5l4.5-4.5 4.5 4.5h-3.5v4h-2v-4z"
-    ></path>
+    <path d="M0 14h16v1h-16zM16 12v1h-16v-1l2-4h4v2h4v-2h4zM3.5 5l4.5-4.5 4.5 4.5h-3.5v4h-2v-4z"></path>
   </svg>
 );
 

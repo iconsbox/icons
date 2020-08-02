@@ -16,10 +16,7 @@ const LibraryIcon = ({ className, size }) => (
     focusable="false"
     fill="currentColor"
   >
-    <path
-      fill="#000000"
-      d="M16 15v-1h-1v-6h1v-1h-3v1h1v6h-3v-6h1v-1h-3v1h1v6h-3v-6h1v-1h-3v1h1v6h-3v-6h1v-1h-3v1h1v6h-1v1h-1v1h17v-1h-1z"
-    ></path>
+    <path d="M16 15v-1h-1v-6h1v-1h-3v1h1v6h-3v-6h1v-1h-3v1h1v6h-3v-6h1v-1h-3v1h1v6h-3v-6h1v-1h-3v1h1v6h-1v1h-1v1h17v-1h-1z"></path>
     <path d="M8 0h1l8 5v1h-17v-1l8-5z"></path>
   </svg>
 );
