@@ -20,7 +20,6 @@ ready(() => {
   const body = document.body;
   let searchResultData = {};
 
-
   /**
    * Add initial select packages
    */
@@ -36,14 +35,16 @@ ready(() => {
   addEvent(searchBar, "input", evt => {
     let searchValue = evt.target.value.toLowerCase().trim();
 
-    if(searchValue.length > 1) {
-      config.ACTIVE_PACKAGE = '';
+    if (searchValue.length > 1) {
+      config.ACTIVE_PACKAGE = "";
       config.ACTIVE_PAGE = 1;
       config.SEARCH_MODE = true;
       searchResultData = {};
 
       Object.keys(iconsData).forEach(pack => {
-        let {icons, package: npmPackage, version: npmVersion} = iconsData[pack];
+        let { icons, package: npmPackage, version: npmVersion } = iconsData[
+          pack
+        ];
         Object.keys(icons).forEach(icon => {
           const currentIcon = icons[icon];
           /**
@@ -111,8 +112,8 @@ ready(() => {
     const popStateEvent = new PopStateEvent("popstate", { state: packageName });
     dispatchEvent(popStateEvent);
 
-    if(config.SEARCH_MODE) {
-      searchBar.dispatchEvent(new Event('input', { bubbles: true }));
+    if (config.SEARCH_MODE) {
+      searchBar.dispatchEvent(new Event("input", { bubbles: true }));
     }
 
     window.scrollTo({
@@ -164,24 +165,29 @@ ready(() => {
     const params = {};
     params.package = urlParams.get("package") || "";
 
-    if(!Object.keys(usedIcons).length) {
+    if (!Object.keys(usedIcons).length) {
       renderIcons({}, [], true);
-      _('.nothing-found').classList.add('visible');
+      _(".nothing-found").classList.add("visible");
       return false;
-    }else{
-      _('.nothing-found').classList.remove('visible');
+    } else {
+      _(".nothing-found").classList.remove("visible");
     }
 
     /**
      * Add initial content
      */
     if (event.state && event.state.length) {
-      const { icons, package: npmPackage, version } = usedIcons[event.state];
+      const { icons, package: npmPackage, version } = usedIcons[
+        event.state
+      ] || { icons: {}, package: "", version: "" };
+
       const list = paginate(
         Object.keys(icons),
         config.ICONS_PER_PAGE,
         config.ACTIVE_PAGE
       );
+      console.log("SSS", list);
+
       renderIcons(
         {
           pack: event.state,
@@ -189,7 +195,7 @@ ready(() => {
           version
         },
         list,
-        event.state
+        true
       );
     } else {
       const startPackage = config.ACTIVE_PACKAGE || IconDataKey[0];
@@ -214,8 +220,11 @@ ready(() => {
       /**
        * If we have more icons and this pack is finished
        */
-      if (listSize < config.ICONS_PER_PAGE && nextNextPackage && !params.package) {
-        console.log({ nextNextPackage} );
+      if (
+        listSize < config.ICONS_PER_PAGE &&
+        nextNextPackage &&
+        !params.package
+      ) {
         config.ACTIVE_PAGE = 1;
         config.ACTIVE_PACKAGE = nextNextPackage;
 
@@ -228,18 +237,15 @@ ready(() => {
   };
   addEvent(window, "popstate", reloadIcons);
 
-
   /**
    * Add initial packages
    */
   const urlParams = new URLSearchParams(window.location.search);
   const paramPackage = urlParams.get("package") || "";
-  if(paramPackage) {
+  if (paramPackage) {
     _(`.${paramPackage}-item`).click();
     setTimeout(() => _(`.${paramPackage}-item`).click(), 0);
   }
 
-
   reloadIcons();
-
 });

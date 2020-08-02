@@ -32,6 +32,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 30rem;
 
   .box {
     position: relative;
@@ -69,7 +70,12 @@ code {
       will-change: transform;
       transition: transform 0.2s ease-in;
       &.loading {
-        background-image: linear-gradient(to right, rgba(235, 235, 235, 1) 0%, rgba(240, 240, 240, 1) 54%, rgba(245, 245, 245, 1) 100%);
+        background-image: linear-gradient(
+          to right,
+          rgba(235, 235, 235, 1) 0%,
+          rgba(240, 240, 240, 1) 54%,
+          rgba(245, 245, 245, 1) 100%
+        );
         border-radius: 0.6rem;
       }
     }
@@ -170,7 +176,11 @@ code {
   }
 
   .socials {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    a {
+      text-decoration: none;
+    }
     svg {
       fill: #333;
       width: 2rem;
@@ -316,7 +326,7 @@ code {
     border: 1px solid #e4e4;
     border-radius: 0 0 0.6rem 0.6rem;
     padding-top: 2rem;
-    box-shadow: 0 0 24rem 100rem rgba(0,0,0,0.4);
+    box-shadow: 0 0 24rem 100rem rgba(0, 0, 0, 0.4);
     z-index: -1;
     will-change: transform, opacity, visibility;
     opacity: 0;
@@ -325,7 +335,7 @@ code {
     min-width: 13rem;
     visibility: collapse;
     transition: transform 0.2s ease-in, opacity 0.2s ease-in,
-    visibility 0.2s ease-in;
+      visibility 0.2s ease-in;
 
     &.visible {
       opacity: 1;
@@ -338,11 +348,16 @@ code {
       margin: 0;
       list-style-type: none;
       li {
-        padding: 0.4rem 0.8rem;
         margin: 0;
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgba(58, 58, 58, 0.1);
+        padding: 0.9rem;
+        &:last-child {
+          border-bottom: none;
+        }
         &.selected {
           &:before {
-            content: '✅';
+            content: "✅";
           }
         }
       }
@@ -440,14 +455,18 @@ code {
 
 .modal {
   display: none;
-  box-shadow: 0 0 10rem 100rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 10rem 100rem rgba(0, 0, 0, 0.5);
   background: #fff;
   border-radius: 0.8rem;
   padding: 0.6rem;
-
+  &.visible {
+    display: flex;
+  }
 }
 
-img{ max-height: 100%;}
+img {
+  max-height: 100%;
+}
 
 @media screen and (max-width: 662px) {
   .box {
