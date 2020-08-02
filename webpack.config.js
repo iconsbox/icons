@@ -3,6 +3,8 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
 
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 const appSrc = path.join(__dirname, "app");
@@ -25,11 +27,16 @@ module.exports = {
       IS_DEV
     }),
 
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
     new HtmlWebpackPlugin({
       template: path.join(appSrc, "index.html"),
       title: "IconBox"
     }),
 
+    new HTMLInlineCSSWebpackPlugin(),
     new CopyWebpackPlugin([
       { from: path.join(__dirname, "./app/resources/"), to: "./static/" },
       { from: path.join(__dirname, "./CNAME"), to: "./" },
@@ -73,25 +80,11 @@ module.exports = {
         ]
       },
 
-      // STYLES
-      {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: IS_DEV
-            }
-          }
-        ]
-      },
-
       // CSS / SASS
       {
         test: /\.scss/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
