@@ -12,11 +12,11 @@ body {
   padding: 0 1rem 1rem 1rem;
 }
 
-code {
+code,
+.code {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   background: #fafafa;
-  border: 1px solid #f0f0f0;
   color: #666;
   padding: 2px 4px;
   margin-bottom: 2px;
@@ -465,13 +465,19 @@ code {
   background: #fff;
   z-index: 999999;
   padding: 0.6rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   &.visible {
     display: flex;
   }
   .modal-close {
     float: right;
     cursor: pointer;
-    margin: 0.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     svg {
       width: 3rem;
       height: 3rem;
@@ -480,11 +486,11 @@ code {
 
   .modal-content {
     display: flex;
-    flex: 0 0 50%;
     flex-direction: row;
     padding: 0.8rem;
+    width: 95%;
     .icon-largeIcon {
-      flex: 0 0 40%;
+      flex: 0 0 35%;
       .icon-holder {
         position: relative;
         width: 100%;
@@ -555,9 +561,64 @@ code {
     }
 
     .icons-info {
-      padding: 1rem;
+      padding: 1rem 4rem;
+      width: 100%;
+      .info-item {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        span {
+          font-weight: 300;
+          margin-left: 0.4rem;
+          color: #444;
+          font-size: 0.9rem;
+          &.keyword {
+            border-radius: 0.8rem;
+            background: #efefef;
+            margin: 0.4rem 0.2rem;
+            padding: 0.2rem 0.6rem;
+          }
+        }
+      }
+
+    }
+    .icon-usage {
+      position: relative;
+      background: #fff;
+      border-radius: 1rem;
+      height: 2.7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1 1 0;
+      margin: 0.6rem 0 ;
+      border: 1px solid #efefef;
+
+      .label {
+        border-radius: 1rem 0 0 1rem;
+        min-width: 7rem;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        background: rgba(239, 239, 239, 0.7);
+        padding-left: 0.8rem;
+      }
+      input {
+        background: transparent;
+        font-size: 1rem;
+        padding: 0 0.8rem;
+        flex: 1;
+        color: #666;
+      }
     }
   }
+}
+
+.separator {
+  width: 100%;
+  border-top: 0.1rem solid #efefef;
+  margin: 1rem 0;
 }
 
 img {

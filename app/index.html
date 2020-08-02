@@ -328,14 +328,14 @@
           </div>
 
           <div class="icon-colors">
-            <div class="color gray" data-code2="#ccc"></div>
-            <div class="color red" data-code="#ccc"></div>
-            <div class="color green" data-code="#ccc"></div>
-            <div class="color yellow" data-code="#ccc"></div>
-            <div class="color cyan" data-code="#ccc"></div>
-            <div class="color blue" data-code="#ccc"></div>
-            <div class="color lime" data-code="#ccc"></div>
-            <div class="color volcano" data-code="#ccc"></div>
+            <div class="color gray"></div>
+            <div class="color red"></div>
+            <div class="color green"></div>
+            <div class="color yellow"></div>
+            <div class="color cyan"></div>
+            <div class="color blue"></div>
+            <div class="color lime"></div>
+            <div class="color volcano"></div>
           </div>
 
           <div class="button button-green">
@@ -345,6 +345,7 @@
               width="16"
               height="16"
               viewBox="0 0 16 16"
+              style="margin-right: 0.6rem"
             >
               <path
                 fill="#000000"
@@ -353,44 +354,54 @@
             </svg>
             Download svg
           </div>
-
-          <div class="searchPanel">
-            <div class="label">
-              svg
-            </div>
-            <input
-              type="text"
-              id="svg"
-              placeholder="Type 2 or more characters to search icons world..."
-            />
-            <button class="hoverable" type="button" id="submitSearchIcon">
-              <svg
-                class="searchIcon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <rect width="24" height="24" opacity="0" />
-                <path
-                  d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
         <div class="icons-info">
           <h1>UserIcon</h1>
+          <div class="separator"></div>
           <div class="info-item">
             version:
             <span>1.0.1-alpha.1</span>
           </div>
           <div class="info-item">
-            in package:
+            package:
             <span>@snappmarket/Eva</span>
           </div>
-          <div class="info-keywords">
+          <div class="info-item">
             keywords:
-            <span>test</span>
-            <span>test2</span>
+            <span class="keyword">test</span>
+            <span class="keyword">test</span>
+          </div>
+
+          <div class="separator"></div>
+          <div class="icon-usage">
+            <div class="label">Svg icon</div>
+            <input
+              type="text"
+              class="code"
+              id="svg"
+              value="import Test from '@iconbox/Snappmarket/Test/index.svg"
+              readonly
+            />
+          </div>
+          <div class="icon-usage">
+            <div class="label">Component</div>
+            <input
+              type="text"
+              class="code"
+              id="svg"
+              value="import { Test } from '@iconbox/Snappmarket"
+              readonly
+            />
+          </div>
+          <div class="icon-usage">
+            <div class="label">✮ Sprite</div>
+            <input
+              type="text"
+              class="code"
+              id="svg"
+              value="import { Test } from '@iconbox/Snappmarket/sprite"
+              readonly
+            />
           </div>
         </div>
       </div>
