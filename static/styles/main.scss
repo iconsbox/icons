@@ -32,6 +32,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 30rem;
 
   .box {
     position: relative;
@@ -68,6 +69,15 @@ code {
       transform: translateZ(0);
       will-change: transform;
       transition: transform 0.2s ease-in;
+      &.loading {
+        background-image: linear-gradient(
+          to right,
+          rgba(235, 235, 235, 1) 0%,
+          rgba(240, 240, 240, 1) 54%,
+          rgba(245, 245, 245, 1) 100%
+        );
+        border-radius: 0.6rem;
+      }
     }
     .buttons {
       position: absolute;
@@ -166,7 +176,11 @@ code {
   }
 
   .socials {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    a {
+      text-decoration: none;
+    }
     svg {
       fill: #333;
       width: 2rem;
@@ -228,6 +242,9 @@ code {
       margin-right: 0.6rem;
       font-size: 2.4rem;
     }
+  }
+  .button-green {
+    text-decoration: none;
   }
   .stickyLogo {
     align-items: center;
@@ -309,15 +326,16 @@ code {
     border: 1px solid #e4e4;
     border-radius: 0 0 0.6rem 0.6rem;
     padding-top: 2rem;
-    box-shadow: 0 0 24rem 100rem rgba(0,0,0,0.4);
+    box-shadow: 0 0 24rem 100rem rgba(0, 0, 0, 0.4);
     z-index: -1;
     will-change: transform, opacity, visibility;
     opacity: 0;
     max-height: 70vh;
     overflow: auto;
+    min-width: 13rem;
     visibility: collapse;
     transition: transform 0.2s ease-in, opacity 0.2s ease-in,
-    visibility 0.2s ease-in;
+      visibility 0.2s ease-in;
 
     &.visible {
       opacity: 1;
@@ -330,11 +348,16 @@ code {
       margin: 0;
       list-style-type: none;
       li {
-        padding: 0.4rem 0.8rem;
         margin: 0;
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgba(58, 58, 58, 0.1);
+        padding: 0.9rem;
+        &:last-child {
+          border-bottom: none;
+        }
         &.selected {
           &:before {
-            content: '✅';
+            content: "✅";
           }
         }
       }
@@ -372,11 +395,82 @@ code {
   }
 }
 
-.modal {
+// Nothing message
+.nothing-found {
   display: none;
+  margin: auto 2%;
+
+  &.visible {
+    display: block;
+  }
+  h3 {
+    margin-bottom: 1rem;
+  }
+  svg {
+    margin-right: 0.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    bottom: -0.4rem;
+  }
 }
 
-img{ max-height: 100%;}
+// Text copy notif
+.text-copied {
+  background: rgba(0, 0, 0, 0.74);
+  color: #fff;
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9) translateY(0.8rem);
+  will-change: opacity, transforn;
+  z-index: 99999;
+  &.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  svg {
+    margin-right: 0.8rem;
+  }
+}
+#copy-text {
+  z-index: -1;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  padding: 0.6rem;
+  &.visible {
+    display: flex;
+  }
+}
+
+img {
+  max-height: 100%;
+}
 
 @media screen and (max-width: 662px) {
   .box {
