@@ -1,7 +1,7 @@
 import config from "./config";
 import iconsData from "./data";
 import "./resources/styles/main.scss";
-import { _, _a } from "./utils/selectors";
+import { _ } from "./utils/selectors";
 import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
 import { ready, addEvent, getScrollY } from "./utils/document";

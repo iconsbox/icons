@@ -1,5 +1,5 @@
 import { _a, _ } from "./selectors";
-import { addEvent } from "./document";
+import { addEvent, copyText } from "./document";
 
 /**
  * Load image skeleton
@@ -24,6 +24,7 @@ export const addCopySvgEvent = () => {
       )
         .then(res => res.text())
         .then(data => {
+          copyText(data);
           _('.text-copied').classList.add('visible');
           setTimeout(() => {
             _('.text-copied').classList.remove('visible');

@@ -426,6 +426,17 @@ code {
     margin-right: 0.8rem;
   }
 }
+#copy-text {
+  z-index: -1;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
 
 .modal {
   display: none;
