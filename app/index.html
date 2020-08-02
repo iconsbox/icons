@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>IconBox - SayJeyHi</title>
+    <title>IconBox | World of famous icon packs with easy to use interface</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600"
@@ -105,17 +105,16 @@
           <h1>‍IconBox</h1>
           <span class="labelStats"><strong>+10k</strong> icons</span>
         </div>
-        <p class="text-muted">version 1.0.1-alpha.1</p>
 
         <div class="topBannerMessage">
-          A world of famous icon packs with easy to use interface
+          <p>World of famous icon packs with easy to use interface</p>
 
-          <div class="socials">
+          <div class="people text-muted">
             Made with love by
             <a href="https://sayjeyhi.com" target="_blank">SayJeyHi</a> in
             <a href="https://github.com/snappmarket" target="_blank"
               >@snappmarket</a
-            >
+            > - <a href="https://dribbble.com/shots/1899530-Jumping-Squares?list=users&offset=1" target="_blank">Animations</a> by <a href="https://dribbble.com/vadim_gromov" target="_blank">Vadim Gromov</a>
           </div>
         </div>
 
@@ -123,6 +122,7 @@
           href="https://github.com/snappmarket/IconBox"
           class="github-corner"
           aria-label="View source on GitHub"
+          target="_blank"
           ><svg
             width="150"
             height="150"
@@ -192,7 +192,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <polyline points="6 9 12 15 18 9"></polyline>
+              <polyline points="6 9 12 15 18 9"/>
             </svg>
           </div>
           <input
@@ -236,7 +236,7 @@
           <!--              stroke-linecap="round"-->
           <!--              stroke-linejoin="round"-->
           <!--            >-->
-          <!--              <polyline points="6 9 12 15 18 9"></polyline>-->
+          <!--              <polyline points="6 9 12 15 18 9"/>-->
           <!--            </svg>-->
           <!--          </div>-->
         </div>
@@ -309,23 +309,7 @@
 
       <div class="modal-content">
         <div class="icon-largeIcon">
-          <div class="icon-holder">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-user"
-            >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
+          <div class="icon-holder"><span class="skeleton"></span></div>
 
           <div class="icon-colors">
             <div class="color gray" data-color="gray"></div>
@@ -339,7 +323,9 @@
           </div>
 
           <a
-            href="https://raw.githubusercontent.com/snappmarket/IconBox/master/packages/Eid/src/DateFruitBowlIcon/index.svg"
+            id="download-svg"
+            href="#"
+            download="#"
             target="_blank"
             class="button button-green"
           >
@@ -360,28 +346,29 @@
           </a>
         </div>
         <div class="icons-info">
-          <h1>UserIcon</h1>
+          <h1 class="icon-name">UserIcon</h1>
           <div class="separator"></div>
           <div class="info-item">
             version:
-            <span>1.0.1-alpha.1</span>
+            <span class="package-version">1.0.1-alpha.1</span>
           </div>
           <div class="info-item">
             package:
-            <span>@snappmarket/Eva</span>
+            <span class="package-name1">@snappmarket/Eva</span>
           </div>
-          <div class="info-item">
+          <div class="info-item keywords">
             keywords:
             <span class="keyword">test</span>
             <span class="keyword">test</span>
           </div>
 
           <div class="separator"></div>
+          At first you need to install <span class="code package-name2"></span> then use one of this import ways:
           <div class="icon-usage">
             <div class="label">Svg icon</div>
             <input
               type="text"
-              class="code"
+              class="code svgImport"
               value="import Test from '@iconbox/Snappmarket/Test/index.svg"
               readonly
             />
@@ -390,7 +377,7 @@
             <div class="label">Component</div>
             <input
               type="text"
-              class="code"
+              class="code componentImport"
               value="import { Test } from '@iconbox/Snappmarket"
               readonly
             />
@@ -399,7 +386,7 @@
             <div class="label">✮ Sprite</div>
             <input
               type="text"
-              class="code"
+              class="code spriteImport"
               value="import { Test } from '@iconbox/Snappmarket/sprite"
               readonly
             />
@@ -421,7 +408,7 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <polyline points="18 15 12 9 6 15"></polyline>
+        <polyline points="18 15 12 9 6 15"/>
       </svg>
     </div>
 
@@ -439,12 +426,12 @@
         stroke-linejoin="round"
         class="feather feather-check"
       >
-        <polyline points="20 6 9 17 4 12"></polyline>
+        <polyline points="20 6 9 17 4 12"/>
       </svg>
       Copied !
     </div>
 
     <!-- Wrapper to copy text -->
-    <textarea id="copy-text"></textarea>
+    <textarea id="copy-text"/>
   </body>
 </html>

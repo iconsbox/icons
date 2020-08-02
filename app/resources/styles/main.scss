@@ -27,6 +27,18 @@ code,
   margin: 0 auto;
 }
 
+.skeleton {
+  width: 6rem !important;
+  height: 6rem !important;
+  background-image: linear-gradient(
+      to right,
+      rgba(235, 235, 235, 1) 0%,
+      rgba(240, 240, 240, 1) 54%,
+      rgba(245, 245, 245, 1) 100%
+  );
+  border-radius: 0.6rem;
+}
+
 // Main content
 .iconsList {
   display: flex;
@@ -151,7 +163,6 @@ code,
     width: 100%;
     font-size: 1.2rem;
     font-weight: 300;
-    margin-top: 20px;
     border-bottom: 2px solid rgb(240, 240, 240);
     position: relative;
     padding: 2rem;
@@ -175,9 +186,9 @@ code,
     }
   }
 
-  .socials {
+  .people {
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     a {
       text-decoration: none;
     }
@@ -495,7 +506,7 @@ code,
       .icon-holder {
         position: relative;
         width: 100%;
-        height: 14rem;
+        height: 16rem;
         background: #fff;
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
         border-radius: 0.8rem;
@@ -506,14 +517,15 @@ code,
         justify-content: center;
         flex-direction: column;
         svg {
-          width: 9rem;
-          height: 9rem;
+          width: 9rem !important;
+          height: 9rem !important;
+          fill: currentColor;
         }
 
         &.gray svg {
           color: rgba(1, 1, 1, 0.64);
         }
-        &.red {
+        &.red svg{
           color: #ff4d4f;
         }
         &.green svg {

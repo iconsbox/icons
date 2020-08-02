@@ -1,17 +1,8 @@
-import config from "../config";
 import { appendHtml } from "../utils/document";
+import { makeFilePath } from '../utils/misc';
 
 const iconsContainer = document.getElementById("iconsList");
 
-/**
- *
- * @param pack
- * @param name
- * @returns {string}
- */
-const makeFilePath = function(pack, name) {
-  return `${config.PATH_PREFIX}${pack}/src/${name}${config.PATH_SUFFIX}`;
-};
 
 /**
  * Will render icons list on page
@@ -22,10 +13,8 @@ const makeFilePath = function(pack, name) {
 export default (packageData, listIcons, replace = false) => {
   let packagesList = "";
   listIcons.forEach(icon => {
-    packagesList += `<div class="box" data-pack="${
+    packagesList += `<div class="box" data-icon="${icon}" data-pack="${
       packageData.pack
-    }" data-package="${packageData.package}" data-version="${
-      packageData.version
     }">
        <img class="loading" title="${icon}" src="${makeFilePath(packageData.pack, icon)}" />
        <div class="buttons">

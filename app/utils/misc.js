@@ -1,6 +1,17 @@
 import { _a, _ } from "./selectors";
 import { addEvent, copyText } from "./document";
 import { showModal } from '../render/modalContent';
+import config from "../config";
+
+/**
+ * Make a path of svg file
+ * @param pack
+ * @param name
+ * @returns {string}
+ */
+export const makeFilePath = function(pack, name) {
+  return `${config.PATH_PREFIX}${pack}/src/${name}${config.PATH_SUFFIX}`;
+};
 
 /**
  * Load image skeleton
@@ -45,12 +56,20 @@ export const addCopySvgEvent = () => {
 export const addShowDetailEvent = () => {
   Array.from(_a(".details") || []).forEach(element => {
     addEvent(element, "click", e => {
-      showModal();
+      const box = e.currentTarget.parentNode.parentNode;
+      const packName = box.getAttribute('data-pack') || '';
+      const iconName = box.getAttribute('data-icon') || '';
+
+      showModal(packName, iconName);
     });
   });
   Array.from(_a(".box img") || []).forEach(element => {
     addEvent(element, "click", e => {
-      showModal();
+      const box = e.currentTarget.parentNode;
+      const packName = box.getAttribute('data-pack') || '';
+      const iconName = box.getAttribute('data-icon') || '';
+
+      showModal(packName, iconName);
     });
   });
 };

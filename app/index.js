@@ -130,7 +130,7 @@ ready(() => {
     const toolbar = document.querySelector(".toolbar");
     const y = getScrollY();
 
-    if (y >= 620) {
+    if (y >= 580) {
       toolbar.classList.add("stick");
       backToTop.classList.add("visible");
     } else {
