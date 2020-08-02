@@ -112,7 +112,7 @@ ready(() => {
     dispatchEvent(popStateEvent);
 
     if(config.SEARCH_MODE) {
-      searchBar.input();
+      searchBar.dispatchEvent(new Event('input', { bubbles: true }));
     }
 
     window.scrollTo({
