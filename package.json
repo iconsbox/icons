@@ -18,6 +18,7 @@
     "lint:staged": "lint-staged",
     "prettify": "prettier --write \"packages/**/*.{js,jsx}\"",
     "generate": "lerna run --parallel generate",
+    "publish-npm": "lerna run --parallel publish-npm",
     "release": "node ./scripts/release/release.js",
     "docs:dev": "cross-env BABEL_ENV=docs webpack -p --progress --mode development",
     "docs:watch": "cross-env BABEL_ENV=docs webpack -p --progress --mode development --watch",
