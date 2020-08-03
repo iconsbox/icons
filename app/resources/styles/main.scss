@@ -615,9 +615,11 @@ code,
           font-size: 0.9rem;
           &.keyword {
             border-radius: 0.8rem;
-            background: #efefef;
+            background: #efefefa6;
             margin: 0.4rem 0.2rem;
             padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            color: #909090;
           }
         }
       }
