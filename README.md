@@ -72,15 +72,20 @@
 ## Why iconbox? I like font icons!
 | **Subject**         | **FontIcons** | **Svg Icons** |
 |---------------------|---------------|---------------|
-| **vector icons**    | ✅Good         | ✅✅Great       |
-| **CSS Control**     | ✅Good         | ✅Better       |
-| **Positioning**     | ❎Not good     | ✅Better       |
-| **Weird Failures**  | ❎Could happen | ✅Nothing      |
-| **Forced Failures** | ❎Could happen | ✅Nothing      |
-| **Semantics**       | ❎Not good     | ✅Better       |
-| **Accessibility**   | ❎Bad          | ✅Better       |
-| **Ease of Use**     | ✅Good         | ✅Better       |
-| **Browser Support** | ✅Better       | ✅Good         |
+| **vector icons**    | ✅ Good         | ✅ Great       |
+| **CSS Control**     | ✅ Good         | ✅ Better       |
+| **Positioning**     | ❎ Not good     | ✅ Better       |
+| **Weird Failures**  | ❎ Could happen | ✅ Nothing      |
+| **Forced Failures** | ❎ Could happen | ✅ Nothing      |
+| **Semantics**       | ❎ Not good     | ✅ Better       |
+| **Accessibility**   | ❎ Bad          | ✅ Better       |
+| **Ease of Use**     | ✅ Good         | ✅ Better       |
+| **Browser Support** | ✅ Better       | ✅ Good         |
+
+resource: [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/)
+
+This will even better if you consider to use `SvgSprite` 🚀.
+
 
 ## How to use it ?
 
