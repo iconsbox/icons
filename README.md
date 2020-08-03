@@ -70,6 +70,8 @@
 </p>
 
 ## Why iconbox? I like font icons!
+lets have a look on **FontIcons** vs **Svg Icons** compare by [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/)
+
 | **Subject**         | **FontIcons** | **Svg Icons** |
 |---------------------|---------------|---------------|
 | **vector icons**    | ✅ Good         | ✅ Great       |
@@ -82,9 +84,8 @@
 | **Ease of Use**     | ✅ Good         | ✅ Better       |
 | **Browser Support** | ✅ Better       | ✅ Good         |
 
-resource: [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/)
 
-This will even better if you consider to use `SvgSprite` 🚀.
+Well, We could see the winner of the game, svg icons are really great and fun, by the way this could be even better if you consider to use `SvgSprite` 🚀.
 
 
 ## How to use it ?
