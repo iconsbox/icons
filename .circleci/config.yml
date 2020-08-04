@@ -74,11 +74,35 @@ jobs:
 #      - run:
 #          command: yarn lint:eslint:fix
 
+
+  deploy:
+    docker: *docker
+    environment: *environment
+    parallelism: 4
+    steps:
+      - checkout
+
+      - run:
+          name: Nodejs Version
+          command: node --version
+      - *restore_yarn_cache
+      - *run_yarn
+
+      # build packages
+      - run:
+          command: yarn build
+
+      # deploy to heroku
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+
 workflows:
   version: 2
   build:
     jobs:
-      - main
+      - main:
           context: globals
           filters:
             branches:
