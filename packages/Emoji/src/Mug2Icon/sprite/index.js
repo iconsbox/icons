@@ -3,7 +3,7 @@
  */
 import * as React from "react";
 import PropTypes from "prop-types";
-import { useOptions, GlobalConfig } from "@snappmarket/config";
+import { useOptions, GlobalConfig } from "@iconbox/config";
 
 if (GlobalConfig.options.importSpriteSVG) {
   // eslint-disable-next-line global-require

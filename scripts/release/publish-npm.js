@@ -9,7 +9,7 @@ console.log(`- releasing ${passedVersion} !`);
 (async function run() {
   try {
     // Run external tool synchronously
-    if (shell.exec(`npm publish dist ${!['--canary', '--alpha'].includes(passedVersion) ? '--tag latest' : ''}`).code !== 0) {
+    if (shell.exec(`npm publish dist --access=public ${!['--canary', '--alpha'].includes(passedVersion) ? '--tag latest' : ''}`).code !== 0) {
       shell.echo('Release build, or publish failed');
       shell.exit(1);
     }
