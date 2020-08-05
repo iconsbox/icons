@@ -1,0 +1,109 @@
+version: 2
+
+aliases:
+  - &docker
+    - image: circleci/node:10.16.1
+
+  - &environment
+    TZ: /usr/share/zoneinfo/America/Los_Angeles
+
+  - &restore_yarn_cache
+    restore_cache:
+      name: Restore node_modules cache
+      keys:
+        - v2-node-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+        - v2-node-{{ arch }}-{{ .Branch }}-
+        - v2-node-{{ arch }}-
+  - &run_yarn
+    run:
+      name: Link and Install Packages
+      command: yarn link && yarn
+
+jobs:
+  main:
+    docker: *docker
+    environment: *environment
+
+    steps:
+      - checkout
+      - run:
+          name: Nodejs Version
+          command: node --version
+      - *restore_yarn_cache
+      - *run_yarn
+
+      # cache node_modules and etc
+      - save_cache:
+          name: Save node_modules cache
+          key: v2-node-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      # build packages
+      - run:
+          command: yarn build
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project/node_modules
+            - project/packages/Clothes/dist
+            - project/packages/Eid/dist
+            - project/packages/Emoji/dist
+            - project/packages/Eva/dist
+            - project/packages/Feather/dist
+            - project/packages/FontAwesome4/dist
+            - project/packages/FontAwesome5/dist
+            - project/packages/Foundation/dist
+            - project/packages/IcoMoon/dist
+            - project/packages/Iconly/dist
+            - project/packages/IonIcons/dist
+            - project/packages/LinearIcons/dist
+            - project/packages/Material/dist
+            - project/packages/Octicons/dist
+            - project/packages/Snappmarket/dist
+            - project/packages/Support/dist
+            - project/packages/TablerIcons/dist
+
+      # test and coverage
+      - run:
+          command: yarn test --verbose=true --maxWorkers=2
+
+      # prettier and linter
+#      - run:
+#          command: yarn prettify
+#      - run:
+#          command: yarn lint:eslint:fix
+
+
+  deploy:
+    docker: *docker
+    environment: *environment
+    parallelism: 4
+    steps:
+      - checkout
+
+      - run:
+          name: Nodejs Version
+          command: node --version
+      - *restore_yarn_cache
+      - *run_yarn
+
+      # build packages
+      - run:
+          command: yarn build
+
+      # deploy to heroku
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - main:
+          context: globals
+          filters:
+            branches:
+              only: master # only run deploy-via-git job on master branch

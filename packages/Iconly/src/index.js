@@ -1,11 +1,11 @@
 /**
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
-export { default as Activity3Icon } from './Activity3Icon/component';
 export { default as Activity2Icon } from './Activity2Icon/component';
+export { default as Activity3Icon } from './Activity3Icon/component';
+export { default as ActivityIcon } from './ActivityIcon/component';
 export { default as Activity4Icon } from './Activity4Icon/component';
 export { default as Bag2Icon } from './Bag2Icon/component';
-export { default as ActivityIcon } from './ActivityIcon/component';
 export { default as Bag3Icon } from './Bag3Icon/component';
 export { default as Bag4Icon } from './Bag4Icon/component';
 export { default as BagIcon } from './BagIcon/component';
@@ -67,8 +67,8 @@ export { default as Message4Icon } from './Message4Icon/component';
 export { default as MessageIcon } from './MessageIcon/component';
 export { default as Notification2Icon } from './Notification2Icon/component';
 export { default as Notification3Icon } from './Notification3Icon/component';
-export { default as Notification4Icon } from './Notification4Icon/component';
 export { default as NotificationIcon } from './NotificationIcon/component';
+export { default as Notification4Icon } from './Notification4Icon/component';
 export { default as Plus22Icon } from './Plus22Icon/component';
 export { default as Plus2Icon } from './Plus2Icon/component';
 export { default as Plus3Icon } from './Plus3Icon/component';
@@ -85,15 +85,15 @@ export { default as Search2Icon } from './Search2Icon/component';
 export { default as Search3Icon } from './Search3Icon/component';
 export { default as Search4Icon } from './Search4Icon/component';
 export { default as SearchIcon } from './SearchIcon/component';
-export { default as Setting22Icon } from './Setting22Icon/component';
 export { default as Setting2Icon } from './Setting2Icon/component';
+export { default as Setting22Icon } from './Setting22Icon/component';
 export { default as Setting3Icon } from './Setting3Icon/component';
 export { default as SettingIcon } from './SettingIcon/component';
-export { default as Star3Icon } from './Star3Icon/component';
 export { default as Star2Icon } from './Star2Icon/component';
+export { default as Star3Icon } from './Star3Icon/component';
 export { default as Star4Icon } from './Star4Icon/component';
 export { default as StarIcon } from './StarIcon/component';
 export { default as Wallet22Icon } from './Wallet22Icon/component';
+export { default as Wallet3Icon } from './Wallet3Icon/component';
 export { default as Wallet2Icon } from './Wallet2Icon/component';
 export { default as WalletIcon } from './WalletIcon/component';
-export { default as Wallet3Icon } from './Wallet3Icon/component';

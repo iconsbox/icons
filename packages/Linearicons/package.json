@@ -1,7 +1,7 @@
 {
   "name": "@iconbox/linear",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.js",
@@ -25,7 +25,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "@snappmarket/config": "^0.2.13",
+    "@iconbox/config": "^1.0.1",
     "prop-types": "^15.0.0",
     "react": "^16.8.6"
   },
@@ -42,6 +42,6 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/snappmarket/icons"
+    "url": "https://github.com/snappmarket/iconbox"
   }
 }
