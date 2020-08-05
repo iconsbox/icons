@@ -69,6 +69,25 @@
     </a>
 </p>
 
+## Why iconbox? I like font icons!
+lets have a look on **FontIcons** vs **Svg Icons** compare by [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/)
+
+| **Subject**         | **FontIcons** | **Svg Icons** |
+|---------------------|---------------|---------------|
+| **vector icons**    | ✅ Good         | ✅ Great       |
+| **CSS Control**     | ✅ Good         | ✅ Better       |
+| **Positioning**     | ❎ Not good     | ✅ Better       |
+| **Weird Failures**  | ❎ Could happen | ✅ Nothing      |
+| **Forced Failures** | ❎ Could happen | ✅ Nothing      |
+| **Semantics**       | ❎ Not good     | ✅ Better       |
+| **Accessibility**   | ❎ Bad          | ✅ Better       |
+| **Ease of Use**     | ✅ Good         | ✅ Better       |
+| **Browser Support** | ✅ Better       | ✅ Good         |
+
+
+Well, We could see the winner of the game, svg icons are really great and fun, by the way this could be even better if you consider to use `SvgSprite` 🚀.
+
+
 ## How to use it ?
 
 Icons are available in `svg` format, `react` components and a special way of `sprite` file, which allows you to sprite svg icons
