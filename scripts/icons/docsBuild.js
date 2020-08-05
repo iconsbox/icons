@@ -56,7 +56,7 @@ const walk = (dir, regExcludes, done) => {
   });
 };
 
-const regExcludes = [/dist/, /index\.svg/, /index\.js/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
+const regExcludes = [/dist/, /sprite/, /component/, /index\.js/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
 
 
 /* eslint-disable indent */
@@ -98,7 +98,7 @@ walk('./packages', regExcludes, async (err, results) => {
       if (
         item.indexOf('.svg') > -1
       ) {
-        const iconName = substringBetween(item, '/src/', '/sprite/');
+        const iconName = substringBetween(item, '/src/', '/index.svg');
         content[packageName].icons[iconName] = {
           k: [],
         };
