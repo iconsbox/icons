@@ -33,7 +33,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "license": "MIT",
   "keywords": [
     "svg-icons",
     "icon",
@@ -43,5 +42,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
+  },
+  "license": "MIT",
+  "Createor": {
+    "name": "TablerIcons",
+    "url": "https://tablericons.com/"
   }
 }
