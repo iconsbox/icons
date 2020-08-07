@@ -599,6 +599,11 @@ code,
       .button-green {
         margin: 1rem 0 !important;
       }
+      .icon-licence {
+        
+        text-align: center;
+        margin: 0.4rem;
+      }
     }
 
     .icons-info {
@@ -627,13 +632,17 @@ code,
           }
         }
       }
-
+    }
+    .install-message {
+      margin: 0.6rem 0.1rem 0.9rem 0.1rem;
+      font-size: 0.8rem;
+      color: #333;
     }
     .icon-usage {
       position: relative;
       background: #fff;
       border-radius: 1rem;
-      height: 2.7rem;
+      height: 2.6rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -643,13 +652,14 @@ code,
 
       .label {
         border-radius: 1rem 0 0 1rem;
-        min-width: 7rem;
+        min-width: 6rem;
         height: 100%;
         align-items: center;
         display: flex;
         justify-content: flex-start;
         background: rgba(239, 239, 239, 0.7);
         padding-left: 0.8rem;
+        font-size: 0.8rem;
       }
       input {
         background: transparent;

@@ -60,7 +60,8 @@ export const showModal = (packName, iconName) => {
   const pack = iconsData[packName] || {
     icons: {},
     package: "",
-    version: ""
+    version: "",
+    owner: {}
   };
   const svgAddress = makeFilePath(packName, iconName);
   const iconNameSplit = iconName
@@ -101,8 +102,13 @@ export const showModal = (packName, iconName) => {
     .setAttribute("download", iconName);
   modalContainer.querySelector(".icon-holder").innerHTML =
     '<span class="skeleton"></span>';
-  modalContainer.classList.add("visible");
+  modalContainer.querySelector(".icon-licence").innerHTML = `${
+    pack.licence ? `${pack.licence} licence` : ""
+  } , All right reserved to <a href="${pack.owner.url || ""}">${
+    pack.owner.name
+  }</a>`;
   document.body.style.overflowY = "hidden";
+  modalContainer.classList.add("visible");
 
   // get svg content
   fetch(svgAddress)
