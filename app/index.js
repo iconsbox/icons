@@ -21,14 +21,13 @@ ready(() => {
   const backToTop = _(".backToTop");
   const selectPackType = _(".selectPackType");
   const packagesListSelector = _(".listPackages ul");
-  const packagesListItemSelector = _(".listPackages ul");
   const body = document.body;
   let searchResultData = {};
 
   /**
    * Add initial select packages
    */
-  let packagesList = "<li>All</li>";
+  let packagesList = "<li class='filter-all'>All</li>";
   Object.keys(iconsData).forEach(packName => {
     packagesList += `<li class="${packName}-item">${packName}</li>`;
   });
@@ -46,6 +45,8 @@ ready(() => {
       config.SEARCH_MODE = true;
       searchResultData = {};
       const keywordSynonyms = getSynonyms(searchValue);
+
+      history.pushState({}, "", "/");
 
       Object.keys(iconsData).forEach(pack => {
         let { icons, package: npmPackage, version: npmVersion } = iconsData[
@@ -89,6 +90,8 @@ ready(() => {
     } else {
       searchResultData = {};
       config.SEARCH_MODE = false;
+      config.ACTIVE_PAGE = 1;
+
 
       reloadIcons({ state: true });
     }
@@ -111,7 +114,7 @@ ready(() => {
   /**
    * Choose package type
    */
-  addEvent(packagesListItemSelector, "click", evt => {
+  addEvent(packagesListSelector, "click", evt => {
     const li = evt.target;
     const packageName = li.innerText.trim();
     selectPackType.querySelector(".select-value").innerHTML = packageName;
@@ -197,7 +200,6 @@ ready(() => {
         config.ICONS_PER_PAGE,
         config.ACTIVE_PAGE
       );
-      console.log("SSS", list);
 
       renderIcons(
         {

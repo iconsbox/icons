@@ -600,7 +600,7 @@ code,
         margin: 1rem 0 !important;
       }
       .icon-license {
-
+        font-size: 0.8rem;
         text-align: center;
         margin: 0.4rem;
       }
@@ -663,10 +663,10 @@ code,
       }
       input {
         background: transparent;
-        font-size: 1rem;
-        padding: 0 0.8rem;
         flex: 1;
         color: #909090;
+        font-size: 0.9rem;
+        padding: 0 0.4rem;
       }
     }
   }

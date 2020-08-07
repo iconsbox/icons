@@ -7,10 +7,10 @@ import { getMultiSynonyms } from "../utils/synonyms";
 const modalContainer = _(".modal");
 const iconHolder = _(".icon-holder");
 const makeSvgPath = (pack, icon) =>
-  `import ${icon} from '${pack}/${icon}/index.svg`;
-const makeComponentPath = (pack, icon) => `import { ${icon} } from '${pack}`;
+  `import ${icon} from '${pack}/${icon}/index.svg';`;
+const makeComponentPath = (pack, icon) => `import { ${icon} } from '${pack}';`;
 const makeSpritePath = (pack, icon) =>
-  `import { ${icon} } from '${pack}/sprite`;
+  `import { ${icon} } from '${pack}/sprite';`;
 
 /**
  * Close modal
@@ -122,7 +122,7 @@ export const showModal = (packName, iconName) => {
       modalContainer.querySelector(".icon-holder").innerHTML = data;
     });
 
-  addEvent(document, 'keypress', e => {
+  addEvent(document, 'keyup', e => {
     console.log("Keypress");
     if(e.key === 'Escape') {
       modalContainer.querySelector('.modal-close').click();
