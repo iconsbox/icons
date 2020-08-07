@@ -6,7 +6,12 @@ import { paginate } from "./utils/array";
 import renderIcons from "./render/iconsList";
 import { ready, addEvent, getScrollY } from "./utils/document";
 import { getNextProp } from "./utils/object";
-import { addSkeletonRemoverEvent, addCopySvgEvent, addShowDetailEvent } from "./utils/misc";
+import { getSynonyms } from "./utils/synonyms";
+import {
+  addSkeletonRemoverEvent,
+  addCopySvgEvent,
+  addShowDetailEvent
+} from "./utils/misc";
 
 ready(() => {
   /**
@@ -40,6 +45,7 @@ ready(() => {
       config.ACTIVE_PAGE = 1;
       config.SEARCH_MODE = true;
       searchResultData = {};
+      const keywordSynonyms = getSynonyms(searchValue);
 
       Object.keys(iconsData).forEach(pack => {
         let { icons, package: npmPackage, version: npmVersion } = iconsData[
@@ -47,13 +53,18 @@ ready(() => {
         ];
         Object.keys(icons).forEach(icon => {
           const currentIcon = icons[icon];
+          const iconSplit = icon
+            .replace(/([a-z](?=[A-Z]))/g, "$1 ")
+            .toLowerCase()
+            .split(" ");
+
           /**
            * Check if icons name or keywords looks like search term
            */
           if (
             icon.toLowerCase() === searchValue ||
-            icon.toLowerCase().indexOf(searchValue) > -1 ||
-            currentIcon.k.join("-").indexOf(searchValue) > -1
+            iconSplit.some(r => r.startsWith(searchValue)) ||
+            iconSplit.some(r => keywordSynonyms.includes(r))
           ) {
             /**
              * Check if we add this package or it is new
@@ -83,7 +94,7 @@ ready(() => {
     }
 
     window.scrollTo({
-      top: 640,
+      top: 600,
       left: 0,
       behavior: "smooth"
     });

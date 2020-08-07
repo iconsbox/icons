@@ -1,13 +1,16 @@
 import { addEvent, copyText } from "../utils/document";
 import { _, _a } from "../utils/selectors";
 import iconsData from "../data";
-import {makeFilePath} from "../utils/misc";
+import { makeFilePath } from "../utils/misc";
+import { getMultiSynonyms } from "../utils/synonyms";
 
 const modalContainer = _(".modal");
 const iconHolder = _(".icon-holder");
-const makeSvgPath = (pack, icon) => `import ${icon} from '${pack}/${icon}/index.svg`;
+const makeSvgPath = (pack, icon) =>
+  `import ${icon} from '${pack}/${icon}/index.svg`;
 const makeComponentPath = (pack, icon) => `import { ${icon} } from '${pack}`;
-const makeSpritePath = (pack, icon) => `import { ${icon} } from '${pack}/sprite`;
+const makeSpritePath = (pack, icon) =>
+  `import { ${icon} } from '${pack}/sprite`;
 
 /**
  * Close modal
@@ -59,22 +62,45 @@ export const showModal = (packName, iconName) => {
     package: "",
     version: ""
   };
-  const icon = pack.icons[iconName];
   const svgAddress = makeFilePath(packName, iconName);
-  const iconKeywords = [...icon.k, iconName, iconName.replace('Icon', '')];
-  const keywords = iconKeywords.map(keyword => `<span class="keyword">${keyword}</span>`).join(', ');
+  const iconNameSplit = iconName
+    .replace(/([a-z](?=[A-Z]))/g, "$1 ")
+    .toLowerCase()
+    .split(" ");
+  const iconKeywords = [
+    iconName,
+    iconName.replace("Icon", ""),
+    ...getMultiSynonyms(iconNameSplit)
+  ];
+  const keywords = iconKeywords
+    .map(keyword => `<span class="keyword">${keyword}</span>`)
+    .join(", ");
 
-  modalContainer.querySelector('.icon-name').innerHTML = iconName;
-  modalContainer.querySelector('.package-version').innerHTML = pack.version;
-  modalContainer.querySelector('.package-name1').innerHTML = pack.package;
-  modalContainer.querySelector('.package-name2').innerHTML = pack.package;
-  modalContainer.querySelector('.keywords').innerHTML = keywords;
-  modalContainer.querySelector('.svgImport').value = makeSvgPath(pack.package, iconName);
-  modalContainer.querySelector('.componentImport').value = makeComponentPath(pack.package, iconName);
-  modalContainer.querySelector('.spriteImport').value = makeSpritePath(pack.package, iconName);
-  modalContainer.querySelector('#download-svg').setAttribute('href', svgAddress);
-  modalContainer.querySelector('#download-svg').setAttribute('download', iconName);
-  modalContainer.querySelector('.icon-holder').innerHTML = '<span class="skeleton"></span>';
+  modalContainer.querySelector(".icon-name").innerHTML = iconName;
+  modalContainer.querySelector(".package-version").innerHTML = pack.version;
+  modalContainer.querySelector(".package-name1").innerHTML = pack.package;
+  modalContainer.querySelector(".package-name2").innerHTML = pack.package;
+  modalContainer.querySelector(".keywords").innerHTML = keywords;
+  modalContainer.querySelector(".svgImport").value = makeSvgPath(
+    pack.package,
+    iconName
+  );
+  modalContainer.querySelector(".componentImport").value = makeComponentPath(
+    pack.package,
+    iconName
+  );
+  modalContainer.querySelector(".spriteImport").value = makeSpritePath(
+    pack.package,
+    iconName
+  );
+  modalContainer
+    .querySelector("#download-svg")
+    .setAttribute("href", svgAddress);
+  modalContainer
+    .querySelector("#download-svg")
+    .setAttribute("download", iconName);
+  modalContainer.querySelector(".icon-holder").innerHTML =
+    '<span class="skeleton"></span>';
   modalContainer.classList.add("visible");
   document.body.style.overflowY = "hidden";
 
@@ -82,6 +108,6 @@ export const showModal = (packName, iconName) => {
   fetch(svgAddress)
     .then(res => res.text())
     .then(data => {
-      modalContainer.querySelector('.icon-holder').innerHTML = data;
+      modalContainer.querySelector(".icon-holder").innerHTML = data;
     });
 };

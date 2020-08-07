@@ -613,10 +613,14 @@ code,
           margin-left: 0.4rem;
           color: #444;
           font-size: 0.9rem;
+          &.keywords {
+            color: #d8d8d8
+          }
           &.keyword {
+            display: inline-block;
             border-radius: 0.8rem;
             background: #efefefa6;
-            margin: 0.4rem 0.2rem;
+            margin: 0.1rem 0.2rem;
             padding: 0.2rem 0.6rem;
             font-size: 0.8rem;
             color: #909090;
