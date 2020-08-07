@@ -33,7 +33,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "license": "MIT",
   "keywords": [
     "svg-icons",
     "icon",
@@ -43,5 +42,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
+  },
+  "license": "CC BY 4.0 License",
+  "owner": {
+    "name": "Font awesome",
+    "licence": "https://github.com/FortAwesome/Font-Awesome#license",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
   }
 }

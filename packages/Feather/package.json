@@ -33,7 +33,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "license": "MIT",
   "keywords": [
     "svg-icons",
     "icon",
@@ -43,5 +42,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
+  },
+  "license": "MIT",
+  "owner": {
+    "name": "feather icons",
+    "licence": "https://github.com/feathericons/feather/blob/master/LICENSE",
+    "url": "https://github.com/feathericons/feather"
   }
 }

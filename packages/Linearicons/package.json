@@ -33,7 +33,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "license": "MIT",
   "keywords": [
     "svg-icons",
     "icon",
@@ -43,5 +42,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
+  },
+  "license": "CC BY-SA 4.0",
+  "owner": {
+    "name": "Linear icons",
+    "url": "https://linearicons.com/free",
+    "licence": "https://creativecommons.org/licenses/by-sa/4.0/"
   }
 }

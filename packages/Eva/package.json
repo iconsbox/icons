@@ -33,7 +33,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "license": "MIT",
   "keywords": [
     "svg-icons",
     "icon",
@@ -43,5 +42,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
+  },
+  "license": "MIT",
+  "owner": {
+    "name": "Eva icons",
+    "licence": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt",
+    "url": "https://github.com/akveo/eva-icons"
   }
 }

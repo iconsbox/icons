@@ -44,8 +44,9 @@
     "url": "https://github.com/snappmarket/iconbox"
   },
   "license": "MIT",
-  "Createor": {
+  "owner": {
     "name": "TablerIcons",
-    "url": "https://tablericons.com/"
+    "url": "https://tablericons.com/",
+    "licence": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
   }
 }

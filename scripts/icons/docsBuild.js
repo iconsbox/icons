@@ -91,6 +91,8 @@ walk('./packages', regExcludes, async (err, results) => {
       content[packageName] = {
         package: packageObject.name,
         version: packageObject.version,
+        owner: packageObject.owner,
+        licence: packageObject.licence,
         icons: {},
       }
     } else {

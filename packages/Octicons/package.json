@@ -33,7 +33,6 @@
     "node": ">=8",
     "npm": ">=5"
   },
-  "license": "MIT",
   "keywords": [
     "svg-icons",
     "icon",
@@ -43,5 +42,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
+  },
+  "license": "MIT",
+  "owner": {
+    "name": "Github",
+    "url": "https://github.com/primer/octicons",
+    "licence": "https://github.com/primer/octicons/blob/master/LICENSE"
   }
 }
