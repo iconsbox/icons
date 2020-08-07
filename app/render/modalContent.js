@@ -18,6 +18,7 @@ const makeSpritePath = (pack, icon) =>
 addEvent(_(".modal-close"), "click", () => {
   modalContainer.classList.remove("visible");
   document.body.style.overflowY = "auto";
+  history.pushState({}, "", `/`);
 });
 
 /**
@@ -77,6 +78,7 @@ export const showModal = (packName, iconName) => {
     .map(keyword => `<span class="keyword">${keyword}</span>`)
     .join(", ");
 
+  console.log("SSSSSS", {pack})
   modalContainer.querySelector(".icon-name").innerHTML = iconName;
   modalContainer.querySelector(".package-version").innerHTML = pack.version;
   modalContainer.querySelector(".package-name1").innerHTML = pack.package;
@@ -102,13 +104,16 @@ export const showModal = (packName, iconName) => {
     .setAttribute("download", iconName);
   modalContainer.querySelector(".icon-holder").innerHTML =
     '<span class="skeleton"></span>';
-  modalContainer.querySelector(".icon-licence").innerHTML = `${
-    pack.licence ? `${pack.licence} licence` : ""
-  } , All right reserved to <a href="${pack.owner.url || ""}">${
+  modalContainer.querySelector(".icon-license").innerHTML = `${
+    pack.license ? `${pack.license} license ,` : ""
+  } All right reserved to <a href="${pack.owner.url || ""}" target="_blank">${
     pack.owner.name
   }</a>`;
   document.body.style.overflowY = "hidden";
   modalContainer.classList.add("visible");
+
+  history.pushState({}, "", `/?package=${pack.package}&icon=${iconName}`);
+
 
   // get svg content
   fetch(svgAddress)
@@ -116,4 +121,11 @@ export const showModal = (packName, iconName) => {
     .then(data => {
       modalContainer.querySelector(".icon-holder").innerHTML = data;
     });
+
+  addEvent(document, 'keypress', e => {
+    console.log("Keypress");
+    if(e.key === 'Escape') {
+      modalContainer.querySelector('.modal-close').click();
+    }
+  });
 };

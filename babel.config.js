@@ -23,7 +23,7 @@ if (process.env.BABEL_ENV !== 'docz') {
   ignorePaths = [
     /@babel[\\|/]runtime/,
     'node_modules/**',
-    '**/LICENCE',
+    '**/license',
     '**/README.md',
     '.mdx',
     '**/package-lock.json',

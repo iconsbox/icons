@@ -43,10 +43,10 @@
     "type": "git",
     "url": "https://github.com/snappmarket/iconbox"
   },
-  "license": "CC BY 4.0 License",
+  "license": "CC BY 4.0",
   "owner": {
     "name": "Font awesome",
-    "licence": "https://github.com/FortAwesome/Font-Awesome#license",
+    "license": "https://github.com/FortAwesome/Font-Awesome#license",
     "url": "https://github.com/FortAwesome/Font-Awesome"
   }
 }
