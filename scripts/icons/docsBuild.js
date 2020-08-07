@@ -99,9 +99,7 @@ walk('./packages', regExcludes, async (err, results) => {
         item.indexOf('.svg') > -1
       ) {
         const iconName = substringBetween(item, '/src/', '/index.svg');
-        content[packageName].icons[iconName] = {
-          k: [],
-        };
+        content[packageName].icons[iconName] = {};
       }
     }
   });
