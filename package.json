@@ -17,6 +17,7 @@
     "lint:js": "npm run lint:eslint -- . ",
     "lint:staged": "lint-staged",
     "prettify": "prettier --write \"packages/**/*.{js,jsx}\"",
+    "optimize": "lerna run --parallel optimize",
     "generate": "lerna run --parallel generate",
     "publish-npm": "lerna run --parallel publish-npm",
     "release": "node ./scripts/release/release.js",
