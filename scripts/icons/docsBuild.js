@@ -56,7 +56,7 @@ const walk = (dir, regExcludes, done) => {
   });
 };
 
-const regExcludes = [/dist/, /sprite/, /component/, /index\.js/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
+const regExcludes = [/dist/, /config/, /sprite/, /component/, /index\.js/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
 
 
 /* eslint-disable indent */

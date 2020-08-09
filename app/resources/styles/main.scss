@@ -279,6 +279,20 @@ code,
     .selectPackType {
       border-right: 0.2rem solid rgba(0, 0, 0, 0.1);
       border-radius: 1rem 0 0 1rem;
+      position: relative;
+
+      &.closed {
+        cursor: not-allowed;
+      }
+      &.closed:after {
+        content: '';
+        position: absolute;
+        background: rgba(215,215,215,0.5);
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        z-index: 99999;
+      }
     }
     .chooseSize {
       border-left: 0.2rem solid rgba(0, 0, 0, 0.1);

@@ -46,6 +46,7 @@ ready(() => {
       searchResultData = {};
       const keywordSynonyms = getSynonyms(searchValue);
 
+      selectPackType.classList.add('closed');
       history.pushState({}, "", "/");
 
       Object.keys(iconsData).forEach(pack => {
@@ -91,7 +92,7 @@ ready(() => {
       searchResultData = {};
       config.SEARCH_MODE = false;
       config.ACTIVE_PAGE = 1;
-
+      selectPackType.classList.remove('closed');
 
       reloadIcons({ state: true });
     }
@@ -107,8 +108,10 @@ ready(() => {
    * Show panel
    */
   addEvent(selectPackType, "click", evt => {
-    const li = evt.currentTarget;
-    li.querySelector(".select-panel").classList.toggle("visible");
+    const div = evt.currentTarget;
+    if(!div.classList.contains('closed')) {
+      div.querySelector(".select-panel").classList.toggle("visible");
+    }
   });
 
   /**
