@@ -1,6 +1,6 @@
 # replace default config
 
-# multipass: true
+multipass: true
 # full: true
 
 plugins:
@@ -65,7 +65,7 @@ plugins:
   - addAttributesToSVGElement
   - removeOffCanvasPaths
   - reusePaths
-  - removeStyleElement
+  - removeStyleElement: true
 
 js2svg:
   pretty: true
