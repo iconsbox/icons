@@ -17,7 +17,6 @@ const Womans5Icon = ({ className, size }) => (
     fill="currentColor"
   >
     <g
-      id="Woman_x2019_s_Coat"
       stroke="#494949"
       strokeWidth="1.5"
       strokeLinecap="round"

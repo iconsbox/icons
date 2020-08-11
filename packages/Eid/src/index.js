@@ -1,9 +1,9 @@
 /**
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
-export { default as CamelIcon } from './CamelIcon/component';
 export { default as ArabManIcon } from './ArabManIcon/component';
 export { default as ChandNightIcon } from './ChandNightIcon/component';
+export { default as CamelIcon } from './CamelIcon/component';
 export { default as DateFruitBowlIcon } from './DateFruitBowlIcon/component';
 export { default as DateFruitIcon } from './DateFruitIcon/component';
 export { default as DayIcon } from './DayIcon/component';
@@ -16,8 +16,8 @@ export { default as KheerIcon } from './KheerIcon/component';
 export { default as MaccaIcon } from './MaccaIcon/component';
 export { default as MattIcon } from './MattIcon/component';
 export { default as MosqueIcon } from './MosqueIcon/component';
-export { default as NamazIcon } from './NamazIcon/component';
 export { default as MuslimManIcon } from './MuslimManIcon/component';
+export { default as NamazIcon } from './NamazIcon/component';
 export { default as NightIcon } from './NightIcon/component';
 export { default as PrayingBeadsIcon } from './PrayingBeadsIcon/component';
 export { default as PrayingHandIcon } from './PrayingHandIcon/component';

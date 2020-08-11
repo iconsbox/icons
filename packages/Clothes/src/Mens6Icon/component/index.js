@@ -22,7 +22,6 @@ const Mens6Icon = ({ className, size }) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       stroke-miterlimit="10"
-      id="Men_x2019_s_Vest"
     >
       <path
         fill="#D6E167"
@@ -30,7 +29,7 @@ const Mens6Icon = ({ className, size }) => (
       ></path>
       <path
         fill="#B7B444"
-        d="M24.141 9.874v-.602 5.707a7.679 7.679 0 1 0 15.358 0V9.265v.609-.609c0 4.242-3.438 7.611-7.679 7.611s-7.679-3.369-7.679-7.611v.609z"
+        d="M24.141 9.874v-.602 5.707a7.679 7.679 0 1015.358 0V9.265v.609-.609c0 4.242-3.438 7.611-7.679 7.611s-7.679-3.369-7.679-7.611v.609z"
       ></path>
     </g>
   </svg>

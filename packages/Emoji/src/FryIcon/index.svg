@@ -1,37 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <style>
-    .st1{fill:#ffc258}.st2{fill:#4f4b45}.st3{fill:#fabfa5}.st10{fill:none;stroke:#45413c;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
-  </style>
-  <symbol id="New_Symbol_14" viewBox="-6.5 -6.5 13 13">
-    <path d="M0-6c2.2 0 4.1 1.5 4.7 3.5C6.3-2.5 6.4 0 5 0v1c0 2.8-2.2 5-5 5s-5-2.2-5-5V0c-1.4 0-1.3-2.5.2-2.5C-4.1-4.5-2.2-6 0-6z" fill="#ffd4c3" stroke="#504b46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-    <circle class="st1" cx="-1.6" cy="-.1" r=".1" fill="#FFC258"/>
-    <path class="st2" d="M-1.6.5c-.3 0-.6-.3-.6-.6s.2-.7.6-.7c.3 0 .6.3.6.7s-.3.6-.6.6z" fill="#4F4B45"/>
-    <circle class="st1" cx="1.6" cy="-.1" r=".1" fill="#FFC258"/>
-    <path class="st2" d="M1.6.5C1.3.5 1 .2 1-.1s.3-.6.6-.6.6.3.6.6-.2.6-.6.6z" fill="#4F4B45"/>
-    <circle class="st3" cx="-3" cy="-1.5" r=".5" fill="#FABFA5"/>
-    <circle class="st3" cx="3" cy="-1.5" r=".5" fill="#FABFA5"/>
-    <path d="M-1.2-3c.8-.5 1.7-.5 2.5 0" fill="none" stroke="#504b46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  </symbol>
-  <g id="Icons">
-    <g id="XMLID_1821_">
-      <ellipse id="XMLID_1663_" cx="20.3" cy="44.4" rx="12.9" ry="1.7" fill="#45413c" opacity=".15"/>
-      <path id="XMLID_1662_" d="M36.3 8.2l-4.4 4.4c-6.8-5.6-17-5.3-23.4 1.1-6.8 6.8-6.8 17.8 0 24.6 6.8 6.8 17.8 6.8 24.6 0 6.4-6.4 6.8-16.5 1.1-23.4l4.4-4.4-2.3-2.3z" fill="#87898c"/>
-      <g id="XMLID_1660_">
-        <path id="XMLID_1661_" d="M8.5 16.3c6.4-6.4 16.5-6.8 23.4-1.1l4.4-4.4 1.1 1.1 1.3-1.3-2.4-2.4-4.4 4.4c-6.8-5.6-17-5.3-23.4 1.1-3.7 3.7-5.4 8.7-5 13.6.2-4 1.9-7.9 5-11z" fill="#bdbec0"/>
-      </g>
-      <path id="XMLID_1659_" class="st10" d="M36.3 8.2l-4.4 4.4c-6.8-5.6-17-5.3-23.4 1.1-6.8 6.8-6.8 17.8 0 24.6 6.8 6.8 17.8 6.8 24.6 0 6.4-6.4 6.8-16.5 1.1-23.4l4.4-4.4-2.3-2.3z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-      <path id="XMLID_128_" d="M43.8 7l-5.2 5.2c-.4.4-1.1.4-1.6 0l-2.4-2.4c-.4-.4-.4-1.1 0-1.6L39.8 3c1.1-1.1 2.9-1.1 4 0s1.1 2.9 0 4z" fill="#ffe500"/>
-      <path id="XMLID_127_" d="M35.7 10.4l5.2-5.2c1-1 2.7-1.1 3.8-.1 0-.8-.2-1.5-.8-2.1-1.1-1.1-2.9-1.1-4 0l-5.2 5.2c-.4.4-.4 1.1 0 1.6l.9.9c0-.2 0-.2.1-.3z" fill="#fff48c"/>
-      <path id="XMLID_126_" class="st10" d="M43.8 7l-5.2 5.2c-.4.4-1.1.4-1.6 0l-2.4-2.4c-.4-.4-.4-1.1 0-1.6L39.8 3c1.1-1.1 2.9-1.1 4 0s1.1 2.9 0 4z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-      <circle id="XMLID_125_" transform="rotate(-45.001 20.777 26.03)" cx="20.8" cy="26" fill="#656769" r="14"/>
-      <path id="XMLID_124_" d="M10.8 19.5c5.5-5.5 14.4-5.5 19.9 0 2.3 2.3 3.6 5.2 4 8.2.5-4.1-.8-8.4-4-11.6-5.5-5.5-14.4-5.5-19.9 0-3.2 3.2-4.5 7.5-4 11.6.4-3 1.7-5.9 4-8.2z" fill="#525252"/>
-      <circle id="XMLID_123_" transform="rotate(-45.001 20.777 26.03)" class="st10" cx="20.8" cy="26" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" r="14"/>
-      <path id="XMLID_122_" d="M24.7 22.7v-.2c0-2.9-2.6-5.3-5.5-4.7h-.1c-3.3.6-6 3.3-6.6 6.6-1.1 5.6 3.5 10.5 9 10 3.7-.3 6.9-3.2 7.5-6.9v-.1c.3-1.6-1.1-3-2.7-3-.8 0-1.6-.8-1.6-1.7z" fill="#f0f0f0"/>
-      <path id="XMLID_121_" d="M12.5 27.6c.6-3.3 3.3-6 6.6-6.6h.1c2.9-.5 5.5 1.8 5.5 4.7v.2c0 .9.7 1.7 1.7 1.7s1.9.5 2.3 1.3c.2-.4.3-.9.3-1.3v-.1c.3-1.6-1.1-3-2.7-3-.9 0-1.7-.7-1.7-1.7v-.2c0-2.9-2.6-5.3-5.5-4.7H19c-3.3.6-6 3.3-6.6 6.6-.1 1-.1 2.1.1 3.1z" fill="#fff"/>
-      <path id="XMLID_120_" class="st10" d="M24.7 22.7v-.2c0-2.9-2.6-5.3-5.5-4.7h-.1c-3.3.6-6 3.3-6.6 6.6-1.1 5.6 3.5 10.5 9 10 3.7-.3 6.9-3.2 7.5-6.9v-.1c.3-1.6-1.1-3-2.7-3-.8 0-1.6-.8-1.6-1.7z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-      <circle id="XMLID_119_" cx="19.7" cy="27.2" r="3.4" fill="#ffaa54"/>
-      <path id="XMLID_118_" d="M19.7 25.8c1.5 0 2.8 1 3.2 2.4.1-.3.2-.6.2-1 0-1.9-1.5-3.4-3.4-3.4s-3.4 1.5-3.4 3.4c0 .4.1.7.2 1 .4-1.4 1.7-2.4 3.2-2.4z" fill="#fc9"/>
-      <circle id="XMLID_117_" class="st10" cx="19.7" cy="27.2" r="3.4" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-    </g>
-  </g>
+  <ellipse cx="20.3" cy="44.4" rx="12.9" ry="1.7" fill="#45413c" opacity=".15"/>
+  <path d="M36.3 8.2l-4.4 4.4c-6.8-5.6-17-5.3-23.4 1.1-6.8 6.8-6.8 17.8 0 24.6 6.8 6.8 17.8 6.8 24.6 0 6.4-6.4 6.8-16.5 1.1-23.4l4.4-4.4-2.3-2.3z" fill="#87898c"/>
+  <path d="M8.5 16.3c6.4-6.4 16.5-6.8 23.4-1.1l4.4-4.4 1.1 1.1 1.3-1.3-2.4-2.4-4.4 4.4c-6.8-5.6-17-5.3-23.4 1.1-3.7 3.7-5.4 8.7-5 13.6.2-4 1.9-7.9 5-11z" fill="#bdbec0"/>
+  <path class="st10" d="M36.3 8.2l-4.4 4.4c-6.8-5.6-17-5.3-23.4 1.1-6.8 6.8-6.8 17.8 0 24.6 6.8 6.8 17.8 6.8 24.6 0 6.4-6.4 6.8-16.5 1.1-23.4l4.4-4.4-2.3-2.3z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M43.8 7l-5.2 5.2c-.4.4-1.1.4-1.6 0l-2.4-2.4c-.4-.4-.4-1.1 0-1.6L39.8 3c1.1-1.1 2.9-1.1 4 0s1.1 2.9 0 4z" fill="#ffe500"/>
+  <path d="M35.7 10.4l5.2-5.2c1-1 2.7-1.1 3.8-.1 0-.8-.2-1.5-.8-2.1-1.1-1.1-2.9-1.1-4 0l-5.2 5.2c-.4.4-.4 1.1 0 1.6l.9.9c0-.2 0-.2.1-.3z" fill="#fff48c"/>
+  <path class="st10" d="M43.8 7l-5.2 5.2c-.4.4-1.1.4-1.6 0l-2.4-2.4c-.4-.4-.4-1.1 0-1.6L39.8 3c1.1-1.1 2.9-1.1 4 0s1.1 2.9 0 4z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <circle transform="rotate(-45.001 20.777 26.03)" cx="20.8" cy="26" fill="#656769" r="14"/>
+  <path d="M10.8 19.5c5.5-5.5 14.4-5.5 19.9 0 2.3 2.3 3.6 5.2 4 8.2.5-4.1-.8-8.4-4-11.6-5.5-5.5-14.4-5.5-19.9 0-3.2 3.2-4.5 7.5-4 11.6.4-3 1.7-5.9 4-8.2z" fill="#525252"/>
+  <circle transform="rotate(-45.001 20.777 26.03)" class="st10" cx="20.8" cy="26" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" r="14"/>
+  <path d="M24.7 22.7v-.2c0-2.9-2.6-5.3-5.5-4.7h-.1c-3.3.6-6 3.3-6.6 6.6-1.1 5.6 3.5 10.5 9 10 3.7-.3 6.9-3.2 7.5-6.9v-.1c.3-1.6-1.1-3-2.7-3-.8 0-1.6-.8-1.6-1.7z" fill="#f0f0f0"/>
+  <path d="M12.5 27.6c.6-3.3 3.3-6 6.6-6.6h.1c2.9-.5 5.5 1.8 5.5 4.7v.2c0 .9.7 1.7 1.7 1.7s1.9.5 2.3 1.3c.2-.4.3-.9.3-1.3v-.1c.3-1.6-1.1-3-2.7-3-.9 0-1.7-.7-1.7-1.7v-.2c0-2.9-2.6-5.3-5.5-4.7H19c-3.3.6-6 3.3-6.6 6.6-.1 1-.1 2.1.1 3.1z" fill="#fff"/>
+  <path class="st10" d="M24.7 22.7v-.2c0-2.9-2.6-5.3-5.5-4.7h-.1c-3.3.6-6 3.3-6.6 6.6-1.1 5.6 3.5 10.5 9 10 3.7-.3 6.9-3.2 7.5-6.9v-.1c.3-1.6-1.1-3-2.7-3-.8 0-1.6-.8-1.6-1.7z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <circle cx="19.7" cy="27.2" r="3.4" fill="#ffaa54"/>
+  <path d="M19.7 25.8c1.5 0 2.8 1 3.2 2.4.1-.3.2-.6.2-1 0-1.9-1.5-3.4-3.4-3.4s-3.4 1.5-3.4 3.4c0 .4.1.7.2 1 .4-1.4 1.7-2.4 3.2-2.4z" fill="#fc9"/>
+  <circle class="st10" cx="19.7" cy="27.2" r="3.4" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
 </svg>

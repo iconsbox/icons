@@ -17,7 +17,6 @@ const Mens3Icon = ({ className, size }) => (
     fill="currentColor"
   >
     <g
-      id="Men_x2019_s_Blazer"
       stroke="#494949"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -40,8 +39,7 @@ const Mens3Icon = ({ className, size }) => (
         fill="#A87B69"
         d="M36.559 14.043c-6.156-1.526-8.852 0-8.852 0L31.701 36.5l4.858-22.457z"
       ></path>
-      <path fill="none" d="M23.431 43.154h5.647"></path>
-      <path fill="none" d="M34.448 43.154h5.648"></path>
+      <path fill="none" d="M23.431 43.154h5.647m5.37 0h5.648"></path>
     </g>
   </svg>
 );

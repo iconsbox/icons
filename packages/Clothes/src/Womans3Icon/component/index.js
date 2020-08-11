@@ -17,7 +17,6 @@ const Womans3Icon = ({ className, size }) => (
     fill="currentColor"
   >
     <g
-      id="Woman_x2019_s_Formal_Coat_x2F_Blazer"
       stroke="#494949"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -30,19 +29,11 @@ const Womans3Icon = ({ className, size }) => (
       ></path>
       <path
         fill="none"
-        d="M33.449 37.42a.23.23 0 1 1-.46 0 .23.23 0 0 1 .46 0z"
-      ></path>
-      <path
-        fill="none"
-        d="M33.218 44.271a.229.229 0 0 1-.226.229.232.232 0 0 1-.235-.229.231.231 0 0 1 .461 0z"
+        d="M33.449 37.42a.23.23 0 11-.46 0 .23.23 0 01.46 0zm-.231 6.851a.229.229 0 01-.226.229.232.232 0 01-.235-.229.231.231 0 01.461 0z"
       ></path>
       <path
         fill="#60A8A6"
-        d="M48.404 46.098l1.491 3.929 6.585-2.832-1.387-3.713z"
-      ></path>
-      <path
-        fill="#60A8A6"
-        d="M7.366 43.377l-1.605 3.796 6.604 2.815 1.549-3.806z"
+        d="M48.404 46.098l1.491 3.929 6.585-2.832-1.387-3.713zM7.366 43.377l-1.605 3.796 6.604 2.815 1.549-3.806z"
       ></path>
       <path
         fill="none"

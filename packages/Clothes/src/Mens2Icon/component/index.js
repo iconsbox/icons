@@ -17,7 +17,6 @@ const Mens2Icon = ({ className, size }) => (
     fill="currentColor"
   >
     <g
-      id="Men_x2019_s_Short"
       stroke="#494949"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -32,7 +31,7 @@ const Mens2Icon = ({ className, size }) => (
         fill="none"
         d="M31.631 19.696v17.976s2.829.367 3.279-4.206v-13.77h-3.279z"
       ></path>
-      <path fill="#B7B444" d="M15.518 19.696V15.56H47.742v4.136z"></path>
+      <path fill="#B7B444" d="M15.518 19.696V15.56h32.224v4.136z"></path>
     </g>
   </svg>
 );

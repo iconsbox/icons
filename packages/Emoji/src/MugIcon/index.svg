@@ -1,49 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <style>
-    .st1{fill:#ffc258}.st2{fill:#4f4b45}.st3{fill:#fabfa5}.st10{fill:none}.st10,.st15{stroke:#45413c;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st15,.st17{fill:#fff}.st20{fill:#fcd}
-  </style>
-  <symbol id="New_Symbol_14" viewBox="-6.5 -6.5 13 13">
-    <path d="M0-6c2.2 0 4.1 1.5 4.7 3.5C6.3-2.5 6.4 0 5 0v1c0 2.8-2.2 5-5 5s-5-2.2-5-5V0c-1.4 0-1.3-2.5.2-2.5C-4.1-4.5-2.2-6 0-6z" fill="#ffd4c3" stroke="#504b46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-    <circle class="st1" cx="-1.6" cy="-.1" r=".1" fill="#FFC258"/>
-    <path class="st2" d="M-1.6.5c-.3 0-.6-.3-.6-.6s.2-.7.6-.7c.3 0 .6.3.6.7s-.3.6-.6.6z" fill="#4F4B45"/>
-    <circle class="st1" cx="1.6" cy="-.1" r=".1" fill="#FFC258"/>
-    <path class="st2" d="M1.6.5C1.3.5 1 .2 1-.1s.3-.6.6-.6.6.3.6.6-.2.6-.6.6z" fill="#4F4B45"/>
-    <circle class="st3" cx="-3" cy="-1.5" r=".5" fill="#FABFA5"/>
-    <circle class="st3" cx="3" cy="-1.5" r=".5" fill="#FABFA5"/>
-    <path d="M-1.2-3c.8-.5 1.7-.5 2.5 0" fill="none" stroke="#504b46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  </symbol>
-  <g id="Icons">
-    <g id="XMLID_993_">
-      <ellipse id="XMLID_100_" cx="21.9" cy="45.5" rx="14.5" ry="1.6" fill="#45413c" opacity=".15"/>
-      <g id="XMLID_65_">
-        <path id="XMLID_86_" class="st15" d="M13.5 10.5c.4-.7.7-1.5.7-2.4 0-2.6-2.1-4.7-4.7-4.7S4.7 5.5 4.7 8.2s2.1 4.7 4.7 4.7h.4c0 1.4 1.2 2.6 2.6 2.6s2.6-1.2 2.6-2.6c0-1.1-.6-2-1.5-2.4z" fill="#FFF" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-        <circle id="XMLID_85_" class="st15" cx="19.3" cy="3.4" r="2.6" fill="#FFF" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-        <g id="XMLID_66_">
-          <g id="XMLID_81_">
-            <path id="XMLID_84_" d="M37.7 35.2c3.1 0 5.6-2.5 5.6-5.6 0-3.1-2.5-5.6-5.6-5.6h-2.1v3.4h2.1c1.2 0 2.1 1 2.1 2.1 0 1.2-1 2.1-2.1 2.1h-3.9V35h3.9z" fill="#e5f8ff"/>
-            <path id="XMLID_83_" class="st17" d="M36.9 25.8c3.1 0 5.6 2.5 5.6 5.6 0 .6-.1 1.1-.2 1.6.7-.9 1.1-2.1 1.1-3.3 0-3.1-2.5-5.6-5.6-5.6h-2.1v1.7h1.2z" fill="#FFF"/>
-            <path id="XMLID_82_" class="st10" d="M37.7 35.2c3.1 0 5.6-2.5 5.6-5.6 0-3.1-2.5-5.6-5.6-5.6h-2.1v3.4h2.1c1.2 0 2.1 1 2.1 2.1 0 1.2-1 2.1-2.1 2.1h-3.9V35h3.9z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-          </g>
-          <g id="XMLID_67_">
-            <g id="XMLID_76_">
-              <path id="XMLID_80_" class="st17" d="M5.5 30.1c0 8.7 7.2 15.8 16 15.5 8.4-.3 14.9-7.4 14.9-15.8v-9.1H5.5v9.4z" fill="#FFF"/>
-              <path id="XMLID_79_" d="M21 40c-6.2 0-11.7-3-15.3-7.5 1.2 7.6 7.9 13.3 15.8 13 7.4-.3 13.4-5.9 14.6-13C32.7 37.1 27.2 40 21 40z" fill="#e8f4fa"/>
-              <path id="XMLID_78_" class="st10" d="M5.5 30.1c0 8.7 7.2 15.8 16 15.5 8.4-.3 14.9-7.4 14.9-15.8v-9.1H5.5v9.4z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-              <ellipse id="XMLID_77_" cx="21" cy="20.6" rx="15.5" ry="1.7" fill="#e8f4fa" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-            </g>
-            <g id="XMLID_68_">
-              <ellipse id="XMLID_75_" class="st20" cx="13.7" cy="31.8" rx="1.3" ry=".9" fill="#FCD"/>
-              <g id="XMLID_72_" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
-                <path id="XMLID_74_" d="M24.3 33.9c.6 0 1 .5.8 1.1-.5 1.9-2.2 3.2-4.2 3.2s-3.7-1.4-4.2-3.2c-.1-.5.3-1.1.8-1.1h6.8z" fill="#ffb0ca"/>
-                <path id="XMLID_73_" d="M21 38.2c1.4 0 2.6-.7 3.4-1.7-.9-.6-2.1-.9-3.4-.9-1.3 0-2.5.3-3.4.9.8 1.1 2 1.7 3.4 1.7z" fill="#ff87af"/>
-              </g>
-              <path id="XMLID_71_" class="st10" d="M13.3 30.1c0-.7.6-1.3 1.3-1.3.7 0 1.3.6 1.3 1.3" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-              <ellipse id="XMLID_70_" class="st20" cx="28.3" cy="31.8" rx="1.3" ry=".9" fill="#FCD"/>
-              <path id="XMLID_69_" class="st10" d="M28.7 30.1c0-.7-.6-1.3-1.3-1.3-.7 0-1.3.6-1.3 1.3" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
+  <ellipse cx="21.9" cy="45.5" rx="14.5" ry="1.6" fill="#45413c" opacity=".15"/>
+  <path class="st15" d="M13.5 10.5c.4-.7.7-1.5.7-2.4 0-2.6-2.1-4.7-4.7-4.7S4.7 5.5 4.7 8.2s2.1 4.7 4.7 4.7h.4c0 1.4 1.2 2.6 2.6 2.6s2.6-1.2 2.6-2.6c0-1.1-.6-2-1.5-2.4z" fill="#FFF" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <circle class="st15" cx="19.3" cy="3.4" r="2.6" fill="#FFF" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M37.7 35.2c3.1 0 5.6-2.5 5.6-5.6 0-3.1-2.5-5.6-5.6-5.6h-2.1v3.4h2.1c1.2 0 2.1 1 2.1 2.1 0 1.2-1 2.1-2.1 2.1h-3.9V35h3.9z" fill="#e5f8ff"/>
+  <path class="st17" d="M36.9 25.8c3.1 0 5.6 2.5 5.6 5.6 0 .6-.1 1.1-.2 1.6.7-.9 1.1-2.1 1.1-3.3 0-3.1-2.5-5.6-5.6-5.6h-2.1v1.7h1.2z" fill="#FFF"/>
+  <path class="st10" d="M37.7 35.2c3.1 0 5.6-2.5 5.6-5.6 0-3.1-2.5-5.6-5.6-5.6h-2.1v3.4h2.1c1.2 0 2.1 1 2.1 2.1 0 1.2-1 2.1-2.1 2.1h-3.9V35h3.9z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path class="st17" d="M5.5 30.1c0 8.7 7.2 15.8 16 15.5 8.4-.3 14.9-7.4 14.9-15.8v-9.1H5.5v9.4z" fill="#FFF"/>
+  <path d="M21 40c-6.2 0-11.7-3-15.3-7.5 1.2 7.6 7.9 13.3 15.8 13 7.4-.3 13.4-5.9 14.6-13C32.7 37.1 27.2 40 21 40z" fill="#e8f4fa"/>
+  <path class="st10" d="M5.5 30.1c0 8.7 7.2 15.8 16 15.5 8.4-.3 14.9-7.4 14.9-15.8v-9.1H5.5v9.4z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <ellipse cx="21" cy="20.6" rx="15.5" ry="1.7" fill="#e8f4fa" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <ellipse class="st20" cx="13.7" cy="31.8" rx="1.3" ry=".9" fill="#FCD"/>
+  <g stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+    <path d="M24.3 33.9c.6 0 1 .5.8 1.1-.5 1.9-2.2 3.2-4.2 3.2s-3.7-1.4-4.2-3.2c-.1-.5.3-1.1.8-1.1h6.8z" fill="#ffb0ca"/>
+    <path d="M21 38.2c1.4 0 2.6-.7 3.4-1.7-.9-.6-2.1-.9-3.4-.9-1.3 0-2.5.3-3.4.9.8 1.1 2 1.7 3.4 1.7z" fill="#ff87af"/>
   </g>
+  <path class="st10" d="M13.3 30.1c0-.7.6-1.3 1.3-1.3.7 0 1.3.6 1.3 1.3" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <ellipse class="st20" cx="28.3" cy="31.8" rx="1.3" ry=".9" fill="#FCD"/>
+  <path class="st10" d="M28.7 30.1c0-.7-.6-1.3-1.3-1.3-.7 0-1.3.6-1.3 1.3" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
 </svg>
