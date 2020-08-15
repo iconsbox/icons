@@ -75,8 +75,9 @@ const ${folderName} = ({ className, size }) => {
         width: size * 10,
         height: size * 10,
       }}
+      role="img"
       fill="currentColor">
-      <use data-testid="${folderName}Href" xlinkHref={\`\${importPrefix}#${folderName}\`} />
+      <use data-testid="${folderName}Href" href={\`\${importPrefix}#${folderName}\`} xlinkHref={\`\${importPrefix}#${folderName}\`} />
     </svg>
   );
 };

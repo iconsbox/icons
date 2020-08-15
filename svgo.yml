@@ -56,13 +56,16 @@ plugins:
   - removeDesc
   - removeViewBox: false
   - removeDimensions: true
-  - removeAttrs
+  - removeAttrs:
+      attrs: '(data|name|class)'
   - removeAttributesBySelector
   - removeElementsByAttr
   - addClassesToSVGElement
   - removeStyleElement
   - removeScriptElement
-  - addAttributesToSVGElement
+  - addAttributesToSVGElement:
+      attributes:
+        - focusable: false
   - removeOffCanvasPaths
   - reusePaths
   - removeStyleElement: true
