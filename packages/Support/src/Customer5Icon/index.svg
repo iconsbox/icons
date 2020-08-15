@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" focusable="false">
   <circle cx="24" cy="10" fill="#67acd5" transform="rotate(-45.001 24.002 9.989)" r="7.5"/>
   <circle cx="25.4" cy="8.6" fill="#fff" transform="rotate(-45.001 25.414 8.584)" r="2.5"/>
   <path fill="#5c5e70" d="M5.5 12v1.5h-1c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1H5M16.5 12v1.5h1c.6 0 1-.4 1-1v-1c0-.6-.4-1-1-1H17"/>

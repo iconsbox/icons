@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-test" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" focusable="false">
   <path d="M0 0h24v24H0z" stroke="none"/>
   <image href="https://static.tildacdn.com/tild3432-3932-4036-b734-633738333636/Myicons__part_2line_.png" width="111" x="-43.5" y="-27.75" opacity=".3"/>
   <path d="M8 13.5v-8a1.5 1.5 0 013 0V12m0-6.5v-2a1.5 1.5 0 013 0V12m0-6.5a1.5 1.5 0 013 0V12m0-4.5a1.5 1.5 0 013 0V16a6 6 0 01-6 6h-2a7 6 0 01-5-3l-3-4.5A1.4 1.4 0 016.5 12L8 13.5"/>

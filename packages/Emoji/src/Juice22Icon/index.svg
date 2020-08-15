@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" focusable="false">
   <ellipse cx="25" cy="45.4" rx="11.2" ry="1.7" fill="#45413c" opacity=".15"/>
   <path d="M34.1 43.3c-.6-1.1-3.3-1.9-6.9-2.2-.5 0-.8-.4-.8-.9v-7.1h-2.6v7.1c0 .5-.4.8-.8.9-3.6.2-6.4 1.1-6.9 2.2-.1.2 0 .5.2.6.9.4 3.6 1.6 8.9 1.6s8-1.1 8.9-1.6c0-.1.1-.4 0-.6z" fill="#00b8f0" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st35" d="M32.9 9.6c0-1-3.5-1.7-7.9-1.7s-7.9.8-7.9 1.7l-1.3 16.2c0 5.1 4.1 9.2 9.2 9.2s9.2-4.1 9.2-9.2L32.9 9.6z" fill="#00B8F0"/>
+  <path d="M32.9 9.6c0-1-3.5-1.7-7.9-1.7s-7.9.8-7.9 1.7l-1.3 16.2c0 5.1 4.1 9.2 9.2 9.2s9.2-4.1 9.2-9.2L32.9 9.6z" fill="#00B8F0"/>
   <path d="M33.2 13.7l-.3-4c0-1-3.5-1.7-7.9-1.7s-7.9.8-7.9 1.7l-1.3 16.2c0 1.5.4 3 1 4.2 0 0 5.5-2.5 9.9-7.3s6.5-9.1 6.5-9.1z" fill="#4acfff"/>
-  <ellipse class="st35" cx="25" cy="9.6" rx="7.9" ry="1.7" fill="#00B8F0"/>
-  <path class="st10" d="M32.9 9.6c0-1-3.5-1.7-7.9-1.7s-7.9.8-7.9 1.7l-1.3 16.2c0 5.1 4.1 9.2 9.2 9.2s9.2-4.1 9.2-9.2L32.9 9.6z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st10" d="M32.9 9.6c0 1-3.5 1.7-7.9 1.7s-7.9-.8-7.9-1.7" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <ellipse cx="25" cy="9.6" rx="7.9" ry="1.7" fill="#00B8F0"/>
+  <path d="M32.9 9.6c0-1-3.5-1.7-7.9-1.7s-7.9.8-7.9 1.7l-1.3 16.2c0 5.1 4.1 9.2 9.2 9.2s9.2-4.1 9.2-9.2L32.9 9.6z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M32.9 9.6c0 1-3.5 1.7-7.9 1.7s-7.9-.8-7.9-1.7" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
   <path d="M13.5 12.1c-.5.3-1.1.1-1.3-.4-1-2.5-.1-5.4 2.3-6.9s5.4-1 7.2 1c.4.4.2 1-.2 1.3l-8 5z" fill="#6dd627" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st49" d="M18.9 16.2l-.9 9.6c0 3.9 3.1 7 7 7s7-3.1 7-7l-.9-9.6H18.9z" fill="#FF8A14"/>
+  <path d="M18.9 16.2l-.9 9.6c0 3.9 3.1 7 7 7s7-3.1 7-7l-.9-9.6H18.9z" fill="#FF8A14"/>
   <path d="M25 25.8c-3 0-5.6-.4-6.9-.9l-.1.9c0 3.9 3.1 7 7 7s7-3.1 7-7l-.1-.9c-1.3.5-3.9.9-6.9.9z" fill="#ff6242"/>
-  <ellipse class="st49" cx="25" cy="16.2" rx="6.1" ry=".9" fill="#FF8A14"/>
+  <ellipse cx="25" cy="16.2" rx="6.1" ry=".9" fill="#FF8A14"/>
   <path d="M27.2 17.5h2.6V11c-.8.1-1.7.2-2.6.3v6.2z" fill="#bf8df2" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
   <path d="M31.1 16.2c0 .5-2.7.9-6.1.9s-6.1-.4-6.1-.9l-.9 9.6c0 1.2.3 2.2.8 3.2 2-1.1 5.2-3.2 8-6.3 1.9-2.1 3.4-4.1 4.4-5.7l-.1-.8z" fill="#ffaa54"/>
   <path d="M18.1 24.9l-.1.9c0 1.2.3 2.2.8 3.2 1.2-.7 3-1.8 4.7-3.2-2.3-.1-4.3-.5-5.4-.9z" fill="#ff866e"/>

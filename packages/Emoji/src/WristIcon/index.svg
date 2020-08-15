@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" focusable="false">
   <ellipse cx="23.4" cy="41.1" rx="11.5" ry="1.5" fill="#45413c" opacity=".15"/>
-  <path class="st88" d="M31.3 35.1H14.5c-.6 0-1.1-.5-1.1-1.1V12.2c0-.6.5-1.1 1.1-1.1h16.9c.6 0 1.1.5 1.1 1.1v21.9c-.1.5-.6 1-1.2 1z" fill="#DAEDF7" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M31.3 35.1H14.5c-.6 0-1.1-.5-1.1-1.1V12.2c0-.6.5-1.1 1.1-1.1h16.9c.6 0 1.1.5 1.1 1.1v21.9c-.1.5-.6 1-1.2 1z" fill="#DAEDF7" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
   <path d="M28.3 41.1H17.5c-.9 0-1.6-.7-1.6-1.6V6.8c0-.9.7-1.6 1.6-1.6h10.7c.9 0 1.6.7 1.6 1.6v32.7c.1.9-.6 1.6-1.5 1.6z" fill="#656769"/>
   <path d="M28.3 5.1H17.5c-.9 0-1.6.7-1.6 1.6v2.5c0-.9.7-1.6 1.6-1.6h10.7c.9 0 1.6.7 1.6 1.6V6.8c.1-1-.6-1.7-1.5-1.7z" fill="#87898c"/>
-  <path class="st10" d="M28.3 41.1H17.5c-.9 0-1.6-.7-1.6-1.6V6.8c0-.9.7-1.6 1.6-1.6h10.7c.9 0 1.6.7 1.6 1.6v32.7c.1.9-.6 1.6-1.5 1.6z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st88" d="M35.9 26.1h-2v-6h2c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1z" fill="#DAEDF7" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M28.3 41.1H17.5c-.9 0-1.6-.7-1.6-1.6V6.8c0-.9.7-1.6 1.6-1.6h10.7c.9 0 1.6.7 1.6 1.6v32.7c.1.9-.6 1.6-1.5 1.6z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M35.9 26.1h-2v-6h2c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1z" fill="#DAEDF7" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
   <circle cx="22.9" cy="23.1" r="12" fill="#daedf7"/>
   <path d="M22.9 13.7c6.2 0 11.3 4.7 11.9 10.7 0-.4.1-.9.1-1.3 0-6.6-5.4-12-12-12s-12 5.4-12 12c0 .4 0 .9.1 1.3.6-6 5.7-10.7 11.9-10.7z" fill="#e8f4fa"/>
-  <circle class="st10" cx="22.9" cy="23.1" r="12" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <circle cx="22.9" cy="23.1" r="12" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
   <circle cx="22.9" cy="23.1" r="8.5" fill="#fff"/>
   <path d="M22.9 16.6c4.4 0 7.9 3.3 8.4 7.5 0-.3.1-.7.1-1 0-4.7-3.8-8.5-8.5-8.5s-8.5 3.8-8.5 8.5c0 .3 0 .7.1 1 .5-4.2 4.1-7.5 8.4-7.5z" fill="#e0e0e0"/>
-  <circle class="st10" cx="22.9" cy="23.1" r="8.5" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st10" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M22.9 17.6v5.5l3-1.5m-3-7v1m0 15v1m-4.2-15.8l.5.8m7.5 13l.5.9M15.5 18.9l.9.5m13 7.5l.9.5m-15.9-4.3h1m15 0h1m-15.9 4.3l.9-.5m13-7.5l.9-.5M18.7 30.5l.5-.9m7.5-13l.5-.8"/>
+  <circle cx="22.9" cy="23.1" r="8.5" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M22.9 17.6v5.5l3-1.5m-3-7v1m0 15v1m-4.2-15.8l.5.8m7.5 13l.5.9M15.5 18.9l.9.5m13 7.5l.9.5m-15.9-4.3h1m15 0h1m-15.9 4.3l.9-.5m13-7.5l.9-.5M18.7 30.5l.5-.9m7.5-13l.5-.8"/>
 </svg>

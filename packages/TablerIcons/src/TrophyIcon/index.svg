@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trophy" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" focusable="false">
   <path d="M0 0h24v24H0z" stroke="none"/>
   <path d="M8 21h8m-4-4v4M7 4h10m0 0v8a5 5 0 01-10 0V4"/>
   <circle cx="5" cy="9" r="2"/>

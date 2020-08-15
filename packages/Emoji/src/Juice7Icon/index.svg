@@ -1,40 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <ellipse class="st5" cx="12.5" cy="45.1" rx="9" ry="1.5" fill="#45413C" opacity=".15"/>
-  <ellipse class="st5" cx="35.7" cy="45.1" rx="9" ry="1.5" fill="#45413C" opacity=".15"/>
-  <path class="st61" d="M10.8 30.5c.1 3.9-1.5 10-1.5 10-.1.3-.4.5-.7.5-2.6-.4-4.7-.2-5.2.5-.1.1-.1.3.1.4.5.4 2.3 1.6 6 2.4 3.7.8 5.8.4 6.5.2.2 0 .3-.2.2-.4-.2-.8-2.1-1.8-4.6-2.5-.3-.1-.5-.4-.4-.7 0 0 1-6.3 2.7-9.8l-3.1-.6z" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st35" d="M20.8 25.9c-.8 3.9-4.8 7-8.7 6.2-3.9-.8-6.3-5.3-5.5-9.2l5.7-21L24 4.4l-3.2 21.5z" fill="#00B8F0"/>
-  <path class="st36" d="M22.4 15.1L24 4.4 12.3 1.9l-5.7 21c-.2.9-.2 1.9-.1 2.8 6.1-2.3 11.8-5.8 15.9-10.6z" fill="#4ACFFF"/>
-  <path class="st10" d="M20.8 25.9c-.8 3.9-4.8 7-8.7 6.2-3.9-.8-6.3-5.3-5.5-9.2l5.7-21L24 4.4l-3.2 21.5z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <ellipse transform="rotate(-78.135 18.142 3.145)" class="st61" cx="18.1" cy="3.1" rx="1.3" ry="6" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st11" d="M10 18.8s.9-1.4 2.8-1c2.2.5 3.1 2.3 3.1 2.3L10 18.8z" fill="#FFE500"/>
-  <path class="st11" d="M19.3 24.9c-.6 3.1-3.9 6.3-7 5.6-3.1-.6-4.8-4.9-4.1-7.9l1.3-4.9s.4 1.1 2.6 1.5c2.2.5 3.2-1.3 5.3-.8 2.2.5 2.6 1.5 2.6 1.5l-.7 5z" fill="#FFE500"/>
-  <path class="st45" d="M18.6 18.8c-.3-.1-.7-.3-1.1-.4-2.2-.5-3.2 1.3-5.3.8-2.2-.5-2.6-1.5-2.6-1.5l-1.3 4.9c-.2.8-.2 1.6-.1 2.5 3.8-1.6 7.4-3.7 10.4-6.3z" fill="#FFF48C"/>
-  <circle transform="rotate(-78.135 18.698 15.797)" class="st11" cx="18.7" cy="15.8" fill="#FFE500" r=".6"/>
-  <circle transform="rotate(-78.135 17.826 23.006)" class="st45" cx="17.8" cy="23" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-78.135 11.559 26.832)" class="st45" cx="11.6" cy="26.8" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-78.135 14.116 23.834)" class="st45" cx="14.1" cy="23.8" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-78.135 15.56 27.673)" class="st45" cx="15.6" cy="27.7" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-78.135 12.283 15.735)" class="st11" cx="12.3" cy="15.7" fill="#FFE500" r=".6"/>
-  <circle transform="rotate(-78.135 11.119 21.276)" class="st28" cx="11.1" cy="21.3" fill="#FFFACF" r=".6"/>
-  <circle transform="rotate(-78.135 16.007 13.303)" class="st11" cx="16" cy="13.3" fill="#FFE500" r=".6"/>
-  <circle transform="rotate(-78.135 15.017 7.31)" class="st16" cx="15" cy="7.3" fill="#E5F8FF" r="1.3"/>
-  <circle transform="rotate(-78.135 12.782 8.769)" class="st16" cx="12.8" cy="8.8" fill="#E5F8FF" r=".6"/>
-  <path class="st61" d="M31.8 31.2c1.8 3.5 2.9 9.7 2.9 9.7.1.3-.1.6-.4.7-2.5.8-4.3 1.8-4.5 2.6 0 .2.1.3.2.4.7.2 2.8.5 6.5-.3 3.7-.9 5.4-2.1 6-2.5.1-.1.2-.3.1-.4-.6-.7-2.7-.8-5.2-.4-.3.1-.6-.2-.7-.5 0 0-1.7-6.1-1.6-10l-3.3.7z" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st35" d="M38.9 22.8c.9 3.9-1.4 8.4-5.3 9.3-3.9.9-7.9-2.2-8.8-6L21.2 4.6l11.7-2.7 6 20.9z" fill="#00B8F0"/>
-  <path class="st36" d="M35.9 12.4l-3-10.5-11.7 2.7L24.8 26c.2.9.6 1.8 1.1 2.6 4.6-4.6 8.2-10.2 10-16.2z" fill="#4ACFFF"/>
-  <path class="st10" d="M38.9 22.8c.9 3.9-1.4 8.4-5.3 9.3-3.9.9-7.9-2.2-8.8-6L21.2 4.6l11.7-2.7 6 20.9z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <ellipse transform="rotate(-12.916 26.991 3.266)" class="st61" cx="27" cy="3.3" rx="6" ry="1.3" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
-  <path class="st11" d="M26.2 20.9s.3-1.7 2.1-2.1c2.1-.5 3.7.8 3.7.8l-5.8 1.3z" fill="#FFE500"/>
-  <path class="st11" d="M37.2 22.5c.7 3-.9 7.3-4 8-3 .7-6.4-2.4-7.1-5.5l-.8-5s.8.8 3 .3c2.1-.5 2.3-2.5 4.5-3 2.1-.5 3 .3 3 .3l1.4 4.9z" fill="#FFE500"/>
-  <path class="st45" d="M34 17.3c-.3 0-.7.1-1.2.2-2.1.5-2.3 2.5-4.5 3-2.1.5-3-.3-3-.3l.8 5c.2.8.5 1.5 1 2.3 2.8-3.2 5.2-6.6 6.9-10.2z" fill="#FFF48C"/>
-  <circle transform="rotate(-12.916 32.796 14.518)" class="st11" cx="32.8" cy="14.5" fill="#FFE500" r=".6"/>
-  <circle transform="rotate(-12.909 35.04 21.434)" class="st45" cx="35" cy="21.4" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-12.909 30.952 27.535)" class="st45" cx="30.9" cy="27.5" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-12.916 32.005 23.733)" class="st45" cx="32" cy="23.7" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-12.916 34.923 26.613)" class="st45" cx="34.9" cy="26.6" fill="#FFF48C" r=".6"/>
-  <circle transform="rotate(-12.916 26.947 17.15)" class="st11" cx="27" cy="17.2" fill="#FFE500" r=".6"/>
-  <circle transform="rotate(-12.916 28.218 22.67)" class="st28" cx="28.2" cy="22.7" fill="#FFFACF" r=".6"/>
-  <circle transform="rotate(-12.916 29.31 13.381)" class="st11" cx="29.3" cy="13.4" fill="#FFE500" r=".6"/>
-  <circle transform="rotate(-12.909 25.91 8.358)" class="st16" cx="25.9" cy="8.4" fill="#E5F8FF" r="1.3"/>
-  <circle transform="rotate(-12.916 24.487 10.618)" class="st16" cx="24.5" cy="10.6" fill="#E5F8FF" r=".6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" focusable="false">
+  <ellipse cx="12.5" cy="45.1" rx="9" ry="1.5" fill="#45413C" opacity=".15"/>
+  <ellipse cx="35.7" cy="45.1" rx="9" ry="1.5" fill="#45413C" opacity=".15"/>
+  <path d="M10.8 30.5c.1 3.9-1.5 10-1.5 10-.1.3-.4.5-.7.5-2.6-.4-4.7-.2-5.2.5-.1.1-.1.3.1.4.5.4 2.3 1.6 6 2.4 3.7.8 5.8.4 6.5.2.2 0 .3-.2.2-.4-.2-.8-2.1-1.8-4.6-2.5-.3-.1-.5-.4-.4-.7 0 0 1-6.3 2.7-9.8l-3.1-.6z" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M20.8 25.9c-.8 3.9-4.8 7-8.7 6.2-3.9-.8-6.3-5.3-5.5-9.2l5.7-21L24 4.4l-3.2 21.5z" fill="#00B8F0"/>
+  <path d="M22.4 15.1L24 4.4 12.3 1.9l-5.7 21c-.2.9-.2 1.9-.1 2.8 6.1-2.3 11.8-5.8 15.9-10.6z" fill="#4ACFFF"/>
+  <path d="M20.8 25.9c-.8 3.9-4.8 7-8.7 6.2-3.9-.8-6.3-5.3-5.5-9.2l5.7-21L24 4.4l-3.2 21.5z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <ellipse transform="rotate(-78.135 18.142 3.145)" cx="18.1" cy="3.1" rx="1.3" ry="6" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M10 18.8s.9-1.4 2.8-1c2.2.5 3.1 2.3 3.1 2.3L10 18.8z" fill="#FFE500"/>
+  <path d="M19.3 24.9c-.6 3.1-3.9 6.3-7 5.6-3.1-.6-4.8-4.9-4.1-7.9l1.3-4.9s.4 1.1 2.6 1.5c2.2.5 3.2-1.3 5.3-.8 2.2.5 2.6 1.5 2.6 1.5l-.7 5z" fill="#FFE500"/>
+  <path d="M18.6 18.8c-.3-.1-.7-.3-1.1-.4-2.2-.5-3.2 1.3-5.3.8-2.2-.5-2.6-1.5-2.6-1.5l-1.3 4.9c-.2.8-.2 1.6-.1 2.5 3.8-1.6 7.4-3.7 10.4-6.3z" fill="#FFF48C"/>
+  <circle transform="rotate(-78.135 18.698 15.797)" cx="18.7" cy="15.8" fill="#FFE500" r=".6"/>
+  <circle transform="rotate(-78.135 17.826 23.006)" cx="17.8" cy="23" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-78.135 11.559 26.832)" cx="11.6" cy="26.8" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-78.135 14.116 23.834)" cx="14.1" cy="23.8" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-78.135 15.56 27.673)" cx="15.6" cy="27.7" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-78.135 12.283 15.735)" cx="12.3" cy="15.7" fill="#FFE500" r=".6"/>
+  <circle transform="rotate(-78.135 11.119 21.276)" cx="11.1" cy="21.3" fill="#FFFACF" r=".6"/>
+  <circle transform="rotate(-78.135 16.007 13.303)" cx="16" cy="13.3" fill="#FFE500" r=".6"/>
+  <circle transform="rotate(-78.135 15.017 7.31)" cx="15" cy="7.3" fill="#E5F8FF" r="1.3"/>
+  <circle transform="rotate(-78.135 12.782 8.769)" cx="12.8" cy="8.8" fill="#E5F8FF" r=".6"/>
+  <path d="M31.8 31.2c1.8 3.5 2.9 9.7 2.9 9.7.1.3-.1.6-.4.7-2.5.8-4.3 1.8-4.5 2.6 0 .2.1.3.2.4.7.2 2.8.5 6.5-.3 3.7-.9 5.4-2.1 6-2.5.1-.1.2-.3.1-.4-.6-.7-2.7-.8-5.2-.4-.3.1-.6-.2-.7-.5 0 0-1.7-6.1-1.6-10l-3.3.7z" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M38.9 22.8c.9 3.9-1.4 8.4-5.3 9.3-3.9.9-7.9-2.2-8.8-6L21.2 4.6l11.7-2.7 6 20.9z" fill="#00B8F0"/>
+  <path d="M35.9 12.4l-3-10.5-11.7 2.7L24.8 26c.2.9.6 1.8 1.1 2.6 4.6-4.6 8.2-10.2 10-16.2z" fill="#4ACFFF"/>
+  <path d="M38.9 22.8c.9 3.9-1.4 8.4-5.3 9.3-3.9.9-7.9-2.2-8.8-6L21.2 4.6l11.7-2.7 6 20.9z" fill="none" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <ellipse transform="rotate(-12.916 26.991 3.266)" cx="27" cy="3.3" rx="6" ry="1.3" fill="#00B8F0" stroke="#45413C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="M26.2 20.9s.3-1.7 2.1-2.1c2.1-.5 3.7.8 3.7.8l-5.8 1.3z" fill="#FFE500"/>
+  <path d="M37.2 22.5c.7 3-.9 7.3-4 8-3 .7-6.4-2.4-7.1-5.5l-.8-5s.8.8 3 .3c2.1-.5 2.3-2.5 4.5-3 2.1-.5 3 .3 3 .3l1.4 4.9z" fill="#FFE500"/>
+  <path d="M34 17.3c-.3 0-.7.1-1.2.2-2.1.5-2.3 2.5-4.5 3-2.1.5-3-.3-3-.3l.8 5c.2.8.5 1.5 1 2.3 2.8-3.2 5.2-6.6 6.9-10.2z" fill="#FFF48C"/>
+  <circle transform="rotate(-12.916 32.796 14.518)" cx="32.8" cy="14.5" fill="#FFE500" r=".6"/>
+  <circle transform="rotate(-12.909 35.04 21.434)" cx="35" cy="21.4" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-12.909 30.952 27.535)" cx="30.9" cy="27.5" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-12.916 32.005 23.733)" cx="32" cy="23.7" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-12.916 34.923 26.613)" cx="34.9" cy="26.6" fill="#FFF48C" r=".6"/>
+  <circle transform="rotate(-12.916 26.947 17.15)" cx="27" cy="17.2" fill="#FFE500" r=".6"/>
+  <circle transform="rotate(-12.916 28.218 22.67)" cx="28.2" cy="22.7" fill="#FFFACF" r=".6"/>
+  <circle transform="rotate(-12.916 29.31 13.381)" cx="29.3" cy="13.4" fill="#FFE500" r=".6"/>
+  <circle transform="rotate(-12.909 25.91 8.358)" cx="25.9" cy="8.4" fill="#E5F8FF" r="1.3"/>
+  <circle transform="rotate(-12.916 24.487 10.618)" cx="24.5" cy="10.6" fill="#E5F8FF" r=".6"/>
 </svg>

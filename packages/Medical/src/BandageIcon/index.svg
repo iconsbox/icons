@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" focusable="false">
   <g transform="rotate(-45 -1353.09 839.063) scale(1.00765)">
     <path fill="#f6b577" d="M199.5 1219.862v7.556c0 .8-.669 1.444-1.5 1.444h-5c-.831 0-1.5-.644-1.5-1.444v-23.111c0-.8.669-1.445 1.5-1.445h5c.831 0 1.5.644 1.5 1.445v7.477z"/>
     <rect width="8" height="26" x="1211.862" y="-208.5" fill="#f6b577" rx="1.5" ry="1.444" transform="rotate(90)"/>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" focusable="false">
   <g transform="translate(-1062.751 -1579.592)">
     <path fill="#938993" d="M1083.251 1586.092h3.5c.831 0 1.5.669 1.5 1.5v21c0 .831-.669 1.5-1.5 1.5h-16c-.83 0-1.5-.669-1.5-1.5v-21c0-.831.67-1.5 1.5-1.5h3.5z"/>
     <circle cx="1078.751" cy="1584.092" r=".5" fill="#0572e4"/>
