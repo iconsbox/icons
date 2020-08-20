@@ -2,14 +2,14 @@
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
 export { default as CollaredIcon } from './CollaredIcon/component';
-export { default as HatIcon } from './HatIcon/component';
 export { default as FrockIcon } from './FrockIcon/component';
+export { default as HatIcon } from './HatIcon/component';
 export { default as HoodieIcon } from './HoodieIcon/component';
 export { default as JacketIcon } from './JacketIcon/component';
 export { default as JeansIcon } from './JeansIcon/component';
 export { default as Mens2Icon } from './Mens2Icon/component';
-export { default as Mens3Icon } from './Mens3Icon/component';
 export { default as Mens4Icon } from './Mens4Icon/component';
+export { default as Mens3Icon } from './Mens3Icon/component';
 export { default as Mens5Icon } from './Mens5Icon/component';
 export { default as Mens6Icon } from './Mens6Icon/component';
 export { default as MensIcon } from './MensIcon/component';

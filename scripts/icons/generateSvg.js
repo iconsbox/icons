@@ -55,7 +55,7 @@ if (GlobalConfig.options.importSpriteSVG) {
   require('./${folderName}.svg');
 }
 
-const ${folderName} = ({ className, size }) => {
+const ${folderName} = ({ className, size, ...rest }) => {
   const options = useOptions();
 
   let importPrefix = options.useSpriteFile ? \`/\${options.spriteSvgName}\` : '';
@@ -76,7 +76,9 @@ const ${folderName} = ({ className, size }) => {
         height: size * 10,
       }}
       role="img"
-      fill="currentColor">
+      fill="currentColor"
+      {...rest}
+    >
       <use data-testid="${folderName}Href" href={\`\${importPrefix}#${folderName}\`} xlinkHref={\`\${importPrefix}#${folderName}\`} />
     </svg>
   );
@@ -104,7 +106,7 @@ export default ${folderName};
 import * as React from 'react';
 import PropTypes from 'prop-types';
 
-const ${folderName} = ({ className, size }) =>
+const ${folderName} = ({ className, size, ...rest }) =>
   <svg
     data-testid="${folderName}"
     viewBox="${viewBox}"
@@ -114,7 +116,9 @@ const ${folderName} = ({ className, size }) =>
       height: size * 10,
     }}
     focusable="false"
-    fill="currentColor">
+    fill="currentColor"
+    {...rest}
+  >
     ${svgElement.innerHTML
       .replace(/xmlns:xlink/g, "xmlnsXlink")
       .replace(/xlink:href/g, "xlinkHref")
