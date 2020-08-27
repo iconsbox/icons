@@ -1,72 +1,13 @@
 <a href="https://iconbox.space" target="_blank">
     <p align="center">
-        <img src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif" width="480" alt="BoxBouncing" />
+        <img src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif" width="220" alt="BoxBouncing" />
     </p>
-    <p align="center">
-        <img src="./app/resources/img/topBanner.jpg" width="100%" alt="IconBox" />
-    </p>
+  <h1 align="center" style="color:#ff0000; font-size:12px;">🧙 IconBox</h1>
 </a>
 
 <p align="center" style="font-size: 24px; font-weight: 900">
     A world of famous icon packs with easy to use interface
     <br/>
-</p>
-
-<p align="center">
-    <a href="https://iconbox.space/?package=Clothes" target="_blank">
-        <img src="./app/resources/img/packs/clothesBadge.jpg" width="120" alt="clothesBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Eid" target="_blank">
-        <img src="./app/resources/img/packs/eidBadge.jpg" width="120" alt="eidBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Emoji" target="_blank">
-        <img src="./app/resources/img/packs/emojiBadge.jpg" width="120" alt="emojiBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Eva" target="_blank">
-        <img src="./app/resources/img/packs/evaBadge.jpg" width="120" alt="evaBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Feather" target="_blank">
-        <img src="./app/resources/img/packs/featherBadge.jpg" width="120" alt="featherBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=FontAwesome4" target="_blank">
-        <img src="./app/resources/img/packs/fontAwesome4Badge.jpg" width="120" alt="fontAwesome4Badge" />
-    </a>
-    <a href="https://iconbox.space/?package=FontAwesome5" target="_blank">
-        <img src="./app/resources/img/packs/fontAwesome5Badge.jpg" width="120" alt="fontAwesome5Badge" />
-    </a>
-    <a href="https://iconbox.space/?package=Foundation" target="_blank">
-        <img src="./app/resources/img/packs/foundationBadge.jpg" width="120" alt="foundationBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Icomoon" target="_blank">
-        <img src="./app/resources/img/packs/icomoonBadge.jpg" width="120" alt="icomoonBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Iconly" target="_blank">
-        <img src="./app/resources/img/packs/iconlyBadge.jpg" width="120" alt="iconlyBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=IonIcons" target="_blank">
-        <img src="./app/resources/img/packs/ionBadge.jpg" width="120" alt="ionBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Linear" target="_blank">
-        <img src="./app/resources/img/packs/linearBadge.jpg" width="120" alt="linearBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Material" target="_blank">
-        <img src="./app/resources/img/packs/materialBadge.jpg" width="120" alt="materialBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Medical" target="_blank">
-        <img src="./app/resources/img/packs/medicalBadge.jpg" width="120" alt="medicalBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Octicons" target="_blank">
-        <img src="./app/resources/img/packs/octBadge.jpg" width="120" alt="octBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Snappmarket" target="_blank">
-        <img src="./app/resources/img/packs/snappmarketBadge.jpg" width="120" alt="snappmarketBadge" />
-    </a>
-    <a href="https://iconbox.space/?package=Support" target="_blank">
-        <img src="./app/resources/img/packs/supportBadge.jpg" width="120" alt="supportBadge" />
-    </a>
-    <a href="https://github.com/snappmarket/IconBox/issues/new" target="_blank">
-        <img src="./app/resources/img/packs/yourIconsBadge.jpg" width="120" alt="addYourIcon" />
-    </a>
 </p>
 
 ## Why iconbox? I like font icons!
