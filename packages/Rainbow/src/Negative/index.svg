@@ -1,0 +1,6 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+  <path fill="none" d="M0 0h24v24H0z"/>
+  <rect x="2" y="2" width="20" height="20" rx="5" fill="#f9102c" opacity=".1"/>
+  <rect x="2" y="2" width="20" height="20" rx="5" stroke-miterlimit="10" stroke="#f9102c" stroke-linecap="round" stroke-width="1.5" fill="none"/>
+  <path stroke-linejoin="round" stroke="#f9102c" stroke-linecap="round" stroke-width="1.5" fill="none" d="M8.5 12h7"/>
+</svg>

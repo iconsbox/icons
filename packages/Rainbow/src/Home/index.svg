@@ -1,0 +1,6 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+  <path fill="none" d="M0 0h24v24H0z"/>
+  <path d="M17 22.004H7a5 5 0 01-5-5v-5.01a5 5 0 011.601-3.666l5.68-5.265a4 4 0 015.438 0l5.68 5.265A5 5 0 0122 11.995v5.009a5 5 0 01-5 5z" fill="#f48c37" opacity=".1"/>
+  <path stroke-linejoin="round" stroke="#f48c37" stroke-linecap="round" stroke-width="1.5" fill="none" d="M14.72 15.004H9.28"/>
+  <path d="M17 22.004H7a5 5 0 01-5-5v-5.01a5 5 0 011.601-3.666l5.68-5.265a4 4 0 015.438 0l5.68 5.265A5 5 0 0122 11.995v5.009a5 5 0 01-5 5z" stroke-miterlimit="10" stroke="#f48c37" stroke-linecap="round" stroke-width="1.5" fill="none"/>
+</svg>
