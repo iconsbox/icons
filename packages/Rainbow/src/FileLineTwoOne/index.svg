@@ -1,4 +1,4 @@
-<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
   <path d="M9 2a5 5 0 00-5 5v10a5 5 0 005 5h6a5 5 0 005-5V9.412a5 5 0 00-1.464-3.536l-2.412-2.412A5 5 0 0012.588 2z" stroke="#030835" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
   <path d="M13.268 5.715v1.017a2 2 0 002 2h1.016m-6.402 6.181h4.236"/>
 </svg>
