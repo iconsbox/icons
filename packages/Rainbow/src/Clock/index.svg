@@ -1,4 +1,4 @@
-<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
   <path fill="none" d="M0 0h24v24H0z"/>
   <rect x="2" y="2" width="20" height="20" rx="5" fill="#9e4d16" opacity=".1"/>
   <path d="M15.244 15.244l-2.658-2.658A2 2 0 0112 11.172v-3.76"/>
