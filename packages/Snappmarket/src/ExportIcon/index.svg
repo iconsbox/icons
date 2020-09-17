@@ -1,3 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 32" focusable="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 32" focusable="false" fill="currentColor">
   <path d="M0 9.333h6.667v1.333H0V9.333zm0 1.334h1.333v20H0v-20zm0 20h22.667V32H0v-1.333zM21.333 9.333h1.333v21.333h-1.333V9.333zm-5.333 0h5.333v1.333H16V9.333zM10.667 0H12v21.333h-1.333V0zM9.333 1.333h1.333V4H9.333V1.333zM8 2.667h1.333v2.667H8V2.667zM6.667 4H8v2.667H6.667V4zM12 1.333h1.333V4H12V1.333zm1.333 1.334h1.333v2.667h-1.333V2.667zM14.667 4H16v2.667h-1.333V4z"/>
 </svg>
