@@ -1,0 +1,6 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+  <path fill="none" d="M0 0h24v24H0z"/>
+  <rect x="2" y="2" width="20" height="20" rx="5" fill="#b4ff22" opacity=".1"/>
+  <rect x="2" y="2" width="20" height="20" rx="5"/>
+  <path d="M5.978 15.458c1.116-2.258 2.386-3.16 3.494-3.494 1.92-.58 3.214.585 5.128 0a6.131 6.131 0 003.422-3.422"/>
+</svg>

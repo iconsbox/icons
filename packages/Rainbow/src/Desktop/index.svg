@@ -1,0 +1,6 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+  <path fill="none" d="M0 0h24v24H0z"/>
+  <rect x="168.17" y="171.433" width="13" height="20" rx="5" transform="rotate(90 178.676 14.757)" fill="#ff0098" opacity=".1"/>
+  <path stroke-linejoin="round" stroke="#ff0098" stroke-linecap="round" stroke-width="1.5" fill="none" d="M13.695 19.748h-3.39"/>
+  <rect x="168.17" y="171.433" width="13" height="20" rx="5" transform="rotate(90 178.675 14.757)" stroke-miterlimit="10" stroke="#ff0098" stroke-linecap="round" stroke-width="1.5" fill="none"/>
+</svg>
