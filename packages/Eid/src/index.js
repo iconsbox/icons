@@ -2,8 +2,8 @@
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
 export { default as ArabManIcon } from './ArabManIcon/component';
-export { default as CamelIcon } from './CamelIcon/component';
 export { default as ChandNightIcon } from './ChandNightIcon/component';
+export { default as CamelIcon } from './CamelIcon/component';
 export { default as DateFruitBowlIcon } from './DateFruitBowlIcon/component';
 export { default as DateFruitIcon } from './DateFruitIcon/component';
 export { default as DayIcon } from './DayIcon/component';
