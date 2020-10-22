@@ -37,6 +37,7 @@ const asyncForEach = async (array, callback) => {
       const root = parser.parse(svgFileContent);
       const svgElement = root.querySelector("svg");
       const viewBox = svgElement.getAttribute("viewBox");
+      const fill = svgElement.getAttribute("fill");
       svgElement.setAttribute("id", folderName);
       svgElement.removeAttribute("fill");
 
@@ -76,7 +77,8 @@ const ${folderName} = ({ className, size, ...rest }) => {
         height: size * 10,
       }}
       role="img"
-      fill="currentColor"
+      focusable="false"
+      fill="${fill}"
       {...rest}
     >
       <use data-testid="${folderName}Href" href={\`\${importPrefix}#${folderName}\`} xlinkHref={\`\${importPrefix}#${folderName}\`} />
@@ -115,8 +117,8 @@ const ${folderName} = ({ className, size, ...rest }) =>
       width: size * 10,
       height: size * 10,
     }}
+    fill="${fill}"
     focusable="false"
-    fill="currentColor"
     {...rest}
   >
     ${svgElement.innerHTML

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+  <path fill="none" d="M0 0h24v24H0z"/>
+  <path d="M20 7.001v13a2.004 2.004 0 01-3.2 1.6l-3-2.25a3 3 0 00-3.6 0l-3 2.25a2.004 2.004 0 01-3.2-1.6v-13a5.002 5.002 0 015-5h6a5.002 5.002 0 015 5z" fill="#ffc010" opacity=".1"/>
+  <path d="M4 19.996V7a5 5 0 015-5h6a5 5 0 015 5v12.996a2 2 0 01-3.2 1.6l-3-2.25a3 3 0 00-3.6 0l-3 2.25a2 2 0 01-3.2-1.6z" stroke-miterlimit="10" stroke="#ffc010" stroke-linecap="round" stroke-width="1.5" fill="none"/>
+  <path stroke-linejoin="round" stroke="#ffc010" stroke-linecap="round" stroke-width="1.5" fill="none" d="M9.28 9h5.44"/>
+</svg>
