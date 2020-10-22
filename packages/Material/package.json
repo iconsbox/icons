@@ -42,7 +42,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/snappmarket/iconbox"
+    "url": "https://github.com/iconsbox/icons"
   },
   "dependencies": {
     "gh-pages": "^3.1.0"
