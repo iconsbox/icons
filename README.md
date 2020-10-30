@@ -10,30 +10,61 @@
     <br/>
 </p>
 
-## Why iconbox? I like font icons!
-lets have a look on **FontIcons** vs **Svg Icons** compare by [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/)
-
-| **Subject**         | **FontIcons** | **Svg Icons** |
-|---------------------|---------------|---------------|
-| **vector icons**    | ✅ Good         | ✅ Great       |
-| **CSS Control**     | ✅ Good         | ✅ Better       |
-| **Positioning**     | ❎ Not good     | ✅ Better       |
-| **Weird Failures**  | ❎ Could happen | ✅ Nothing      |
-| **Forced Failures** | ❎ Could happen | ✅ Nothing      |
-| **Semantics**       | ❎ Not good     | ✅ Better       |
-| **Accessibility**   | ❎ Bad          | ✅ Better       |
-| **Ease of Use**     | ✅ Good         | ✅ Better       |
-| **Browser Support** | ✅ Better       | ✅ Good         |
-
-
-Well, We could see the winner of the game, svg icons are really great and fun, by the way this could be even better if you consider to use `SvgSprite` 🚀.
-
-
-## How to use it ?
+## How to use iconbox?
 
 Icons are available in `svg` format, `react` components and a special way of `sprite` file, which allows you to sprite svg icons
 in a pack. e.g. if you are using `webpack` you could use [svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader)
 
+
+## React svg components
+Choose your icon from our [webapp](https://iconbox.space) then import it where ever you want: 
+```js
+import { MoodSadIcon } from '@iconbox/tabler';
+
+const Component = () => {
+  return <MoodSadIcon />;
+}
+```
+
+If you want to improve bundle size and jusgt complie used svg files:
+```js
+[
+  'transform-imports',
+  {
+    '@iconbox\/?(((\\w*)?\/?)*)': {
+      'transform': isClient ? '@iconbox/${1}/esm/${member}' : '@iconbox/${1}/${member}',
+    },
+  }
+]
+```
+the `isClient` could decide between SSR and CSR and load svg files `cjs` version in server.
+
+
+## Sprite svg components
+Choose your icon from our [webapp](https://iconbox.space) then import it where ever you want: 
+```js
+import { MoodSadIcon } from '@iconbox/tabler/sprite';
+
+const Component = () => {
+  return <MoodSadIcon />;
+}
+```
+
+If you want to improve bundle size and jusgt complie used svg files:
+```js
+[
+  'transform-imports',
+  {
+    '@iconbox\/?(((\\w*)?\/?)*)\/sprite': {
+      'transform': isClient ? '@iconbox/${1}/esm/${member}/sprite' : '@iconbox/${1}/${member}/sprite',
+    },
+  }
+]
+```
+the `isClient` could decide between SSR and CSR and load svg files `cjs` version in server.
+
+## which file should I use?
+You can use whatever version you want, we provide various versions of icons for every pack. But we advice reading this article about **FontIcons** vs **Svg Icons** compare by [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/) first.
 
 ## license 
 This repo is just a wrapper to exist icon packs, so please respect every icon pack license you use.
