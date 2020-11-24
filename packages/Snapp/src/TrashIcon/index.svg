@@ -1,6 +1,6 @@
 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
   <g fill="none" fill-rule="evenodd">
     <path d="M0 0h24v24H0z"/>
-    <path d="M7 6V5a3 3 0 013-3h4a3 3 0 013 3v1h3a1 1 0 010 2h-1v11a3 3 0 01-3 3H8a3 3 0 01-3-3V8H4a1 1 0 110-2h3zm2 0h6V5a1 1 0 00-1-1h-4a1 1 0 00-1 1v1zm8 2H7v11a1 1 0 001 1h8a1 1 0 001-1V8zm-8 4a1 1 0 012 0v5a1 1 0 01-2 0v-5zm4 0a1 1 0 012 0v5a1 1 0 01-2 0v-5z" fill="#404040" fill-rule="nonzero"/>
+    <path d="M7 6V5a3 3 0 013-3h4a3 3 0 013 3v1h3a1 1 0 010 2h-1v11a3 3 0 01-3 3H8a3 3 0 01-3-3V8H4a1 1 0 110-2h3zm2 0h6V5a1 1 0 00-1-1h-4a1 1 0 00-1 1v1zm8 2H7v11a1 1 0 001 1h8a1 1 0 001-1V8zm-8 4a1 1 0 012 0v5a1 1 0 01-2 0v-5zm4 0a1 1 0 012 0v5a1 1 0 01-2 0v-5z" fill="currentColor" fill-rule="nonzero"/>
   </g>
 </svg>

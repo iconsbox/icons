@@ -1,6 +1,6 @@
 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
   <g fill="none" fill-rule="evenodd">
     <path d="M0 0h24v24H0z"/>
-    <path d="M5 13a1 1 0 010-2h14a1 1 0 010 2H5z" fill="#404040" fill-rule="nonzero"/>
+    <path d="M5 13a1 1 0 010-2h14a1 1 0 010 2H5z" fill="currentColor" fill-rule="nonzero"/>
   </g>
 </svg>

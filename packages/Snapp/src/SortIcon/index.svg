@@ -1,7 +1,7 @@
 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
   <g fill="none" fill-rule="evenodd">
     <path d="M0 0h24v24H0z"/>
-    <g fill="#404040">
+    <g fill="currentColor">
       <g transform="translate(6 4)">
         <rect transform="rotate(-90 8 1)" x="7" y="-7" width="2" height="16" rx="1"/>
         <rect transform="rotate(-90 10.25 5.5)" x="9.25" y="-.25" width="2" height="11.5" rx="1"/>
