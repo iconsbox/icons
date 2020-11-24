@@ -21,7 +21,9 @@ const asyncForEach = async (array, callback) => {
       const fullPath = icon
         .substr(0, icon.lastIndexOf("/"))
         .replace("/sprite", "");
-      const folderName = fullPath.split("/").pop();
+      const fullPathSplit = fullPath.split("/");
+      const folderName = fullPathSplit.pop();
+      const packageName = fullPathSplit.slice(-2).shift();
       const svgFileContent = await fse.readFile(icon, "utf-8");
 
       /**
@@ -53,7 +55,7 @@ import { useOptions, GlobalConfig } from '@iconbox/config';
 
 if (GlobalConfig.options.importSpriteSVG) {
   // eslint-disable-next-line global-require
-  require('./${folderName}.svg');
+  require('./${packageName}${folderName}.svg');
 }
 
 const ${folderName} = ({ className, size, ...rest }) => {
@@ -81,7 +83,7 @@ const ${folderName} = ({ className, size, ...rest }) => {
       fill="${fill}"
       {...rest}
     >
-      <use data-testid="${folderName}Href" href={\`\${importPrefix}#${folderName}\`} xlinkHref={\`\${importPrefix}#${folderName}\`} />
+      <use data-testid="${folderName}Href" href={\`\${importPrefix}#${packageName}${folderName}\`} xlinkHref={\`\${importPrefix}#${packageName}${folderName}\`} />
     </svg>
   );
 };
@@ -154,7 +156,7 @@ export default ${folderName};
          * Update svg file
          */
         fse.writeFile(
-          `${fullPath}/sprite/${folderName}.svg`,
+          `${fullPath}/sprite/${packageName}${folderName}.svg`,
           root
             .toString()
             .replace(/<g><\/g>/g, "")
