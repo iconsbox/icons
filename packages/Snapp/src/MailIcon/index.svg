@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/Mail</title>
+    <g id="Icons/24/Mail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M19,4 C20.6568542,4 22,5.34314575 22,7 L22,7 L22,17 C22,18.6568542 20.6568542,20 19,20 L19,20 L5,20 C3.34314575,20 2,18.6568542 2,17 L2,17 L2,7 C2,5.34314575 3.34314575,4 5,4 L5,4 Z M20,9.699 L12.4856429,13.8741573 C12.2213732,14.0209738 11.9071708,14.0393259 11.6304179,13.9292135 L11.5143571,13.8741573 L4,9.7 L4,17 C4,17.5128358 4.38604019,17.9355072 4.88337887,17.9932723 L5,18 L19,18 C19.5522847,18 20,17.5522847 20,17 L20,17 L20,9.699 Z M19,6 L5,6 C4.44771525,6 4,6.44771525 4,7 L4,7 L4,7.411 L12,11.855 L20,7.41 L20,7 C20,6.48716416 19.6139598,6.06449284 19.1166211,6.00672773 L19,6 Z" id="Combined-Shape" fill="#404040"></path>
+        <g id="Badge" transform="translate(16.000000, -4.000000)">
+            <ellipse id="Oval" fill="#FF4232" fill-rule="nonzero" cx="7" cy="9.5" rx="7" ry="7.38888889"></ellipse>
+            <text id="۲" font-family="IRANSansMobile-Medium, IRANSansMobile" font-size="12" font-weight="400" fill="#FFFFFF">
+                <tspan x="0" y="10.5">۲</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

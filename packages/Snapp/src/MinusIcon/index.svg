@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/Minus</title>
+    <g id="Icons/24/Minus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M5,13 C4.44771525,13 4,12.5522847 4,12 C4,11.4477153 4.44771525,11 5,11 L19,11 C19.5522847,11 20,11.4477153 20,12 C20,12.5522847 19.5522847,13 19,13 L5,13 Z" id="Path" fill="#404040" fill-rule="nonzero"></path>
+    </g>
+</svg>

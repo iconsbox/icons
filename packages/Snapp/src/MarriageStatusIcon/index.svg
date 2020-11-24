@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/Marriage status</title>
+    <defs>
+        <path d="M13.6093511,19.3024901 C17.1657918,20.2554355 20.8213715,18.1448855 21.7743169,14.5884449 C22.7272623,11.0320042 20.6167124,7.37642445 17.0602717,6.42347904 C13.503831,5.47053363 9.84825127,7.58108356 8.89530586,11.1375243 C7.94236045,14.6939649 10.0529104,18.3495446 13.6093511,19.3024901 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="13.3366426" height="13.3366426" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M10.1678184,6.36718412 C6.58028688,5.53893721 3.00059118,7.77577934 2.17234427,11.3633109 C1.34409736,14.9508424 3.58093949,18.5305381 7.168471,19.358785 C10.7560025,20.1870319 14.3356982,17.9501898 15.1639451,14.3626582 C15.992192,10.7751267 13.7553499,7.19543103 10.1678184,6.36718412 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="13.3362894" height="13.3362894" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Icons/24/Marriage-status" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Oval" stroke="#404040" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="33.6" xlink:href="#path-1"></use>
+        <use id="Oval-Copy" stroke="#404040" mask="url(#mask-4)" stroke-width="4" stroke-dasharray="33" xlink:href="#path-3"></use>
+    </g>
+</svg>

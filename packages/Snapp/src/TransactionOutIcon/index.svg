@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/TransactionOut</title>
+    <g id="Icons/24/TransactionOut" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M6.70457241,18.7075416 C6.31462789,19.0974861 5.68240291,19.0974861 5.29245839,18.7075416 C4.90251387,18.3175971 4.90251387,17.6853721 5.29245839,17.2954276 L15.5908552,6.9970308 L8.11668644,6.9970308 C7.56522161,6.9970308 7.11817103,6.54998023 7.11817103,5.9985154 C7.11817103,5.44705057 7.56522161,5 8.11668644,5 L18.0014846,5 C18.5529494,5 19,5.44705057 19,5.9985154 L19,15.8833136 C19,16.4347784 18.5529494,16.881829 18.0014846,16.881829 C17.4500198,16.881829 17.0029692,16.4347784 17.0029692,15.8833136 L17.0029692,8.40914483 L6.70457241,18.7075416 Z" id="Path" fill="#22A958" fill-rule="nonzero"></path>
+    </g>
+</svg>

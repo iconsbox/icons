@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/Search</title>
+    <g id="Icons/24/Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M10.5,2 C15.1944204,2 19,5.80557963 19,10.5 C19,12.4865245 18.3185332,14.3138839 17.1766205,15.7610573 L21.0571068,19.6428932 C21.4476311,20.0334175 21.4476311,20.6665825 21.0571068,21.0571068 C20.6665825,21.4476311 20.0334175,21.4476311 19.6428932,21.0571068 L15.7610573,17.1766205 C14.3138839,18.3185332 12.4865245,19 10.5,19 C5.80557963,19 2,15.1944204 2,10.5 C2,5.80557963 5.80557963,2 10.5,2 Z M10.5,4 C6.91014913,4 4,6.91014913 4,10.5 C4,14.0898509 6.91014913,17 10.5,17 C14.0898509,17 17,14.0898509 17,10.5 C17,6.91014913 14.0898509,4 10.5,4 Z" id="Combined-Shape" fill="#404040" fill-rule="nonzero"></path>
+    </g>
+</svg>

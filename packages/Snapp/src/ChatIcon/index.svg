@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/Chat</title>
+    <g id="Icons/24/Chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M18,3 L6,3 C4.34314575,3 3,4.34314575 3,6 L3,20 L3.00598327,20.1136309 C3.09281919,20.9276677 4.1045317,21.3096819 4.70710678,20.7071068 L8.414,17 L18,17 C19.6568542,17 21,15.6568542 21,14 L21,6 C21,4.34314575 19.6568542,3 18,3 Z M6,5 L18,5 C18.5522847,5 19,5.44771525 19,6 L19,14 C19,14.5522847 18.5522847,15 18,15 L8,15 L7.86855602,15.0086724 C7.65185492,15.0374017 7.44917353,15.1366129 7.29289322,15.2928932 L5,17.584 L5,6 C5,5.44771525 5.44771525,5 6,5 Z" id="Path" fill="#404040"></path>
+    </g>
+</svg>

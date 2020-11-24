@@ -37,7 +37,7 @@ const asyncForEach = async (array, callback) => {
       const root = parser.parse(svgFileContent);
       const svgElement = root.querySelector("svg");
       const viewBox = svgElement.getAttribute("viewBox");
-      const fill = svgElement.getAttribute("fill");
+      const fill = svgElement.getAttribute("fill") || 'none';
       svgElement.setAttribute("id", folderName);
       svgElement.removeAttribute("fill");
 

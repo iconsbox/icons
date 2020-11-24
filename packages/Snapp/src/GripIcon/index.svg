@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/Grip</title>
+    <g id="Icons/24/Grip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M21,14 C21.5522847,14 22,14.4477153 22,15 C22,15.5522847 21.5522847,16 21,16 L3,16 C2.44771525,16 2,15.5522847 2,15 C2,14.4477153 2.44771525,14 3,14 L21,14 Z M21,8 C21.5522847,8 22,8.44771525 22,9 C22,9.55228475 21.5522847,10 21,10 L3,10 C2.44771525,10 2,9.55228475 2,9 C2,8.44771525 2.44771525,8 3,8 L21,8 Z" id="Combined-Shape" fill="#404040" fill-rule="nonzero"></path>
+    </g>
+</svg>

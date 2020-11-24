@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/24/ChevronRight</title>
+    <g id="Icons/24/ChevronRight" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+        <path d="M8.29289322,4.70710678 C7.90236893,4.31658249 7.90236893,3.68341751 8.29289322,3.29289322 C8.68341751,2.90236893 9.31658249,2.90236893 9.70710678,3.29289322 L17.7071068,11.2928932 C18.0976311,11.6834175 18.0976311,12.3165825 17.7071068,12.7071068 L9.70710678,20.7071068 C9.31658249,21.0976311 8.68341751,21.0976311 8.29289322,20.7071068 C7.90236893,20.3165825 7.90236893,19.6834175 8.29289322,19.2928932 L15.5857864,12 L8.29289322,4.70710678 Z" id="Path-3" fill="#404040" fill-rule="nonzero"></path>
+    </g>
+</svg>
