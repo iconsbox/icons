@@ -9,7 +9,7 @@
       <use xlink:href="#b"/>
     </mask>
   </defs>
-  <g fill-rule="evenodd" stroke="currentColor" stroke-width="4">
+  <g fill="none" fill-rule="evenodd" stroke="#404040" stroke-width="4">
     <use mask="url(#c)" stroke-dasharray="33.6" xlink:href="#a"/>
     <use mask="url(#d)" stroke-dasharray="33" xlink:href="#b"/>
   </g>

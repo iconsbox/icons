@@ -1,11 +1,12 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false">
-  <g fill-rule="evenodd">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M0 0h24v24H0z"/>
     <g transform="translate(16 -4)">
       <ellipse fill="#FF4232" fill-rule="nonzero" cx="7" cy="9.5" rx="7" ry="7.389"/>
       <text font-family="IRANSansMobile-Medium, IRANSansMobile" font-size="12" font-weight="400" fill="#FFF">
         <tspan x="0" y="10.5">۲</tspan>
       </text>
     </g>
-    <path d="M10.5 4.189V3.5a1.5 1.5 0 013 0v.689A6.003 6.003 0 0118 10v6l1.293 1.293A1 1 0 0118.586 19H5.414a1 1 0 01-.707-1.707L6 16v-6a6.003 6.003 0 014.5-5.811zM8 17h8v-7a4 4 0 10-8 0v7zm2 3h4a2 2 0 11-4 0z"/>
+    <path d="M10.5 4.189V3.5a1.5 1.5 0 013 0v.689A6.003 6.003 0 0118 10v6l1.293 1.293A1 1 0 0118.586 19H5.414a1 1 0 01-.707-1.707L6 16v-6a6.003 6.003 0 014.5-5.811zM8 17h8v-7a4 4 0 10-8 0v7zm2 3h4a2 2 0 11-4 0z" fill="#404040" fill-rule="nonzero"/>
   </g>
 </svg>
