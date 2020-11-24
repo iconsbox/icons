@@ -1,8 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Icons/24/Play</title>
-    <g id="Icons/24/Play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
-        <path d="M8,6.82 L8,17.18 C8,17.97 8.87,18.45 9.54,18.02 L17.68,12.84 C18.3,12.45 18.3,11.55 17.68,11.15 L9.54,5.98 C8.87,5.55 8,6.03 8,6.82 Z" id="Path" fill="#404040"></path>
-    </g>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false">
+  <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 000-1.69L9.54 5.98A.998.998 0 008 6.82z" fill="none"/>
 </svg>

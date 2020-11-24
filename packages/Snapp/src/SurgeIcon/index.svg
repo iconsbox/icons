@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Icons/24/Surge</title>
-    <g id="Icons/24/Surge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
-        <path d="M12,1.5 C6.200997,1.5 1.5,6.200997 1.5,12 C1.5,17.799045 6.200997,22.5 12,22.5 C17.799045,22.5 22.5,17.799045 22.5,12 C22.5,6.200997 17.799045,1.5 12,1.5 Z M10.5,20 L16.3932,11.3868 C16.6333,11.0359 16.3538,10.5646 15.9308,10.6069 L12,11 L13.5,4 L7.60675,12.6132 C7.3667,12.9641 7.64618,13.4354 8.06915,13.3931 L12,13 L10.5,20 Z" id="Shape" fill="#F8D648"></path>
-    </g>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false">
+  <g fill-rule="evenodd">
+    <circle fill="#FFF" cx="12" cy="12" r="12"/>
+    <path d="M12 1.5C6.201 1.5 1.5 6.201 1.5 12S6.201 22.5 12 22.5 22.5 17.799 22.5 12 17.799 1.5 12 1.5zM10.5 20l5.893-8.613a.5.5 0 00-.462-.78L12 11l1.5-7-5.893 8.613a.5.5 0 00.462.78L12 13l-1.5 7z" fill="#F8D648"/>
+  </g>
 </svg>

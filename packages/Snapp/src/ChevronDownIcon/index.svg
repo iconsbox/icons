@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Icons/24/ChevronDown</title>
-    <g id="Icons/24/ChevronDown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Container" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
-        <path d="M7.29289322,4.70710678 C6.90236893,4.31658249 6.90236893,3.68341751 7.29289322,3.29289322 C7.68341751,2.90236893 8.31658249,2.90236893 8.70710678,3.29289322 L16.7071068,11.2928932 C17.0976311,11.6834175 17.0976311,12.3165825 16.7071068,12.7071068 L8.70710678,20.7071068 C8.31658249,21.0976311 7.68341751,21.0976311 7.29289322,20.7071068 C6.90236893,20.3165825 6.90236893,19.6834175 7.29289322,19.2928932 L14.5857864,12 L7.29289322,4.70710678 Z" id="Path-3" fill="#404040" fill-rule="nonzero" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) "></path>
-    </g>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" focusable="false">
+  <g fill-rule="evenodd">
+    <path d="M0 0h24v24H0z"/>
+    <path d="M19.293 7.293a1 1 0 011.414 1.414l-8 8a1 1 0 01-1.414 0l-8-8a1 1 0 111.414-1.414L12 14.586l7.293-7.293z" fill-rule="nonzero"/>
+  </g>
 </svg>
