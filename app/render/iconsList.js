@@ -16,6 +16,9 @@ export default (packageData, listIcons, replace = false) => {
     packagesList += `<div class="box" data-icon="${icon}" data-pack="${
       packageData.pack
     }">
+       <div class="heading">
+          ${icon}
+       </div>
        <img class="loading" title="${icon}" src="${makeFilePath(packageData.pack, icon)}" />
        <div class="buttons">
           <div class="button copy">

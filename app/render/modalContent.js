@@ -58,12 +58,19 @@ Array.from(_a(".color") || []).forEach(element => {
  * Show modal
  */
 export const showModal = (packName, iconName) => {
-  const pack = iconsData[packName] || {
+  let pack = iconsData[packName] || {
     icons: {},
     package: "",
     version: "",
     owner: {}
   };
+
+  // if this is an opened page
+  if(packName.indexOf("@") > -1) {
+    packName = Object.keys(iconsData).filter(iconData => iconsData[iconData].package === packName);
+    pack = iconsData[packName];
+  }
+
   const svgAddress = makeFilePath(packName, iconName);
   const iconNameSplit = iconName
     .replace(/([a-z](?=[A-Z]))/g, "$1 ")
@@ -120,10 +127,16 @@ export const showModal = (packName, iconName) => {
     .then(res => res.text())
     .then(data => {
       modalContainer.querySelector(".icon-holder").innerHTML = data;
+
+      // if svg has current color
+      if(data.indexOf("currentColor") === -1 ){
+        modalContainer.querySelector(".icon-colors").style.display = "none";
+      }else{
+        modalContainer.querySelector(".icon-colors").style.display = "flex";
+      }
     });
 
   addEvent(document, 'keyup', e => {
-    console.log("Keypress");
     if(e.key === 'Escape') {
       modalContainer.querySelector('.modal-close').click();
     }

@@ -12,6 +12,7 @@ import {
   addCopySvgEvent,
   addShowDetailEvent
 } from "./utils/misc";
+import {showModal} from "./render/modalContent";
 
 ready(() => {
   /**
@@ -28,7 +29,7 @@ ready(() => {
    * Add initial select packages
    */
   let packagesList = "<li class='filter-all'>All</li>";
-  Object.keys(iconsData).forEach(packName => {
+  Object.keys(iconsData).sort().forEach(packName => {
     packagesList += `<li class="${packName}-item">${packName}</li>`;
   });
   packagesListSelector.innerHTML = packagesList;
@@ -55,6 +56,7 @@ ready(() => {
         ];
         Object.keys(icons).forEach(icon => {
           const currentIcon = icons[icon];
+          const isSynonym = iconSplit.some(r => keywordSynonyms.includes(r));
           const iconSplit = icon
             .replace(/([a-z](?=[A-Z]))/g, "$1 ")
             .toLowerCase()
@@ -66,11 +68,12 @@ ready(() => {
           if (
             icon.toLowerCase() === searchValue ||
             iconSplit.some(r => r.startsWith(searchValue)) ||
-            iconSplit.some(r => keywordSynonyms.includes(r))
+            isSynonym
           ) {
             /**
              * Check if we add this package or it is new
              */
+            currentIcon.lowPriority = isSynonym;
             if (searchResultData[pack]) {
               searchResultData[pack].icons[icon] = currentIcon;
             } else {
@@ -134,7 +137,7 @@ ready(() => {
     }
 
     window.scrollTo({
-      top: 640,
+      top: 620,
       left: 0,
       behavior: "smooth"
     });
@@ -259,9 +262,10 @@ ready(() => {
    */
   const urlParams = new URLSearchParams(window.location.search);
   const paramPackage = urlParams.get("package") || "";
-  if (paramPackage) {
-    _(`.${paramPackage}-item`).click();
-    setTimeout(() => _(`.${paramPackage}-item`).click(), 0);
+  const paramIcon = urlParams.get("icon") || "";
+
+  if(paramPackage && paramIcon) {
+    showModal(paramPackage, paramIcon);
   }
 
   reloadIcons();
