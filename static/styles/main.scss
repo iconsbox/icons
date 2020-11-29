@@ -60,6 +60,7 @@ code,
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 
     &:hover {
       transform: scale(1.05);
@@ -70,8 +71,12 @@ code,
         transition: transform 0.2s ease-in, opacity 0.2s ease-in;
         transform: translateZ(0) translateY(0);
       }
+      .heading {
+        transform: translateZ(0) translateY(-1rem);
+        opacity: 0;
+      }
       img {
-        transform: translateZ(0) translateY(-1.3rem);
+        transform: scale(1.3) translateZ(0) translateY(-1.3rem);
       }
     }
     img {
@@ -90,6 +95,15 @@ code,
         );
         border-radius: 0.6rem;
       }
+    }
+    .heading {
+      position: absolute;
+      top: 0;
+      border-radius: 0 0 5px 5px;
+      background: #f3f3f3;
+      font-size: 11px;
+      padding: 3px 10px;
+      transition: transform 0.2s ease-in, opacity 0.2s ease-in;
     }
     .buttons {
       position: absolute;
