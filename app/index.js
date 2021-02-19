@@ -56,12 +56,13 @@ ready(() => {
         ];
         Object.keys(icons).forEach(icon => {
           const currentIcon = icons[icon];
-          const isSynonym = iconSplit.some(r => keywordSynonyms.includes(r));
           const iconSplit = icon
             .replace(/([a-z](?=[A-Z]))/g, "$1 ")
             .toLowerCase()
             .split(" ");
 
+          const isSynonym = iconSplit.some(r => keywordSynonyms.includes(r));
+          
           /**
            * Check if icons name or keywords looks like search term
            */
