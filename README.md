@@ -1,8 +1,8 @@
 <a href="https://iconbox.space" target="_blank">
     <p align="center">
-        <img src="https://cdn.dribbble.com/users/636156/screenshots/1899530/jumping_squares.gif" width="220" alt="BoxBouncing" />
+        <img src="./logoBlack.png" width="220" alt="BoxBouncing" />
     </p>
-  <h1 align="center" style="color:#ff0000; font-size:12px;">🧙 IconBox</h1>
+  <h1 align="center" style="color:#ff0000; font-size:12px;">IconBox</h1>
 </a>
 
 <p align="center" style="font-size: 24px; font-weight: 900">
@@ -10,63 +10,17 @@
     <br/>
 </p>
 
-## How to use iconbox?
+## What is Iconbox?
 
 Icons are available in `svg` format, `react` components and a special way of `sprite` file, which allows you to sprite svg icons
 in a pack. e.g. if you are using `webpack` you could use [svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader)
 
-
-## React svg components
-Choose your icon from our [webapp](https://iconbox.space) then import it where ever you want: 
-```js
-import { MoodSadIcon } from '@iconbox/tabler';
-
-const Component = () => {
-  return <MoodSadIcon />;
-}
-```
-
-If you want to improve bundle size and jusgt complie used svg files:
-```js
-[
-  'transform-imports',
-  {
-    '@iconbox\/?(((\\w*)?\/?)*)': {
-      'transform': isClient ? '@iconbox/${1}/esm/${member}' : '@iconbox/${1}/${member}',
-    },
-  }
-]
-```
-the `isClient` could decide between SSR and CSR and load svg files `cjs` version in server.
+## How I could start using?
+Visit our web application, and you will find the route. http://app.iconbox.space
+also if you are old family member our old site available here: http://old.iconbox.space
 
 
-## Sprite svg components
-Choose your icon from our [webapp](https://iconbox.space) then import it where ever you want: 
-```js
-import { MoodSadIcon } from '@iconbox/tabler/sprite';
-
-const Component = () => {
-  return <MoodSadIcon />;
-}
-```
-
-If you want to improve bundle size and jusgt complie used svg files:
-```js
-[
-  'transform-imports',
-  {
-    '@iconbox\/?(((\\w*)?\/?)*)\/sprite': {
-      'transform': isClient ? '@iconbox/${1}/esm/${member}/sprite' : '@iconbox/${1}/${member}/sprite',
-    },
-  }
-]
-```
-the `isClient` could decide between SSR and CSR and load svg files `cjs` version in server.
-
-## which file should I use?
-You can use whatever version you want, we provide various versions of icons for every pack. But we advice reading this article about **FontIcons** vs **Svg Icons** compare by [CssTricks](https://css-tricks.com/icon-fonts-vs-svg/) first.
-
-## license 
+## license
 This repo is just a wrapper to exist icon packs, so please respect every icon pack license you use.
 
 - **Clothes**: free icon pack from [flat icons](https://www.flaticon.com/)
