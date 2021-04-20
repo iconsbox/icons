@@ -1,6 +1,0 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
-  <g fill="none" fill-rule="evenodd">
-    <path d="M0 0h24v24H0z"/>
-    <path d="M21 16v2a3 3 0 01-2.824 2.995L18 21h-2a1 1 0 010-2h2a1 1 0 00.993-.883L19 18v-2a1 1 0 012 0zM5 16v2a1 1 0 00.883.993L6 19h2a1 1 0 010 2H6a3 3 0 01-2.995-2.824L3 18v-2a1 1 0 012 0zM9 4a1 1 0 01-1 1H6a1 1 0 00-.993.883L5 6v2a1 1 0 11-2 0V6a3 3 0 012.824-2.995L6 3h2a1 1 0 011 1zm9-1a3 3 0 012.995 2.824L21 6v2a1 1 0 01-2 0V6a1 1 0 00-.883-.993L18 5h-2a1 1 0 010-2h2z" fill="currentColor"/>
-  </g>
-</svg>
