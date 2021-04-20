@@ -1,6 +1,6 @@
 <a href="https://iconbox.space" target="_blank">
     <p align="center">
-        <img src="./logoBlack.png" width="220" alt="BoxBouncing" />
+        <img src="https://iconbox.space/logoBlack.png" width="180" alt="BoxBouncing" />
     </p>
   <h1 align="center" style="color:#ff0000; font-size:12px;">IconBox</h1>
 </a>
