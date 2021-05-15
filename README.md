@@ -1,6 +1,6 @@
 <a href="https://iconbox.space" target="_blank">
     <p align="center">
-        <img src="./logoBlack.png" width="220" alt="BoxBouncing" />
+        <img src="https://iconbox.space/logoBlack.png" width="180" alt="BoxBouncing" />
     </p>
   <h1 align="center" style="color:#ff0000; font-size:12px;">IconBox</h1>
 </a>
@@ -38,6 +38,5 @@ This repo is just a wrapper to exist icon packs, so please respect every icon pa
 - **Material Design Icons**: [Apache license version 2.0.](https://material.io/resources/icons)
 - **Medical Icons**: free icon pack from [flat icons](https://www.flaticon.com/)
 - **Oct Icons**: [MIT](https://github.com/primer/octicons#license)
-- **SnappMarket Icons**: [MIT](http://snapp.market) by [SnappMarket](https://www.snapp.market/)
 - **Support Icons**: free icon pack from [flat icons](https://www.flaticon.com/)
 - **Tabler Icons**: MIT by [Tabler Icons](https://www.tablericons.com/)
