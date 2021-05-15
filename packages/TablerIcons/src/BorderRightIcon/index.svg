@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" focusable="false">
-  <path d="M0 0h24v24H0z" stroke="none"/>
-  <path d="M20 4v16"/>
-  <path d="M4 4h16m0 16H4m0 0V4m0 8h16m-8-8v16" stroke-dasharray=".001 4"/>
-</svg>
