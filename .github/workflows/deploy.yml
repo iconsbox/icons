@@ -20,7 +20,8 @@ jobs:
       - name: 🤖 Publish npm packages
         run: yarn run release
         env:
-          CI: true
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
 
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2

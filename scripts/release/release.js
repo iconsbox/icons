@@ -10,7 +10,7 @@ console.log(`releasing ${passedVersion} together !`);
 
 (async function run() {
   try {
-    const { version } = await grabVersionAndGenerateNewOne(passedVersion, path.join(process.cwd(), 'packages/SnappMarket/'));
+    const { version } = await grabVersionAndGenerateNewOne(passedVersion, path.join(process.cwd(), 'packages/Ant/'));
 
     if (shell.exec(`lerna run --parallel change-version -- -- ${version} && lerna run --parallel build && lerna run --parallel publish-npm -- -- ${version}`).code !== 0) {
       shell.echo('Release build, or publish failed');
