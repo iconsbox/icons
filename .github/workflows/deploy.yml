@@ -4,23 +4,27 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: 🛎️ Checkout
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
 
-      - name: Install 🎢
+      - name: 🎢 Install
         run: yarn install --force
 
-      - name: Deploy 🧩
-        run: yarn run deploy
+      - name: 🧩 Generate Icons
+        run: yarn run generate
         env:
           CI: true
 
-      - name: Deploy 🚀
+      - name: 🤖 Publish npm packages
+        run: yarn run release
+        env:
+          CI: true
+
+      - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master2
-          FOLDER: ./
           CLEAN: true # Automatically remove deleted files from the deploy branch

@@ -161,7 +161,8 @@ export default ${folderName};
             .toString()
             .replace(/<g><\/g>/g, "")
             .replace(/xmlns xlink/g, "xmlns:xlink"),
-          "utf8"
+          "utf8",
+          f => f
         ),
         /**
          * Update index js file
@@ -169,7 +170,8 @@ export default ${folderName};
         await fse.writeFile(
           `${fullPath}/component/index.js`,
           normalFileContent,
-          "utf8"
+          "utf8",
+          f => f
         ),
         /**
          * Update sprite js file
@@ -177,7 +179,8 @@ export default ${folderName};
         await fse.writeFile(
           `${fullPath}/sprite/index.js`,
           splittableFileContent,
-          "utf8"
+          "utf8",
+          f => f
         )
       ]);
     } catch (e) {
