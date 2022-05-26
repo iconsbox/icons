@@ -47,7 +47,7 @@ const asyncForEach = async (array, callback) => {
        * Make sprite svg
        */
       const splittableFileContent = `/**
-* THIS IS AN AUTO GENERATED SPRITE FILE, CHANGES WILL NOT APPLY
+* THIS IS AN AUTO GENERATED ICONBOX SPRITE FILE, CHANGES WILL NOT APPLY
 */
 import * as React from 'react';
 import PropTypes from 'prop-types';
@@ -65,7 +65,7 @@ const ${folderName} = ({ className, size, ...rest }) => {
   if(options.useSpriteFile && options.publicPath !== '/') {
     importPrefix = \`/\${options.publicPath}\${importPrefix}\`;
   }
-  
+
   return (
     <svg
       data-testid="${folderName}"
@@ -105,7 +105,7 @@ export default ${folderName};
        * Make svg component
        */
       const normalFileContent = `/**
-* THIS IS AN AUTO GENERATED FILE, CHANGES WILL NOT APPLY
+* THIS IS AN AUTO GENERATED ICONBOX FILE, CHANGES WILL NOT APPLY
 */
 import * as React from 'react';
 import PropTypes from 'prop-types';

@@ -21,9 +21,7 @@
     "publish-npm": "node ../../scripts/release/publish-npm.js",
     "prebuild": "rimraf ./dist",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "prepare": "yarn run build"
   },
   "peerDependencies": {
     "@iconbox/config": "^1.0.1",

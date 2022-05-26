@@ -1,4 +1,4 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" focusable="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" focusable="false">
   <rect x="112" y="48" width="288" height="416" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
   <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160.01 112H352v64H160.01z"/>
   <circle cx="168" cy="248" r="24"/>

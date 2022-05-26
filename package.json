@@ -5,9 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "cross-env BABEL_ENV=docs webpack-dev-server -p --progress --mode development",
     "build": "lerna run --parallel build",
-    "deploy": "yarn docs:build && gh-pages -d docs -r https://$GH_TOKEN@github.com/snappmarket/iconbox",
+    "deploy": "yarn generate && node ./scripts/icons/docsBuild.js",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "test": "echo \"Will write tests soon ....\"",
     "lint": "npm run lint:js && npm run lint:css",
@@ -20,19 +19,9 @@
     "optimize": "lerna run --parallel optimize",
     "generate": "yarn optimize && lerna run --parallel generate",
     "publish-npm": "lerna run --parallel publish-npm",
-    "release": "node ./scripts/release/release.js",
-    "docs:dev": "cross-env BABEL_ENV=docs webpack -p --progress --mode development",
-    "docs:watch": "cross-env BABEL_ENV=docs webpack -p --progress --mode development --watch",
-    "docs:build": "node ./scripts/icons/docsBuild.js && cross-env BABEL_ENV=docs webpack -p --progress --mode production"
+    "release": "node ./scripts/release/release.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/plugin-proposal-decorators": "^7.8.3",
-    "@babel/plugin-proposal-export-default-from": "^7.8.3",
-    "@babel/plugin-transform-object-assign": "^7.8.3",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-multi-entry": "^3.0.0",
     "@testing-library/jest-dom": "^5.1.1",
@@ -40,19 +29,6 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@testing-library/user-event": "^10.0.0",
     "autoprefixer": "^9.7.4",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.3",
-    "babel-jest": "^24.9.0",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-dynamic-import-node": "^2.3.0",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "babel-plugin-optimize-clsx": "^2.6.0",
-    "babel-plugin-react-remove-properties": "^0.3.0",
-    "babel-plugin-styled-components": "^1.10.6",
-    "babel-plugin-transform-dev-warning": "^0.1.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-plugin-transform-react-constant-elements": "^6.23.0",
-    "babel-preset-airbnb": "^4.4.0",
     "chalk": "^3.0.0",
     "clean-webpack-plugin": "1.0.0",
     "compression-webpack-plugin": "2.0.0",
@@ -118,11 +94,7 @@
     "semver": "^7.1.3",
     "shelljs": "^0.8.3",
     "style-loader": "0.23.1",
-    "url-loader": "1.1.2",
-    "webpack": "^4.41.0",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.1.13",
-    "webpack-merge": "4.1.5"
+    "url-loader": "1.1.2"
   },
   "lint-staged": {
     "(?!test|spec).*\\.js": [
@@ -138,6 +110,8 @@
   "dependencies": {
     "@iconbox/config": "^1.0.1",
     "json-query": "^2.2.2",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "tsc": "^2.0.4",
+    "typescript": "^4.7.2"
   }
 }
