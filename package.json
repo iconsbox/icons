@@ -13,12 +13,14 @@
     "release": "node ./scripts/release/release.js"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "fs-extra": "^10.1.0",
     "gh-pages": "^4.0.0",
     "glob": "^8.0.3",
     "lerna": "^5.0.0",
     "node-html-parser": "^5.3.3",
     "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
     "semver": "^7.3.7",
     "shelljs": "^0.8.5"
   },
