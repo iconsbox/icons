@@ -107,7 +107,7 @@ walk('./packages', regExcludes, async (err, results) => {
   });
 
   await fse.writeFile(
-    `app/data.js`,
+    `packages/data.js`,
     `export default ${JSON.stringify(content)}`,
     'utf8',
   );

@@ -19,6 +19,7 @@
     "glob": "^8.0.3",
     "lerna": "^5.0.0",
     "node-html-parser": "^5.3.3",
+    "prettier": "^2.6.2",
     "semver": "^7.3.7",
     "shelljs": "^0.8.5"
   },
