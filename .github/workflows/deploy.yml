@@ -12,7 +12,7 @@ jobs:
       - name: Install 🎢
         run: yarn install --force
 
-      - name: Build 🧩
+      - name: Deploy 🧩
         run: yarn run deploy
         env:
           CI: true
