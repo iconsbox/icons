@@ -8,9 +8,6 @@
   "unpkg": "./dist/umd/config.production.js",
   "scripts": {
     "build": "tsc && yarn build:copy-files",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./dist",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ../../babel.config.js ./src --out-dir ./dist/esm",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ../../babel.config.js ./src --out-dir ./dist/es",
     "build:copy-files": "node ../../scripts/copy-file/packages-copy.js",
     "change-version": "node ../../scripts/release/change-version.js",
     "publish-npm": "node ../../scripts/release/publish-npm.js",

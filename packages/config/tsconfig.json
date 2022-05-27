@@ -3,6 +3,8 @@
   "include": ["src", "../config/custom.d.ts"],
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
   }
 }
