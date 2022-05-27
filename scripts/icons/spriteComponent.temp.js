@@ -1,8 +1,7 @@
 const a = `/**
 * THIS IS AN AUTO GENERATED ICONBOX SPRITE FILE, CHANGES WILL NOT APPLY
 */
-import * as React from 'react';
-import { ReactElement, SVGProps } from "react";
+import React, { ReactElement, SVGProps } from 'react';
 import { useOptions, GlobalConfig } from '@iconbox/config';
 
 if (GlobalConfig.options.importSpriteSVG) {
