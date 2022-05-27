@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src", "../config/custom.d.ts"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "preserveSymlinks": true,
+    "jsx": "react"
+  }
+}

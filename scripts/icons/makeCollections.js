@@ -58,7 +58,7 @@ const walk = (dir, regExcludes, done) => {
   });
 };
 
-const regExcludes = [/index\.js/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
+const regExcludes = [/index\.ts/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
 
 /* eslint-disable indent */
 const asyncForEach = async (array, callback) => {
@@ -94,9 +94,9 @@ export { default as ${iconName} } from './${iconName}/component';`;
 
   for (const key in content) {
     await fse.ensureDirSync(`${key}/sprite`);
-    await fse.writeFile(`${key}/index.js`, content[key], 'utf8');
+    await fse.writeFile(`${key}/index.ts`, content[key], 'utf8');
     await fse.writeFile(
-      `${key}/sprite/index.js`,
+      `${key}/sprite/index.ts`,
       content[key].replace(/from '\./g, "from '..").replace(/\/component/g, '/sprite'),
       'utf8',
     );

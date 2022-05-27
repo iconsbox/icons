@@ -2,6 +2,8 @@ const fse = require("fs-extra");
 const glob = require("glob");
 const parser = require("node-html-parser");
 const shell = require("shelljs");
+const componentTemplate = require("./component.temp.js");
+const spriteComponentTemplate = require("./spriteComponent.temp.js");
 
 // Glob index.svg files inb packages
 const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
@@ -46,110 +48,34 @@ const asyncForEach = async (array, callback) => {
       /**
        * Make sprite svg
        */
-      const splittableFileContent = `/**
-* THIS IS AN AUTO GENERATED ICONBOX SPRITE FILE, CHANGES WILL NOT APPLY
-*/
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { useOptions, GlobalConfig } from '@iconbox/config';
-
-if (GlobalConfig.options.importSpriteSVG) {
-  // eslint-disable-next-line global-require
-  require('./${packageName}${folderName}.svg');
-}
-
-const ${folderName} = ({ className, size, ...rest }) => {
-  const options = useOptions();
-
-  let importPrefix = options.useSpriteFile ? \`/\${options.spriteSvgName}\` : '';
-  if(options.useSpriteFile && options.publicPath !== '/') {
-    importPrefix = \`/\${options.publicPath}\${importPrefix}\`;
-  }
-
-  return (
-    <svg
-      data-testid="${folderName}"
-      viewBox="0 0 ${viewBox
-        .split(" ")
-        .slice(2)
-        .join(" ")}"
-      className={className}
-      style={{
-        width: size * 10,
-        height: size * 10,
-      }}
-      role="img"
-      focusable="false"
-      fill="${fill}"
-      {...rest}
-    >
-      <use data-testid="${folderName}Href" href={\`\${importPrefix}#${packageName}${folderName}\`} xlinkHref={\`\${importPrefix}#${packageName}${folderName}\`} />
-    </svg>
-  );
-};
-
-${folderName}.propTypes = {
-  className: PropTypes.string,
-  size: PropTypes.number,
-};
-
-${folderName}.defaultProps = {
-  size: 1.5,
-};
-
-export default ${folderName};
-
-`;
+      const splittableFileContent = spriteComponentTemplate
+        .replace(/{COMP_NAME}/g, folderName)
+        .replace(/{VIEW_BOX}/g, viewBox)
+        .replace(/{FILL_VALUE}/g, fill)
+        .replace(/{PACKAGE_NAME}/g, packageName);
 
       /**
        * Make svg component
        */
-      const normalFileContent = `/**
-* THIS IS AN AUTO GENERATED ICONBOX FILE, CHANGES WILL NOT APPLY
-*/
-import * as React from 'react';
-import PropTypes from 'prop-types';
-
-const ${folderName} = ({ className, size, ...rest }) =>
-  <svg
-    data-testid="${folderName}"
-    viewBox="${viewBox}"
-    className={className}
-    style={{
-      width: size * 10,
-      height: size * 10,
-    }}
-    fill="${fill}"
-    focusable="false"
-    {...rest}
-  >
-    ${svgElement.innerHTML
-        .replace(/xmlns:xlink/g, "xmlnsXlink")
-        .replace(/xlink:href/g, "xlinkHref")
-        .replace(/<g><\/g>/g, "")
-        .replace(/fill-rule/g, "fillRule")
-        .replace(/fill-rule/g, "fillRule")
-        .replace(/clip-rule/g, "clipRule")
-        .replace(/clip-path/g, "clipPath")
-        .replace(/stroke-width/g, "strokeWidth")
-        .replace(/stroke-linecap/g, "strokeLinecap")
-        .replace(/stroke-linejoin/g, "strokeLinejoin")
-        .replace(/fill-opacity/g, "fillOpacity")
-        .replace(/class=/g, "className=")}
-  </svg>;
-
-${folderName}.propTypes = {
-  className: PropTypes.string,
-  size: PropTypes.number,
-};
-
-${folderName}.defaultProps = {
-  size: 1.5,
-};
-
-export default ${folderName};
-
-`;
+      const normalFileContent = componentTemplate
+        .replace(/COMP_NAME/g, folderName)
+        .replace(/VIEW_BOX/g, viewBox)
+        .replace(/FILL_VALUE/g, fill)
+        .replace(/SVG_BODY/g, svgElement.innerHTML
+          .replace(/xmlns:xlink/g, "xmlnsXlink")
+          .replace(/xlink:href/g, "xlinkHref")
+          .replace(/<g><\/g>/g, "")
+          .replace(/fill-rule/g, "fillRule")
+          .replace(/fill-rule/g, "fillRule")
+          .replace(/clip-rule/g, "clipRule")
+          .replace(/clip-path/g, "clipPath")
+          .replace(/stroke-width/g, "strokeWidth")
+          .replace(/stroke-linecap/g, "strokeLinecap")
+          .replace(/stroke-linejoin/g, "strokeLinejoin")
+          .replace(/fill-opacity/g, "fillOpacity")
+          .replace(/stroke-miterlimit/g, "strokeMiterlimit")
+          .replace(/class=/g, "className=")
+        );
 
       await Promise.all([
         /**
@@ -168,7 +94,7 @@ export default ${folderName};
          * Update index js file
          */
         await fse.writeFile(
-          `${fullPath}/component/index.js`,
+          `${fullPath}/component/index.tsx`,
           normalFileContent,
           "utf8",
           f => f
@@ -177,7 +103,7 @@ export default ${folderName};
          * Update sprite js file
          */
         await fse.writeFile(
-          `${fullPath}/sprite/index.js`,
+          `${fullPath}/sprite/index.tsx`,
           splittableFileContent,
           "utf8",
           f => f
@@ -189,7 +115,7 @@ export default ${folderName};
     }
   });
 
-  if (shell.exec(`prettier --write "src/**/*.{js,jsx}"`).code !== 0) {
+  if (shell.exec(`prettier --write "src/**/*.{ts,tsx}"`).code !== 0) {
     shell.echo(`run lint failed`);
   }
 })();
