@@ -4,7 +4,7 @@ const path = require('path');
 const grabVersionAndGenerateNewOne = require('../version/version-generator');
 
 const myArguments = process.argv.slice(2);
-const passedVersion = myArguments[0] || '--canary';
+const passedVersion = myArguments[0] || '--patch';
 
 console.log(`releasing ${passedVersion} together !`);
 
