@@ -7,7 +7,7 @@
   "module": "./dist/esm/index.js",
   "unpkg": "./dist/umd/config.production.js",
   "scripts": {
-    "build": "tsc && yarn build:copy-files",
+    "build": "node ../../scripts/build.js && yarn build:copy-files",
     "build:copy-files": "node ../../scripts/copy-file/packages-copy.js",
     "change-version": "node ../../scripts/release/change-version.js",
     "publish-npm": "node ../../scripts/release/publish-npm.js",

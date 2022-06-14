@@ -5,6 +5,6 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "preserveSymlinks": true,
-    "jsx": "react"
+    "jsx": "react",
   }
 }

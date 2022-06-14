@@ -7,10 +7,10 @@
   "module": "./dist/esm/index.js",
   "unpkg": "./dist/umd/jamIcons.production.js",
   "scripts": {
-    "build": "tsc && yarn build:copy-files",
+    "build": "node ../../scripts/build.js && yarn build:copy-files",
     "build:copy-files": "node ../../scripts/copy-file/icons-packages-copy.js",
     "optimize": "svgo src/*/*.svg --config=../../svgo.yml",
-    "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
+    "generate": "node ../../scripts/icons/generateSvg.js > /dev/null 2>&1  && node ../../scripts/icons/makeCollections.js",
     "change-version": "node ../../scripts/release/change-version.js",
     "publish-npm": "node ../../scripts/release/publish-npm.js",
     "prebuild": "rimraf ./dist",
