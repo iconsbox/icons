@@ -27,7 +27,9 @@ async function createPackageFile() {
     unpkg: '../umd/sprite/icons.production.js',
   };
 
-  console.log('Writing package:' , buildPath)
+  console.log('Writing package:' , buildPath);
+  await fse.ensureDirSync(`${buildPath}/sprite`);
+
   const targetPath = path.join(buildPath, './package.json');
   const targetPathSprite = path.join(buildPath, './sprite/package.json');
 
