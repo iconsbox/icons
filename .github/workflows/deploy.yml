@@ -26,6 +26,12 @@ jobs:
         env:
           CI: true
 
+      - name: Add private packages PAT
+        run: |
+          echo _auth=${{secrets.NPM_TOKEN}} >> .npmrc
+          echo email=jafar.rezaei.ard@gmail.com >> .npmrc
+          echo always-auth=true >> .npmrc
+
       - name: 🤖 Publish npm packages
         run: npm run release
         env:
