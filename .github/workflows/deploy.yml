@@ -28,7 +28,7 @@ jobs:
 
       - name: Add private packages PAT
         run: |
-          echo "//registry.npmjs.org/:_authToken=${secrets.NPM_TOKEN}" >> .npmrc
+          echo //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}} >> .npmrc
 
       - name: 🤖 Publish npm packages
         run: npm run release
