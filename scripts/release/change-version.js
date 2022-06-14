@@ -2,7 +2,7 @@
 const changeVersionInPackageJson = require('../version/change-version');
 
 const myArguments = process.argv.slice(2);
-const passedVersion = myArguments[0] || '--canary';
+const passedVersion = myArguments[0] || '--patch';
 
 (async function run() {
   try {
