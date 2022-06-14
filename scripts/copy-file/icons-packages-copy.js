@@ -28,8 +28,8 @@ async function createPackageFile() {
   };
 
   console.log('Writing package:' , buildPath)
-  const targetPath = path.resolve(buildPath, './package.json');
-  const targetPathSprite = path.resolve(buildPath, './sprite/package.json');
+  const targetPath = path.join(buildPath, './package.json');
+  const targetPathSprite = path.join(buildPath, './sprite/package.json');
 
   await fse.writeFile(targetPath, JSON.stringify(newPackageData, null, 2), 'utf8');
   await fse.writeFile(targetPathSprite, JSON.stringify(newSpritePackageData, null, 2), 'utf8');
