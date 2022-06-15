@@ -33,10 +33,15 @@ jobs:
       - name: 🤖 Publish npm packages
         run: npm run release
 
+      - name: 🤖 Prepare file update
+        run: |
+          - mkdir temp
+          - rsync -vau . temp/
+
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master2
-          FOLDER: /
+          FOLDER: temp
           CLEAN: true # Automatically remove deleted files from the deploy branch
