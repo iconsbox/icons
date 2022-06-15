@@ -35,8 +35,8 @@ jobs:
 
       - name: 🤖 Prepare file update
         run: |
-          - mkdir temp
-          - rsync -vau . temp/
+          kdir temp
+          rsync -vau . temp/
 
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
