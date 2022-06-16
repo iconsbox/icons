@@ -9,9 +9,9 @@ export { default as AlertTriangleFillIcon } from './AlertTriangleFillIcon/compon
 export { default as AlertTriangleOutlineIcon } from './AlertTriangleOutlineIcon/component';
 export { default as ArchiveFillIcon } from './ArchiveFillIcon/component';
 export { default as ArchiveOutlineIcon } from './ArchiveOutlineIcon/component';
-export { default as ArrowBackFillIcon } from './ArrowBackFillIcon/component';
 export { default as ArrowBackOutlineIcon } from './ArrowBackOutlineIcon/component';
 export { default as ArrowCircleDownFillIcon } from './ArrowCircleDownFillIcon/component';
+export { default as ArrowBackFillIcon } from './ArrowBackFillIcon/component';
 export { default as ArrowCircleDownOutlineIcon } from './ArrowCircleDownOutlineIcon/component';
 export { default as ArrowCircleLeftFillIcon } from './ArrowCircleLeftFillIcon/component';
 export { default as ArrowCircleLeftOutlineIcon } from './ArrowCircleLeftOutlineIcon/component';
@@ -19,8 +19,8 @@ export { default as ArrowCircleRightFillIcon } from './ArrowCircleRightFillIcon/
 export { default as ArrowCircleRightOutlineIcon } from './ArrowCircleRightOutlineIcon/component';
 export { default as ArrowCircleUpFillIcon } from './ArrowCircleUpFillIcon/component';
 export { default as ArrowCircleUpOutlineIcon } from './ArrowCircleUpOutlineIcon/component';
-export { default as ArrowDownFillIcon } from './ArrowDownFillIcon/component';
 export { default as ArrowDownOutlineIcon } from './ArrowDownOutlineIcon/component';
+export { default as ArrowDownFillIcon } from './ArrowDownFillIcon/component';
 export { default as ArrowDownwardFillIcon } from './ArrowDownwardFillIcon/component';
 export { default as ArrowDownwardOutlineIcon } from './ArrowDownwardOutlineIcon/component';
 export { default as ArrowForwardFillIcon } from './ArrowForwardFillIcon/component';
@@ -32,9 +32,9 @@ export { default as ArrowIosDownwardOutlineIcon } from './ArrowIosDownwardOutlin
 export { default as ArrowIosForwardFillIcon } from './ArrowIosForwardFillIcon/component';
 export { default as ArrowIosForwardOutlineIcon } from './ArrowIosForwardOutlineIcon/component';
 export { default as ArrowIosUpwardFillIcon } from './ArrowIosUpwardFillIcon/component';
-export { default as ArrowIosUpwardOutlineIcon } from './ArrowIosUpwardOutlineIcon/component';
 export { default as ArrowLeftFillIcon } from './ArrowLeftFillIcon/component';
 export { default as ArrowLeftOutlineIcon } from './ArrowLeftOutlineIcon/component';
+export { default as ArrowIosUpwardOutlineIcon } from './ArrowIosUpwardOutlineIcon/component';
 export { default as ArrowRightFillIcon } from './ArrowRightFillIcon/component';
 export { default as ArrowRightOutlineIcon } from './ArrowRightOutlineIcon/component';
 export { default as ArrowUpFillIcon } from './ArrowUpFillIcon/component';
@@ -312,6 +312,7 @@ export { default as MoreHorizontalFillIcon } from './MoreHorizontalFillIcon/comp
 export { default as MoreHorizontalOutlineIcon } from './MoreHorizontalOutlineIcon/component';
 export { default as MoreVerticalFillIcon } from './MoreVerticalFillIcon/component';
 export { default as MoreVerticalOutlineIcon } from './MoreVerticalOutlineIcon/component';
+export { default as MoveFillIcon } from './MoveFillIcon/component';
 export { default as MoveOutlineIcon } from './MoveOutlineIcon/component';
 export { default as MusicFillIcon } from './MusicFillIcon/component';
 export { default as MusicOutlineIcon } from './MusicOutlineIcon/component';
@@ -490,4 +491,3 @@ export { default as WifiFillIcon } from './WifiFillIcon/component';
 export { default as WifiOffFillIcon } from './WifiOffFillIcon/component';
 export { default as WifiOffOutlineIcon } from './WifiOffOutlineIcon/component';
 export { default as WifiOutlineIcon } from './WifiOutlineIcon/component';
-export { default as MoveFillIcon } from './MoveFillIcon/component';
