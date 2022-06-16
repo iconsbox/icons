@@ -1,7 +1,7 @@
 {
   "name": "@iconbox/medical",
   "private": false,
-  "version": "2.0.11",
+  "version": "2.0.12",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.js",
