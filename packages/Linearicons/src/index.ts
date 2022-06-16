@@ -1,8 +1,8 @@
 /**
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
-export { default as ApartmentIcon } from './ApartmentIcon/component';
 export { default as AlarmIcon } from './AlarmIcon/component';
+export { default as ApartmentIcon } from './ApartmentIcon/component';
 export { default as ArrowDownCircleIcon } from './ArrowDownCircleIcon/component';
 export { default as ArrowDownIcon } from './ArrowDownIcon/component';
 export { default as ArrowLeftCircleIcon } from './ArrowLeftCircleIcon/component';
@@ -14,8 +14,8 @@ export { default as ArrowUpIcon } from './ArrowUpIcon/component';
 export { default as BicycleIcon } from './BicycleIcon/component';
 export { default as BoldIcon } from './BoldIcon/component';
 export { default as BookIcon } from './BookIcon/component';
-export { default as BriefcaseIcon } from './BriefcaseIcon/component';
 export { default as BookmarkIcon } from './BookmarkIcon/component';
+export { default as BriefcaseIcon } from './BriefcaseIcon/component';
 export { default as BubbleIcon } from './BubbleIcon/component';
 export { default as BugIcon } from './BugIcon/component';
 export { default as BullhornIcon } from './BullhornIcon/component';
@@ -122,8 +122,8 @@ export { default as PointerDownIcon } from './PointerDownIcon/component';
 export { default as PointerLeftIcon } from './PointerLeftIcon/component';
 export { default as PointerRightIcon } from './PointerRightIcon/component';
 export { default as PointerUpIcon } from './PointerUpIcon/component';
-export { default as PowerSwitchIcon } from './PowerSwitchIcon/component';
 export { default as PoopIcon } from './PoopIcon/component';
+export { default as PowerSwitchIcon } from './PowerSwitchIcon/component';
 export { default as PrinterIcon } from './PrinterIcon/component';
 export { default as PushpinIcon } from './PushpinIcon/component';
 export { default as QuestionCircleIcon } from './QuestionCircleIcon/component';
@@ -151,16 +151,16 @@ export { default as TextAlignCenterIcon } from './TextAlignCenterIcon/component'
 export { default as TextAlignJustifyIcon } from './TextAlignJustifyIcon/component';
 export { default as TextAlignLeftIcon } from './TextAlignLeftIcon/component';
 export { default as TextAlignRightIcon } from './TextAlignRightIcon/component';
-export { default as TextFormatRemoveIcon } from './TextFormatRemoveIcon/component';
 export { default as TextFormatIcon } from './TextFormatIcon/component';
+export { default as TextFormatRemoveIcon } from './TextFormatRemoveIcon/component';
 export { default as TextSizeIcon } from './TextSizeIcon/component';
 export { default as ThumbsDownIcon } from './ThumbsDownIcon/component';
 export { default as ThumbsUpIcon } from './ThumbsUpIcon/component';
 export { default as TrainIcon } from './TrainIcon/component';
 export { default as TrashIcon } from './TrashIcon/component';
 export { default as UnderlineIcon } from './UnderlineIcon/component';
-export { default as UnlinkIcon } from './UnlinkIcon/component';
 export { default as UndoIcon } from './UndoIcon/component';
+export { default as UnlinkIcon } from './UnlinkIcon/component';
 export { default as UploadIcon } from './UploadIcon/component';
 export { default as UserIcon } from './UserIcon/component';
 export { default as UsersIcon } from './UsersIcon/component';
