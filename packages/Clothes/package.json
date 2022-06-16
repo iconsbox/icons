@@ -12,7 +12,7 @@
     "optimize": "svgo src/*/*.svg --config=../../svgo.yml",
     "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
     "change-version": "node ../../scripts/release/change-version.js",
-    "prepublish-npm": "echo //registry.npmjs.org/:_authToken=$NPM_TOKEN\" > ./dist/.npmrc",
+    "prepublish-npm": "echo //registry.npmjs.org/:_authToken=$NPM_TOKEN > ./dist/.npmrc",
     "publish-npm": "cd dist && npm publish --access=public",
     "prebuild": "rimraf ./dist",
     "start": "rollup -c -w",
