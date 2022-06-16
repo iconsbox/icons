@@ -23,7 +23,7 @@ jobs:
           CI: true
 
       - name: 🧩 Build ts
-        run: npm workspace @iconbox/clothes build
+        run: npm run build
         env:
           CI: true
 
