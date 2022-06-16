@@ -34,12 +34,12 @@ jobs:
         run: npm run release
 
       - name: 🤖 Prepare file update
-        run: rsync -av --exclude=/node_modules --exclude=/.git --exclude='dist' . temp/
+        run: rsync -av --exclude=/node_modules --exclude=.npmrc --exclude=/.git --exclude='dist' . temp/
 
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master2
+          BRANCH: master
           FOLDER: temp
           CLEAN: true # Automatically remove deleted files from the deploy branch
