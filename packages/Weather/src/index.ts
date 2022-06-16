@@ -4,9 +4,9 @@
 export { default as AlienIcon } from './AlienIcon/component';
 export { default as BarometerIcon } from './BarometerIcon/component';
 export { default as CelsiusIcon } from './CelsiusIcon/component';
-export { default as CloudDownIcon } from './CloudDownIcon/component';
 export { default as CloudIcon } from './CloudIcon/component';
 export { default as CloudRefreshIcon } from './CloudRefreshIcon/component';
+export { default as CloudDownIcon } from './CloudDownIcon/component';
 export { default as CloudUpIcon } from './CloudUpIcon/component';
 export { default as CloudyGustsIcon } from './CloudyGustsIcon/component';
 export { default as CloudyIcon } from './CloudyIcon/component';
