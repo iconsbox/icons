@@ -684,6 +684,7 @@ export { default as CompassRegularIcon } from './CompassRegularIcon/component';
 export { default as CompassSolidIcon } from './CompassSolidIcon/component';
 export { default as CompressArrowsAltSolidIcon } from './CompressArrowsAltSolidIcon/component';
 export { default as CompressSolidIcon } from './CompressSolidIcon/component';
+export { default as ConciergeBellSolidIcon } from './ConciergeBellSolidIcon/component';
 export { default as CookieBiteSolidIcon } from './CookieBiteSolidIcon/component';
 export { default as CookieSolidIcon } from './CookieSolidIcon/component';
 export { default as CopyRegularIcon } from './CopyRegularIcon/component';
@@ -797,7 +798,6 @@ export { default as FileExcelRegularIcon } from './FileExcelRegularIcon/componen
 export { default as FileExcelSolidIcon } from './FileExcelSolidIcon/component';
 export { default as FileExportSolidIcon } from './FileExportSolidIcon/component';
 export { default as FileImageRegularIcon } from './FileImageRegularIcon/component';
-export { default as ConciergeBellSolidIcon } from './ConciergeBellSolidIcon/component';
 export { default as FileImageSolidIcon } from './FileImageSolidIcon/component';
 export { default as FileImportSolidIcon } from './FileImportSolidIcon/component';
 export { default as FileInvoiceDollarSolidIcon } from './FileInvoiceDollarSolidIcon/component';
@@ -896,6 +896,7 @@ export { default as GrinSquintTearsSolidIcon } from './GrinSquintTearsSolidIcon/
 export { default as GrinStarsRegularIcon } from './GrinStarsRegularIcon/component';
 export { default as GrinStarsSolidIcon } from './GrinStarsSolidIcon/component';
 export { default as GrinTearsRegularIcon } from './GrinTearsRegularIcon/component';
+export { default as GrinTearsSolidIcon } from './GrinTearsSolidIcon/component';
 export { default as GrinTongueRegularIcon } from './GrinTongueRegularIcon/component';
 export { default as GrinTongueSolidIcon } from './GrinTongueSolidIcon/component';
 export { default as GrinTongueSquintRegularIcon } from './GrinTongueSquintRegularIcon/component';
@@ -937,7 +938,6 @@ export { default as HandRockRegularIcon } from './HandRockRegularIcon/component'
 export { default as HandRockSolidIcon } from './HandRockSolidIcon/component';
 export { default as HandScissorsRegularIcon } from './HandScissorsRegularIcon/component';
 export { default as HandScissorsSolidIcon } from './HandScissorsSolidIcon/component';
-export { default as GrinTearsSolidIcon } from './GrinTearsSolidIcon/component';
 export { default as HandSpockRegularIcon } from './HandSpockRegularIcon/component';
 export { default as HandSpockSolidIcon } from './HandSpockSolidIcon/component';
 export { default as HandsHelpingSolidIcon } from './HandsHelpingSolidIcon/component';
@@ -1055,6 +1055,7 @@ export { default as LockOpenSolidIcon } from './LockOpenSolidIcon/component';
 export { default as LockSolidIcon } from './LockSolidIcon/component';
 export { default as LongArrowAltDownSolidIcon } from './LongArrowAltDownSolidIcon/component';
 export { default as LongArrowAltLeftSolidIcon } from './LongArrowAltLeftSolidIcon/component';
+export { default as LongArrowAltRightSolidIcon } from './LongArrowAltRightSolidIcon/component';
 export { default as LongArrowAltUpSolidIcon } from './LongArrowAltUpSolidIcon/component';
 export { default as LowVisionSolidIcon } from './LowVisionSolidIcon/component';
 export { default as LuggageCartSolidIcon } from './LuggageCartSolidIcon/component';
@@ -1165,7 +1166,6 @@ export { default as PersonBoothSolidIcon } from './PersonBoothSolidIcon/componen
 export { default as PhoneAltSolidIcon } from './PhoneAltSolidIcon/component';
 export { default as PhoneSlashSolidIcon } from './PhoneSlashSolidIcon/component';
 export { default as PhoneSolidIcon } from './PhoneSolidIcon/component';
-export { default as LongArrowAltRightSolidIcon } from './LongArrowAltRightSolidIcon/component';
 export { default as PhoneSquareAltSolidIcon } from './PhoneSquareAltSolidIcon/component';
 export { default as PhoneSquareSolidIcon } from './PhoneSquareSolidIcon/component';
 export { default as PhoneVolumeSolidIcon } from './PhoneVolumeSolidIcon/component';

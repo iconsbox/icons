@@ -312,7 +312,6 @@ export { default as MoreHorizontalFillIcon } from './MoreHorizontalFillIcon/comp
 export { default as MoreHorizontalOutlineIcon } from './MoreHorizontalOutlineIcon/component';
 export { default as MoreVerticalFillIcon } from './MoreVerticalFillIcon/component';
 export { default as MoreVerticalOutlineIcon } from './MoreVerticalOutlineIcon/component';
-export { default as MoveFillIcon } from './MoveFillIcon/component';
 export { default as MoveOutlineIcon } from './MoveOutlineIcon/component';
 export { default as MusicFillIcon } from './MusicFillIcon/component';
 export { default as MusicOutlineIcon } from './MusicOutlineIcon/component';
@@ -491,3 +490,4 @@ export { default as WifiFillIcon } from './WifiFillIcon/component';
 export { default as WifiOffFillIcon } from './WifiOffFillIcon/component';
 export { default as WifiOffOutlineIcon } from './WifiOffOutlineIcon/component';
 export { default as WifiOutlineIcon } from './WifiOutlineIcon/component';
+export { default as MoveFillIcon } from './MoveFillIcon/component';
