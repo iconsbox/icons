@@ -35,7 +35,7 @@ jobs:
 
       - name: 🤖 Prepare file update
         run: |
-          kdir temp
+          mkdir temp
           rsync -vau . temp/
 
       - name: 🚀 Deploy

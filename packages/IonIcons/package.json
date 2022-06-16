@@ -1,7 +1,7 @@
 {
   "name": "@iconbox/ion",
   "private": false,
-  "version": "2.0.7",
+  "version": "2.0.8",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.js",
