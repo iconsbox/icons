@@ -75,6 +75,7 @@ walk('./src', regExcludes, async (err, results) => {
   }
 
   const content = {};
+  const contentType = {};
   await asyncForEach(results, item => {
     if (item.indexOf('/component') > -1) {
       const lastSlash = item.replace('/component').lastIndexOf('/');
@@ -89,6 +90,18 @@ walk('./src', regExcludes, async (err, results) => {
       current += `
 export { default as ${iconName} } from './${iconName}/component';`;
       content[pathDir] = current;
+
+      let currentType =
+        contentType[pathDir] ||
+        `/**
+* THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
+*/
+import { ReactElement, SVGProps } from "react";
+type SvgComponent = (props: SVGProps<SVGElement>) => ReactElement;
+`;
+      currentType += `
+export { SvgComponent as ${iconName} };`;
+      contentType[pathDir] = currentType;
     }
   });
 
@@ -98,6 +111,12 @@ export { default as ${iconName} } from './${iconName}/component';`;
     await fse.writeFile(
       `${key}/sprite/index.ts`,
       content[key].replace(/from '\./g, "from '..").replace(/\/component/g, '/sprite'),
+      'utf8',
+    );
+    await fse.writeFile(`${key}/index.d.ts`, contentType[key], 'utf8');
+    await fse.writeFile(
+      `${key}/sprite/index.d.ts`,
+      contentType[key],
       'utf8',
     );
   }

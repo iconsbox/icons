@@ -9,6 +9,7 @@ out
 public
 .idea
 docs
+index.d.ts
 
 # builds
 build
