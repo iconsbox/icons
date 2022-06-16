@@ -5,7 +5,7 @@ const glob = require('glob');
 Promise
   .all([
     esbuild.build({
-      entryPoints: glob.sync('src/**/*.{tsx,ts,js}'),
+      entryPoints: glob.sync('src/**/*.{tsx,ts}'),
       outdir: "dist",
       minify: false,
       platform: 'browser',
