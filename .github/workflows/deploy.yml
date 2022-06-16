@@ -1,9 +1,10 @@
 name: Build and Deploy
 on:
-  - push
-  - workflow_dispatch
+  push:
+      branches:
+        - master
 jobs:
-  build-and-deploy:
+  publish-package:
     runs-on: ubuntu-latest
     env:
       NODE_OPTIONS: --max-old-space-size=8192
@@ -17,18 +18,25 @@ jobs:
         run: yarn install --force
 
       - name: 🧩 Generate Icons
-        run: yarn run generate
+        run: yarn workspace @iconbox/clothes generate
         env:
           CI: true
 
       - name: 🧩 Build ts
-        run: yarn run build
+        run: yarn workspace @iconbox/clothes build
         env:
           CI: true
 
       - name: Add private packages PAT
         run: |
           echo //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}} >> .npmrc
+
+      - name: Check node and npm versions
+        run: |
+          node -v
+          npm -v
+          cd packages/Clothes/
+          ls -ltrah
 
       - name: 🤖 Publish npm packages
         run: npm run release
