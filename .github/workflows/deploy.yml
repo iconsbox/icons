@@ -23,7 +23,7 @@ jobs:
         run: yarn install --force
 
       - name: Generate new version
-        run: yarn workspace @iconbox/clothes generate
+        run: yarn generate
 
       - name: Change version
         run: yarn run change-version
