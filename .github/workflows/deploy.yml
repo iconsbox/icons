@@ -18,13 +18,13 @@ jobs:
         run: yarn install --force
 
       - name: 🧩 Generate new version
-        run: yarn run generate
+        run: yarn workspace @iconbox/clothes generate
 
       - name: Change version
         run: yarn run change-version
 
       - name: 🧩 Build ts
-        run: npm run build
+        run: yarn run build
         env:
           CI: true
 
@@ -33,7 +33,7 @@ jobs:
           echo //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}} >> .npmrc
 
       - name: 🤖 Publish npm packages
-        run: npm run publish-npm
+        run: yarn run publish-npm
 
       - name: 🤖 Prepare file update
         run: rsync -av --exclude=/node_modules --exclude=.npmrc --exclude=/.git --exclude='dist' --exclude='sprite' --exclude='component' . temp/
