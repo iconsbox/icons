@@ -15,7 +15,6 @@
   "devDependencies": {
     "@types/react": "^18.0.9",
     "esbuild": "^0.14.43",
-    "esbuild-node-externals": "^1.4.1",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
     "lerna": "^5.0.0",

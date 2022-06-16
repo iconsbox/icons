@@ -13,7 +13,7 @@
     "optimize": "svgo src/*/*.svg --config=../../svgo.yml",
     "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
     "change-version": "node ../../scripts/release/change-version.js",
-    "publish-npm": "node ../../scripts/release/publish-npm.js > /dev/null 2>&1 ",
+    "publish-npm": "node ../../scripts/release/publish-npm.js",
     "start": "rollup -c -w",
     "prepare": "yarn run build"
   },
