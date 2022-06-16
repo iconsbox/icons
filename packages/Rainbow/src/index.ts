@@ -1,7 +1,6 @@
 /**
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
-export { default as ActivityFillIcon } from './ActivityFillIcon/component';
 export { default as ActivityIcon } from './ActivityIcon/component';
 export { default as ActivityLineIcon } from './ActivityLineIcon/component';
 export { default as ActivityLineTwoOneIcon } from './ActivityLineTwoOneIcon/component';
@@ -42,13 +41,13 @@ export { default as CloudLineIcon } from './CloudLineIcon/component';
 export { default as CloudLineTwoOneIcon } from './CloudLineTwoOneIcon/component';
 export { default as CloudTwoColorIcon } from './CloudTwoColorIcon/component';
 export { default as CommentFillIcon } from './CommentFillIcon/component';
+export { default as CommentIcon } from './CommentIcon/component';
 export { default as CommentLineIcon } from './CommentLineIcon/component';
 export { default as CommentLineTwoOneIcon } from './CommentLineTwoOneIcon/component';
 export { default as CommentTwoColorIcon } from './CommentTwoColorIcon/component';
 export { default as CopyFillIcon } from './CopyFillIcon/component';
 export { default as CopyIcon } from './CopyIcon/component';
 export { default as CopyLineIcon } from './CopyLineIcon/component';
-export { default as CommentIcon } from './CommentIcon/component';
 export { default as CopyLineTwoOneIcon } from './CopyLineTwoOneIcon/component';
 export { default as CopyTwoColorIcon } from './CopyTwoColorIcon/component';
 export { default as DashboardFillIcon } from './DashboardFillIcon/component';
@@ -56,8 +55,8 @@ export { default as DashboardIcon } from './DashboardIcon/component';
 export { default as DashboardLineIcon } from './DashboardLineIcon/component';
 export { default as DashboardLineTwoOneIcon } from './DashboardLineTwoOneIcon/component';
 export { default as DashboardTwoColorIcon } from './DashboardTwoColorIcon/component';
-export { default as DesktopIcon } from './DesktopIcon/component';
 export { default as DesktopFillIcon } from './DesktopFillIcon/component';
+export { default as DesktopIcon } from './DesktopIcon/component';
 export { default as DesktopLineIcon } from './DesktopLineIcon/component';
 export { default as DesktopLineTwoOneIcon } from './DesktopLineTwoOneIcon/component';
 export { default as DesktopTwoColorIcon } from './DesktopTwoColorIcon/component';
@@ -221,3 +220,4 @@ export { default as _3DIcon } from './_3DIcon/component';
 export { default as _3DLineIcon } from './_3DLineIcon/component';
 export { default as _3DLineTwoOneIcon } from './_3DLineTwoOneIcon/component';
 export { default as _3DTwoColorIcon } from './_3DTwoColorIcon/component';
+export { default as ActivityFillIcon } from './ActivityFillIcon/component';
