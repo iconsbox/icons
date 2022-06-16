@@ -1,13 +1,18 @@
 name: Build and Deploy
+
 on:
   push:
       branches:
         - master
+
 jobs:
   publish-package:
+
     runs-on: ubuntu-latest
     env:
       NODE_OPTIONS: --max-old-space-size=8192
+      NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
@@ -17,7 +22,7 @@ jobs:
       - name: 🎢 Install
         run: yarn install --force
 
-      - name: 🧩 Generate new version
+      - name: Generate new version
         run: yarn workspace @iconbox/clothes generate
 
       - name: Change version
@@ -30,12 +35,12 @@ jobs:
 
       - name: Add private packages PAT
         run: |
-          echo //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}} >> .npmrc
+          echo //registry.npmjs.org/:_authToken="${{secrets.NPM_TOKEN}}" > .npmrc
 
       - name: 🤖 Publish npm packages
         run: npm run publish-npm
 
-      - name: 🤖 Prepare file update
+      - name: Prepare file update
         run: rsync -av --exclude=/node_modules --exclude=.npmrc --exclude=/.git --exclude='dist' --exclude='sprite' --exclude='component' . temp/
 
       - name: 🚀 Deploy
