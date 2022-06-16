@@ -12,7 +12,7 @@
     "optimize": "svgo src/*/*.svg --config=../../svgo.yml",
     "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
     "change-version": "node ../../scripts/release/change-version.js",
-    "publish-npm": "cd dist && ls && cd ../ && npm publish dist --access=public",
+    "publish-npm": "cd dist && npm publish --access=public",
     "prebuild": "rimraf ./dist",
     "start": "rollup -c -w",
     "prepare": "yarn run build"
