@@ -13,12 +13,10 @@
     "release": "node ./scripts/release/release.js"
   },
   "devDependencies": {
-    "@types/node": "^17.0.35",
     "@types/react": "^18.0.9",
     "esbuild": "^0.14.43",
     "esbuild-node-externals": "^1.4.1",
     "fs-extra": "^10.1.0",
-    "gh-pages": "^4.0.0",
     "glob": "^8.0.3",
     "lerna": "^5.0.0",
     "node-html-parser": "^5.3.3",
@@ -26,10 +24,5 @@
     "rimraf": "^3.0.2",
     "semver": "^7.3.7",
     "shelljs": "^0.8.5"
-  },
-  "dependencies": {
-    "@svgr/core": "^6.2.1",
-    "tsc": "^2.0.4",
-    "typescript": "^4.7.2"
   }
 }
