@@ -33,7 +33,7 @@ jobs:
           echo //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}} >> .npmrc
 
       - name: 🤖 Publish npm packages
-        run: yarn run publish-npm
+        run: npm run publish-npm
 
       - name: 🤖 Prepare file update
         run: rsync -av --exclude=/node_modules --exclude=.npmrc --exclude=/.git --exclude='dist' --exclude='sprite' --exclude='component' . temp/
