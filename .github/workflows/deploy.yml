@@ -34,9 +34,7 @@ jobs:
         run: npm run release
 
       - name: 🤖 Prepare file update
-        run: |
-          mkdir temp
-          rsync -vau . temp/
+        run: rsync -av --exclude=/node_modules --exclude=/.git --exclude='dist' . temp/
 
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
