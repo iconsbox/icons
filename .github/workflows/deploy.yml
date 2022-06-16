@@ -15,12 +15,13 @@ jobs:
           persist-credentials: false
 
       - name: 🎢 Install
-        run: npm install --force
+        run: yarn install --force
 
-      - name: 🧩 Generate Icons
-        run: npm run generate
-        env:
-          CI: true
+      - name: 🧩 Generate new version
+        run: yarn run generate
+
+      - name: Change version
+        run: yarn run change-version
 
       - name: 🧩 Build ts
         run: npm run build
@@ -31,15 +32,8 @@ jobs:
         run: |
           echo //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}} >> .npmrc
 
-      - name: Check node and npm versions
-        run: |
-          node -v
-          npm -v
-          cd packages/Clothes/
-          ls -ltrah
-
       - name: 🤖 Publish npm packages
-        run: npm run release
+        run: npm run publish-npm
 
       - name: 🤖 Prepare file update
         run: rsync -av --exclude=/node_modules --exclude=.npmrc --exclude=/.git --exclude='dist' --exclude='sprite' --exclude='component' . temp/

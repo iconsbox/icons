@@ -10,7 +10,7 @@
     "test": "echo \"Will write tests soon ....\"",
     "optimize": "lerna run --parallel optimize",
     "publish-npm": "lerna run --parallel publish-npm",
-    "release": "node ./scripts/release/release.js"
+    "change-version": "lerna run --parallel change-version"
   },
   "devDependencies": {
     "@types/react": "^18.0.9",
@@ -21,8 +21,7 @@
     "node-html-parser": "^5.3.3",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
-    "semver": "^7.3.7",
-    "shelljs": "^0.8.5"
+    "semver": "^7.3.7"
   },
   "dependencies": {
     "typescript": "^4.7.3"
