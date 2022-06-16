@@ -15,15 +15,15 @@ jobs:
           persist-credentials: false
 
       - name: 🎢 Install
-        run: yarn install --force
+        run: npm install --force
 
       - name: 🧩 Generate Icons
-        run: yarn workspace @iconbox/clothes generate
+        run: npm workspace @iconbox/clothes generate
         env:
           CI: true
 
       - name: 🧩 Build ts
-        run: yarn workspace @iconbox/clothes build
+        run: npm workspace @iconbox/clothes build
         env:
           CI: true
 
