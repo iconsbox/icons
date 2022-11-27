@@ -18,7 +18,7 @@ async function createPackageFile() {
     ...packageDataOther,
     private: false,
     main: './index.js',
-    module: './esm/index.js',
+    module: './index.js',
   };
   const targetPath = path.resolve(buildPath, './package.json');
 

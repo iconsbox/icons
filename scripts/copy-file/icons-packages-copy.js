@@ -16,15 +16,13 @@ async function createPackageFile() {
     ...packageDataOther,
     private: false,
     main: './index.js',
-    module: './esm/index.js',
-    unpkg: './umd/icons.production.js',
+    module: './index.js',
   };
   const newSpritePackageData = {
     ...packageDataOther,
     private: false,
     main: './index.js',
-    module: '../esm/sprite/index.js',
-    unpkg: '../umd/sprite/icons.production.js',
+    module: '../sprite/index.js',
   };
 
   console.log('Writing package:' , buildPath);
