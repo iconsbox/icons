@@ -1,7 +1,7 @@
 {
   "name": "@iconbox/ant",
   "private": false,
-  "version": "2.0.28",
+  "version": "2.0.29",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "scripts": {
     "build": "node ../../scripts/build.js && yarn build:copy-files",
