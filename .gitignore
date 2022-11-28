@@ -29,3 +29,5 @@ yarn-error.log*
 package-lock.json
 sprite*
 component*
+
+packages/*/src/*.js

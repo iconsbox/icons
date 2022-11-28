@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ../../scripts/build.js && yarn build:copy-files",
     "build:copy-files": "node ../../scripts/copy-file/icons-packages-copy.js",
-    "postbuild": "cp src/index.d.ts ./dist/index.d.ts && rm ./dist/index.d.js",
+    "postbuild": "cp src/index.js ./dist/ && cp src/index.cjs.js ./dist/ && cp src/index.d.ts ./dist/",
     "optimize": "svgo src/*/*.svg --config=../../svgo.yml",
     "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
     "change-version": "node ../../scripts/release/change-version.js",
