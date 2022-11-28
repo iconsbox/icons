@@ -4,18 +4,10 @@ const parser = require("node-html-parser");
 const shell = require("shelljs");
 const componentTemplate = require("./component.temp.js");
 const spriteComponentTemplate = require("./spriteComponent.temp.js");
+const { asyncForEach } = require('../helpers');
 
 // Glob index.svg files inb packages
 const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
-
-/* eslint-disable indent */
-const asyncForEach = async (array, callback) => {
-  // eslint-disable-next-line no-plusplus
-  for (let index = 0; index < array.length; index++) {
-    // eslint-disable-next-line no-await-in-loop
-    await callback(array[index], index, array);
-  }
-};
 
 (async () => {
   await asyncForEach(svgIcons, async icon => {

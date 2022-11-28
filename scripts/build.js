@@ -4,7 +4,7 @@ const glob = require('glob');
 
 !(async function () {
   try {
-    const entryPoints = glob.sync('src/**/*.{tsx,ts}');
+    const entryPoints = glob.sync('src/**/*.tsx');
     await esbuild.build({
       entryPoints,
       outdir: "dist",
