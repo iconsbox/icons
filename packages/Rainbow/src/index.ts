@@ -2,6 +2,7 @@
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
 export { default as ActivityFillIcon } from './ActivityFillIcon/component';
+export { default as ActivityIcon } from './ActivityIcon/component';
 export { default as ActivityLineIcon } from './ActivityLineIcon/component';
 export { default as ActivityLineTwoOneIcon } from './ActivityLineTwoOneIcon/component';
 export { default as ActivityTwoColorIcon } from './ActivityTwoColorIcon/component';
@@ -220,4 +221,3 @@ export { default as _3DIcon } from './_3DIcon/component';
 export { default as _3DLineIcon } from './_3DLineIcon/component';
 export { default as _3DLineTwoOneIcon } from './_3DLineTwoOneIcon/component';
 export { default as _3DTwoColorIcon } from './_3DTwoColorIcon/component';
-export { default as ActivityIcon } from './ActivityIcon/component';

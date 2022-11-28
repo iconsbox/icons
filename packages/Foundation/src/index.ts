@@ -2,12 +2,12 @@
 * THIS IS AN AUTO GENERATED FILE, CHANGES COULD BE OVERWRITE
 */
 export { default as AddressBookIcon } from './AddressBookIcon/component';
-export { default as AlignCenterIcon } from './AlignCenterIcon/component';
 export { default as AlertIcon } from './AlertIcon/component';
+export { default as AlignCenterIcon } from './AlignCenterIcon/component';
 export { default as AlignJustifyIcon } from './AlignJustifyIcon/component';
 export { default as AlignLeftIcon } from './AlignLeftIcon/component';
-export { default as AnchorIcon } from './AnchorIcon/component';
 export { default as AlignRightIcon } from './AlignRightIcon/component';
+export { default as AnchorIcon } from './AnchorIcon/component';
 export { default as AnnotateIcon } from './AnnotateIcon/component';
 export { default as ArchiveIcon } from './ArchiveIcon/component';
 export { default as ArrowDownIcon } from './ArrowDownIcon/component';
@@ -21,8 +21,8 @@ export { default as ArrowsOutIcon } from './ArrowsOutIcon/component';
 export { default as AslIcon } from './AslIcon/component';
 export { default as AsteriskIcon } from './AsteriskIcon/component';
 export { default as AtSignIcon } from './AtSignIcon/component';
-export { default as BatteryEmptyIcon } from './BatteryEmptyIcon/component';
 export { default as BackgroundColorIcon } from './BackgroundColorIcon/component';
+export { default as BatteryEmptyIcon } from './BatteryEmptyIcon/component';
 export { default as BatteryFullIcon } from './BatteryFullIcon/component';
 export { default as BatteryHalcon } from './BatteryHalcon/component';
 export { default as BitcoinCircleIcon } from './BitcoinCircleIcon/component';
@@ -59,8 +59,8 @@ export { default as CropIcon } from './CropIcon/component';
 export { default as CrownIcon } from './CrownIcon/component';
 export { default as Css3Icon } from './Css3Icon/component';
 export { default as DatabaseIcon } from './DatabaseIcon/component';
-export { default as DieOneIcon } from './DieOneIcon/component';
 export { default as DieFourIcon } from './DieFourIcon/component';
+export { default as DieOneIcon } from './DieOneIcon/component';
 export { default as DieSixIcon } from './DieSixIcon/component';
 export { default as DieThreeIcon } from './DieThreeIcon/component';
 export { default as DieTwoIcon } from './DieTwoIcon/component';
@@ -87,8 +87,8 @@ export { default as GraphHorizontalIcon } from './GraphHorizontalIcon/component'
 export { default as GraphPieIcon } from './GraphPieIcon/component';
 export { default as GraphTrendIcon } from './GraphTrendIcon/component';
 export { default as GuideDogIcon } from './GuideDogIcon/component';
-export { default as HeartIcon } from './HeartIcon/component';
 export { default as HearingAidIcon } from './HearingAidIcon/component';
+export { default as HeartIcon } from './HeartIcon/component';
 export { default as HomeIcon } from './HomeIcon/component';
 export { default as Html5Icon } from './Html5Icon/component';
 export { default as IndentLessIcon } from './IndentLessIcon/component';
