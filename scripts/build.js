@@ -22,7 +22,7 @@ const glob = require('glob');
         ".js": ".cjs.js"
       },
       minify: false,
-      platform: 'node',
+      platform: 'browser',
       format: 'cjs',
       sourcemap: false,
       sourcesContent: false,
