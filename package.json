@@ -13,7 +13,6 @@
     "change-version": "lerna run --parallel change-version"
   },
   "devDependencies": {
-    "@types/react": "^18.0.9",
     "esbuild": "^0.14.43",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
@@ -23,8 +22,5 @@
     "rimraf": "^3.0.2",
     "semver": "^7.3.7",
     "shelljs": "^0.8.5"
-  },
-  "dependencies": {
-    "typescript": "^4.7.3"
   }
 }

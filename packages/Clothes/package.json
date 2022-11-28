@@ -39,8 +39,5 @@
   "owner": {
     "name": "FlatIcons",
     "url": "https://flaticons.com"
-  },
-  "devDependencies": {
-    "esbuild-plugin-d.ts": "^1.1.0"
   }
 }

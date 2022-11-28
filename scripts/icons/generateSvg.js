@@ -2,8 +2,7 @@ const fse = require("fs-extra");
 const glob = require("glob");
 const parser = require("node-html-parser");
 const shell = require("shelljs");
-const componentTemplate = require("./component.temp.js");
-const spriteComponentTemplate = require("./spriteComponent.temp.js");
+const { esm, spriteEsm } = require("./component.temp.js");
 const { asyncForEach } = require('../helpers');
 
 // Glob index.svg files inb packages
@@ -40,7 +39,7 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
       /**
        * Make sprite svg
        */
-      const splittableFileContent = spriteComponentTemplate
+      const splittableFileContent = spriteEsm
         .replace(/{COMP_NAME}/g, folderName)
         .replace(/{VIEW_BOX}/g, viewBox)
         .replace(/{FILL_VALUE}/g, fill)
@@ -49,7 +48,7 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
       /**
        * Make svg component
        */
-      const normalFileContent = componentTemplate
+      const normalFileContent = esm
         .replace(/COMP_NAME/g, folderName)
         .replace(/VIEW_BOX/g, viewBox)
         .replace(/FILL_VALUE/g, fill)
@@ -86,8 +85,17 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
          * Update index js file
          */
         await fse.writeFile(
-          `${fullPath}/component/index.tsx`,
+          `${fullPath}/component/index.jsx`,
           normalFileContent,
+          "utf8",
+          f => f
+        ),
+        /**
+         * Update index js file
+         */
+        await fse.writeFile(
+          `${fullPath}/component/index.cjs.jsx`,
+          normalFileContent.replace('export default', 'module.exports = '),
           "utf8",
           f => f
         ),
@@ -95,8 +103,14 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
          * Update sprite js file
          */
         await fse.writeFile(
-          `${fullPath}/sprite/index.tsx`,
+          `${fullPath}/sprite/index.jsx`,
           splittableFileContent,
+          "utf8",
+          f => f
+        ),
+        await fse.writeFile(
+          `${fullPath}/sprite/index.jsx`,
+          splittableFileContent.replace('export default', 'module.exports = '),
           "utf8",
           f => f
         )
@@ -107,7 +121,7 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
     }
   });
 
-  if (shell.exec(`prettier --write "src/**/*.{ts,tsx}"`).code !== 0) {
+  if (shell.exec(`prettier --write "src/**/*.jsx"`).code !== 0) {
     shell.echo(`run lint failed`);
   }
 })();

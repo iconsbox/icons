@@ -21,7 +21,7 @@ const esmPkgRow = name => `\nexport { default as ${name} } from './${name}/compo
 const cjsPkgRow = name => `\nconst ${name} = require('./${name}/component/index.cjs.js');`;
 const pkgTypeRow = name => `\nexport { SvgComponent as ${name} } from './${name}/component';`;
 
-const regExcludes = [/index\.ts/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
+const regExcludes = [/index\.jsx/, /index\.cjs\.jsx/, /js\/lib\.js/, /node_modules/, /\.DS_Store/];
 
 walk('./src', regExcludes, async (err, results) => {
   if (err) {
