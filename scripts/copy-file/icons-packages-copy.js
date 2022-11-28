@@ -15,13 +15,13 @@ async function createPackageFile() {
   const newPackageData = {
     ...packageDataOther,
     private: false,
-    main: './index.js',
+    main: './index.cjs.js',
     module: './index.js',
   };
   const newSpritePackageData = {
     ...packageDataOther,
     private: false,
-    main: './index.js',
+    main: './index.cjs.js',
     module: '../sprite/index.js',
   };
 
