@@ -100,7 +100,7 @@ import { ReactElement, SVGProps } from "react";
 type SvgComponent = (props: SVGProps<SVGElement>) => ReactElement;
 `;
       currentType += `
-export { SvgComponent as ${iconName} };`;
+export { SvgComponent as ${iconName} } from './${iconName}/component';`;
       contentType[pathDir] = currentType;
     }
   });
