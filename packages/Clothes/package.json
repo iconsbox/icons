@@ -1,7 +1,7 @@
 {
   "name": "@iconbox/clothes",
   "private": false,
-  "version": "2.0.31",
+  "version": "2.0.32",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "scripts": {
     "build": "node ../../scripts/build.js && yarn build:copy-files",
