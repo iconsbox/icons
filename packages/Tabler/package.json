@@ -3,8 +3,6 @@
   "private": false,
   "version": "2.0.26",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
-  "main": "./index.js",
-  "module": "./index.js",
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "node ../../scripts/build.js && yarn build:copy-files",

@@ -12,6 +12,18 @@ Promise
       sourcemap: false,
       sourcesContent: false,
     }),
+    esbuild.build({
+      entryPoints: glob.sync('src/**/*.{tsx,ts}'),
+      outdir: "dist",
+      outExtension: {
+        ".js": ".cjs.js"
+      },
+      minify: false,
+      platform: 'node',
+      format: 'cjs',
+      sourcemap: false,
+      sourcesContent: false,
+    }),
   ])
   .then(() => console.log("⚡ Javascript build complete! ⚡"))
   .catch(error => {
