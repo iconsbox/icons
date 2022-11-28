@@ -4,7 +4,7 @@ const glob = require('glob');
 
 !(async function () {
   try {
-    const entryPoints = glob.sync('src/**/*.tsx');
+    const entryPoints = glob.sync('src/**/*.jsx');
     await esbuild.build({
       entryPoints,
       outdir: "dist",
@@ -13,21 +13,7 @@ const glob = require('glob');
       sourcemap: false,
       sourcesContent: false,
     });
-    console.log("⚡ ESM version build complete! ⚡");
-
-    await esbuild.build({
-      entryPoints,
-      outdir: "dist",
-      outExtension: {
-        ".js": ".cjs.js"
-      },
-      minify: false,
-      platform: 'browser',
-      format: 'cjs',
-      sourcemap: false,
-      sourcesContent: false,
-    });
-    console.log("⚡ CJS version build complete! ⚡");
+    console.log("⚡ Javascript build complete! ⚡");
   } catch (e) {
     console.log("Build error, ", e.message);
     console.log("E:  ", e);
