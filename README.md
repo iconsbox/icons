@@ -5,6 +5,8 @@
   <h1 align="center" style="color:#ff0000; font-size:12px;">IconBox</h1>
 </a>
 
+[![npm version](https://badge.fury.io/js/@iconbox%2Fconfig.svg)](https://badge.fury.io/js/@iconbox%2Fconfig)
+
 <p align="center" style="font-size: 24px; font-weight: 900">
     A world of famous icon packs with easy to use interface
     <br/>
