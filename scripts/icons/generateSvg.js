@@ -95,7 +95,9 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
          */
         await fse.writeFile(
           `${fullPath}/component/index.cjs.jsx`,
-          normalFileContent.replace('export default', 'module.exports = '),
+          normalFileContent
+            .replace('export default', 'module.exports = ')
+            .replace('import * as React from "react"', 'const React = require("react")'),
           "utf8",
           f => f
         ),
@@ -109,8 +111,10 @@ const svgIcons = glob.sync(`${process.cwd()}/src/**/index.svg`);
           f => f
         ),
         await fse.writeFile(
-          `${fullPath}/sprite/index.jsx`,
-          splittableFileContent.replace('export default', 'module.exports = '),
+          `${fullPath}/sprite/index.cjs.jsx`,
+          splittableFileContent
+            .replace('export default', 'module.exports = ')
+            .replace('import * as React from "react"', 'const React = require("react")'),
           "utf8",
           f => f
         )

@@ -1,6 +1,7 @@
 const esm = `/**
 * THIS IS AN AUTO GENERATED ICONBOX FILE, CHANGES WILL NOT APPLY
 */
+import * as React from "react";
 const COMP_NAME = ({ size, ...rest }) =>
   <svg
     data-testid="COMP_NAME"
@@ -26,6 +27,7 @@ export default COMP_NAME;
 const spriteEsm = `/**
 * THIS IS AN AUTO GENERATED ICONBOX SPRITE FILE, CHANGES WILL NOT APPLY
 */
+import * as React from 'react';
 import { useOptions, GlobalConfig } from '@iconbox/config';
 
 if (GlobalConfig.options.importSpriteSVG) {
