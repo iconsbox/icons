@@ -1,14 +1,6 @@
 import { createContext } from 'react';
 
-const ToolboxContext = createContext<{
-  options: {
-    SSR: boolean;
-    importSpriteSVG: boolean;
-    useSpriteFile: boolean;
-    publicPath: string;
-    spriteSvgName: string;
-  }
-}>({
+const ToolboxContext = createContext({
   options: {
     SSR: false,
     importSpriteSVG: false,
