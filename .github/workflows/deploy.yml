@@ -9,6 +9,7 @@ jobs:
   publish-package:
 
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       NODE_OPTIONS: --max-old-space-size=12288
       NPM_TOKEN: ${{secrets.NPM_TOKEN}}
