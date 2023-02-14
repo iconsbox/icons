@@ -14,7 +14,7 @@
     "prepare": "yarn run build"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
+    "react": "^=16.x || ^=17.x || ^=18.x",
     "react-dom": "^16.8.6"
   },
   "engines": {
