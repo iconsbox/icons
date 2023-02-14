@@ -4,7 +4,7 @@ const glob = require('glob');
 
 !(async function () {
   try {
-    const entryPoints = glob.sync('src/**/*.{jsx,js}');
+    let entryPoints = glob.sync('src/**/*.{jsx,js}');
     await esbuild.build({
       entryPoints,
       outdir: "dist",
@@ -13,6 +13,7 @@ const glob = require('glob');
       sourcemap: false,
       sourcesContent: false,
     });
+    entryPoints = null
     console.log("⚡ Javascript build complete! ⚡");
   } catch (e) {
     console.log("Build error, ", e.message);

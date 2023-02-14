@@ -4,14 +4,15 @@
   "version": "2.0.32",
   "author": "Jafar Rezaei (SayJeyHi) <jafar.rezaei.ard@gmail.com>",
   "scripts": {
+    "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
+    "change-version": "node ../../scripts/release/change-version.js",
     "build": "node ../../scripts/build.js && yarn build:copy-files",
+    "publish-npm": "cd dist && npm publish --access=public",
+
     "build:copy-files": "node ../../scripts/copy-file/icons-packages-copy.js",
     "postbuild": "cp src/index.js ./dist/ && cp src/index.cjs.js ./dist/ && cp src/index.d.ts ./dist/",
     "optimize": "svgo src/*/*.svg --config=../../svgo.yml",
-    "generate": "node ../../scripts/icons/generateSvg.js && node ../../scripts/icons/makeCollections.js",
-    "change-version": "node ../../scripts/release/change-version.js",
     "prepublish-npm": "echo //registry.npmjs.org/:_authToken=$NPM_TOKEN > ./dist/.npmrc",
-    "publish-npm": "cd dist && npm publish --access=public",
     "prebuild": "rimraf ./dist",
     "start": "rollup -c -w",
     "prepare": "yarn run build"
@@ -19,7 +20,7 @@
   "peerDependencies": {
     "@iconbox/config": "^1.0.1",
     "prop-types": "^15.0.0",
-    "react": "^=16.x || ^=17.x  || ^=18.x"
+    "react": "^=16.x || ^=17.x || ^=18.x"
   },
   "engines": {
     "node": ">=8",

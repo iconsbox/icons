@@ -5,12 +5,12 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run --parallel build",
     "generate": "lerna run --parallel generate && node ./scripts/icons/docsBuild.js",
-    "test": "echo \"Will write tests soon ....\"",
-    "optimize": "lerna run --parallel optimize",
+    "change-version": "lerna run --parallel change-version",
+    "build": "lerna run --parallel build",
     "publish-npm": "lerna run --parallel publish-npm",
-    "change-version": "lerna run --parallel change-version"
+    "optimize": "lerna run --parallel optimize",
+    "test": "echo \"Will write tests soon ....\""
   },
   "devDependencies": {
     "esbuild": "^0.14.43",
